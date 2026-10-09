@@ -1,0 +1,8 @@
+prefix=/workspace/fuel_ws/devel
+
+Name: fuel_gazebo
+Description: Description of fuel_gazebo
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib -lfuel_gazebo_controller
+Requires: 

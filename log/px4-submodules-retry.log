@@ -1,0 +1,16 @@
+From https://github.com/nlohmann/json
+ + d8dfc0d...d33068d develop    -> origin/develop  (forced update)
+From https://github.com/nlohmann/json
+ * branch            bc889afb4c5bf1c0d8ee29ef35eaaf4c8bef8a5d -> FETCH_HEAD
+Submodule path 'src/lib/events/libevents/libs/cpp/parse/nlohmann_json': checked out 'bc889afb4c5bf1c0d8ee29ef35eaaf4c8bef8a5d'
+From https://github.com/mavlink/mavlink
+ * branch            18955a04c7c7467e00ea42b704addb4a9c12b53a -> FETCH_HEAD
+Submodule path 'src/modules/mavlink/mavlink': checked out '18955a04c7c7467e00ea42b704addb4a9c12b53a'
+Submodule 'pymavlink' (https://github.com/ardupilot/pymavlink.git) registered for path 'src/modules/mavlink/mavlink/pymavlink'
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/src/modules/mavlink/mavlink/pymavlink'...
+From https://github.com/ardupilot/pymavlink
+ * branch            2ca2c13b54b4c75dd71c79acafc7ec40d9cb4965 -> FETCH_HEAD
+Submodule path 'src/modules/mavlink/mavlink/pymavlink': checked out '2ca2c13b54b4c75dd71c79acafc7ec40d9cb4965'
+From https://github.com/PX4/Micro-XRCE-DDS-Client
+ * branch            4248559f3b111155c783e524e461ccc83e768103 -> FETCH_HEAD
+Submodule path 'src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client': checked out '4248559f3b111155c783e524e461ccc83e768103'

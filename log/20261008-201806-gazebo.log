@@ -1,0 +1,3784 @@
+... logging to /tmp/.ros/log/d116e86a-c2ff-11f1-9ac3-acf23ca0f2c5/roslaunch-ubuntu-17098.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch
+[1mstarted roslaunch server http://ubuntu:35015/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /exploration_node/astar/allocate_num: 1000000
+ * /exploration_node/astar/lambda_heu: 10000.0
+ * /exploration_node/astar/max_search_time: 0.2
+ * /exploration_node/astar/resolution_astar: 0.2
+ * /exploration_node/bspline/limit_acc: 1.0
+ * /exploration_node/bspline/limit_ratio: 1.1
+ * /exploration_node/bspline/limit_vel: 1.0
+ * /exploration_node/exploration/am: 1.0
+ * /exploration_node/exploration/max_decay: 0.8
+ * /exploration_node/exploration/refine_local: True
+ * /exploration_node/exploration/refined_num: 7
+ * /exploration_node/exploration/refined_radius: 5.0
+ * /exploration_node/exploration/relax_time: 1.0
+ * /exploration_node/exploration/top_view_num: 15
+ * /exploration_node/exploration/tsp_dir: /workspace/fuel_w...
+ * /exploration_node/exploration/vm: 1.0
+ * /exploration_node/exploration/w_dir: 1.5
+ * /exploration_node/exploration/yd: 1.0471975333333332
+ * /exploration_node/exploration/ydd: 1.5707963
+ * /exploration_node/frontier/candidate_dphi: 0.2617993833333333
+ * /exploration_node/frontier/candidate_rmax: 2.5
+ * /exploration_node/frontier/candidate_rmin: 1.5
+ * /exploration_node/frontier/candidate_rnum: 3
+ * /exploration_node/frontier/cluster_min: 100
+ * /exploration_node/frontier/cluster_size_xy: 2.0
+ * /exploration_node/frontier/cluster_size_z: 10.0
+ * /exploration_node/frontier/down_sample: 3
+ * /exploration_node/frontier/min_candidate_clearance: 0.21
+ * /exploration_node/frontier/min_candidate_dist: 0.75
+ * /exploration_node/frontier/min_view_finish_fraction: 0.2
+ * /exploration_node/frontier/min_visib_num: 15
+ * /exploration_node/fsm/replan_time: 0.2
+ * /exploration_node/fsm/thresh_replan1: 0.5
+ * /exploration_node/fsm/thresh_replan2: 0.5
+ * /exploration_node/fsm/thresh_replan3: 1.5
+ * /exploration_node/heading_planner/half_vert_num: 5
+ * /exploration_node/heading_planner/lambda1: 2.0
+ * /exploration_node/heading_planner/lambda2: 1.0
+ * /exploration_node/heading_planner/max_yaw_rate: 0.17453292222222222
+ * /exploration_node/heading_planner/w: 20000.0
+ * /exploration_node/heading_planner/weight_type: 1.0
+ * /exploration_node/heading_planner/yaw_diff: 0.5235987666666666
+ * /exploration_node/manager/clearance_threshold: 0.2
+ * /exploration_node/manager/control_points_distance: 0.35
+ * /exploration_node/manager/dynamic_environment: 0
+ * /exploration_node/manager/local_segment_length: 6.0
+ * /exploration_node/manager/max_acc: 1.0
+ * /exploration_node/manager/max_jerk: 4.0
+ * /exploration_node/manager/max_vel: 1.0
+ * /exploration_node/manager/min_time: True
+ * /exploration_node/manager/use_active_perception: True
+ * /exploration_node/manager/use_geometric_path: True
+ * /exploration_node/manager/use_kinodynamic_path: True
+ * /exploration_node/manager/use_optimization: True
+ * /exploration_node/manager/use_topo_path: True
+ * /exploration_node/map_ros/cx: 320.0
+ * /exploration_node/map_ros/cy: 240.0
+ * /exploration_node/map_ros/depth_filter_margin: 2
+ * /exploration_node/map_ros/depth_filter_maxdist: 5.0
+ * /exploration_node/map_ros/depth_filter_mindist: 0.2
+ * /exploration_node/map_ros/esdf_slice_height: 0.3
+ * /exploration_node/map_ros/frame_id: world
+ * /exploration_node/map_ros/fx: 381.36
+ * /exploration_node/map_ros/fy: 381.36
+ * /exploration_node/map_ros/k_depth_scaling_factor: 1000.0
+ * /exploration_node/map_ros/show_all_map: True
+ * /exploration_node/map_ros/show_esdf_time: False
+ * /exploration_node/map_ros/show_occ_time: False
+ * /exploration_node/map_ros/skip_pixel: 2
+ * /exploration_node/map_ros/visualization_truncate_height: 10.09
+ * /exploration_node/map_ros/visualization_truncate_low: -2.0
+ * /exploration_node/optimization/algorithm1: 15
+ * /exploration_node/optimization/algorithm2: 11
+ * /exploration_node/optimization/dist0: 0.7
+ * /exploration_node/optimization/ld_dist: 10.0
+ * /exploration_node/optimization/ld_end: 0.5
+ * /exploration_node/optimization/ld_feasi: 2.0
+ * /exploration_node/optimization/ld_guide: 1.5
+ * /exploration_node/optimization/ld_smooth: 20.0
+ * /exploration_node/optimization/ld_start: 100.0
+ * /exploration_node/optimization/ld_time: 1.0
+ * /exploration_node/optimization/ld_view: 0.0
+ * /exploration_node/optimization/ld_waypt: 0.3
+ * /exploration_node/optimization/max_acc: 1.0
+ * /exploration_node/optimization/max_iteration_num1: 2
+ * /exploration_node/optimization/max_iteration_num2: 2000
+ * /exploration_node/optimization/max_iteration_num3: 200
+ * /exploration_node/optimization/max_iteration_num4: 200
+ * /exploration_node/optimization/max_iteration_time1: 0.0001
+ * /exploration_node/optimization/max_iteration_time2: 0.005
+ * /exploration_node/optimization/max_iteration_time3: 0.003
+ * /exploration_node/optimization/max_iteration_time4: 0.003
+ * /exploration_node/optimization/max_vel: 1.0
+ * /exploration_node/perception_utils/left_angle: 1.04719755
+ * /exploration_node/perception_utils/max_dist: 8.0
+ * /exploration_node/perception_utils/right_angle: 1.04719755
+ * /exploration_node/perception_utils/top_angle: 0.52359878
+ * /exploration_node/perception_utils/vis_dist: 1.0
+ * /exploration_node/sdf_map/box_max_x: 9.7
+ * /exploration_node/sdf_map/box_max_y: 9.7
+ * /exploration_node/sdf_map/box_max_z: 2.8
+ * /exploration_node/sdf_map/box_min_x: -9.7
+ * /exploration_node/sdf_map/box_min_y: -9.7
+ * /exploration_node/sdf_map/box_min_z: 0.1
+ * /exploration_node/sdf_map/default_dist: 0.0
+ * /exploration_node/sdf_map/ground_height: -1.0
+ * /exploration_node/sdf_map/local_bound_inflate: 0.5
+ * /exploration_node/sdf_map/local_map_margin: 50
+ * /exploration_node/sdf_map/map_size_x: 24.0
+ * /exploration_node/sdf_map/map_size_y: 24.0
+ * /exploration_node/sdf_map/map_size_z: 5.0
+ * /exploration_node/sdf_map/max_ray_length: 8.0
+ * /exploration_node/sdf_map/min_ray_length: 0.5
+ * /exploration_node/sdf_map/obstacles_inflation: 0.199
+ * /exploration_node/sdf_map/optimistic: False
+ * /exploration_node/sdf_map/p_hit: 0.65
+ * /exploration_node/sdf_map/p_max: 0.9
+ * /exploration_node/sdf_map/p_min: 0.12
+ * /exploration_node/sdf_map/p_miss: 0.35
+ * /exploration_node/sdf_map/p_occ: 0.8
+ * /exploration_node/sdf_map/resolution: 0.1
+ * /exploration_node/sdf_map/signed_dist: False
+ * /exploration_node/sdf_map/virtual_ceil_height: -10
+ * /exploration_node/search/allocate_num: 100000
+ * /exploration_node/search/check_num: 10
+ * /exploration_node/search/horizon: 5.0
+ * /exploration_node/search/init_max_tau: 1.0
+ * /exploration_node/search/lambda_heu: 10.0
+ * /exploration_node/search/margin: 0.2
+ * /exploration_node/search/max_acc: 1.0
+ * /exploration_node/search/max_tau: 0.8
+ * /exploration_node/search/max_vel: 1.0
+ * /exploration_node/search/optimistic: False
+ * /exploration_node/search/resolution_astar: 0.025
+ * /exploration_node/search/time_resolution: 0.8
+ * /exploration_node/search/vel_margin: 0.25
+ * /exploration_node/search/w_time: 10.0
+ * /fuel_gazebo_camera_pose/sensor_mode: lidar
+ * /gazebo/enable_ros_network: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /traj_server/perception_utils/left_angle: 1.04719755
+ * /traj_server/perception_utils/max_dist: 8.0
+ * /traj_server/perception_utils/right_angle: 1.04719755
+ * /traj_server/perception_utils/top_angle: 0.52359878
+ * /traj_server/perception_utils/vis_dist: 1.0
+ * /traj_server/traj_server/init_x: 0.0
+ * /traj_server/traj_server/init_y: 0.0
+ * /traj_server/traj_server/init_z: 1.0
+ * /traj_server/traj_server/pub_traj_id: 4
+ * /traj_server/traj_server/time_forward: 1.5
+ * /use_sim_time: True
+ * /waypoint_generator/waypoint_type: point
+
+NODES
+  /
+    exploration_node (exploration_manager/exploration_node)
+    fuel_gazebo_camera_pose (fuel_gazebo/camera_pose.py)
+    gazebo (gazebo_ros/gzserver)
+    gazebo_depth_rviz (rviz/rviz)
+    gazebo_gui (gazebo_ros/gzclient)
+    traj_server (plan_manage/traj_server)
+    waypoint_generator (waypoint_generator/waypoint_generator)
+
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ros'
+[33m[WARN] [1791461902.433921780]: [Traj server]: init...[0m
+hit: 0.619039, miss: -0.619039, min: -1.99243, max: 2.19722, thresh: 1.38629
+origin_: -12 -12  -1
+map size: 24 24  5
+origin_: -12 -12  -1
+map size: 24 24  5
+yaw diff: 0.523599
+max yaw diff: 0.174533
+vert num: 5
+top:        0
+ 0.84659
+0.532245
+bottom:        0
+-0.84659
+0.532245
+left: 0.769831
+       0
+0.638248
+right: -0.771876
+        0
+ 0.635773
+lefttop: -3.73084  -2.3951      4.5
+leftbottom: -2.87212   2.3951      4.5
+righttop: 2.86098 -2.3951     4.5
+rightbottom: 2.86098  2.3951     4.5
+T_cb:  0 -1  0  0
+ 0  0  1  0
+ 1  0  0  0
+ 0  0  0  1
+T_bc: -0 -0  1  0
+-1 -0  0 -0
+-0  1 -0  0
+ 0 -0  0  1
+origin_: -12 -12  -1
+map size: 24 24  5
+0
+0
+[33m[WARN] [1791461905.865286656, 1.004000000]: no odom.[0m
+[0m[INFO] [1791461905.863298538, 1.002000000]: [FSM]: state: INIT[0m
+[FSM]: from INIT to WAIT_TRIGGER
+[33m[WARN] [1791461905.887831245, 1.020000000]: wait for trigger.[0m
+[33m[WARN] [1791461906.919904431, 2.024000000]: wait for trigger.[0m
+[0m[INFO] [1791461906.897148814, 2.004000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   3.88453 0.0206612, first pc:    0.999998 -0.00185861
+max idx: 1
+mean:   5.57461 0.0266754, first pc:  0.466826 -0.884349
+max idx: 0
+mean:  5.44166 0.801963, first pc: 0.934789 0.355205
+max idx: 0
+mean:   2.07531 0.0142231, first pc:  0.99919 0.040243
+0, 
+new num: 1, new dormant: 4
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   3.87205 0.0243862, first pc:    0.999999 -0.00126067
+max idx: 1
+mean:   5.57527 0.0336782, first pc: 0.470311  -0.8825
+max idx: 0
+mean:  5.44343 0.808996, first pc: 0.935144 0.354267
+max idx: 0
+mean:   2.07342 0.0145737, first pc:  0.999217 0.0395662
+[33m[WARN] [1791461907.920435590, 3.004000000]: [Traj server]: ready.[0m
+0, 
+new num: 1, new dormant: 4
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461908.026145209, 3.104000000]: wait for trigger.[0m
+[0m[INFO] [1791461908.026119158, 3.104000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    3.8691 0.0243375, first pc:    0.999999 -0.00131149
+max idx: 1
+mean:   5.57501 0.0337759, first pc:  0.469506 -0.882929
+max idx: 0
+mean:  5.44209 0.808792, first pc: 0.935131 0.354301
+max idx: 0
+mean:    2.0714 0.0143911, first pc:  0.999213 0.0396631
+0, 
+new num: 1, new dormant: 4
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   2.48828 -0.141217, first pc:  0.973334 -0.229391
+max idx: 0
+mean:   3.72627 -0.288647, first pc:  0.822471 -0.568807
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791461909.055266554, 4.104000000]: wait for trigger.[0m
+[0m[INFO] [1791461909.055239698, 4.104000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   2.49481 -0.146901, first pc:   0.97592 -0.218128
+max idx: 0
+mean:   3.72241 -0.287838, first pc:  0.822785 -0.568353
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   3.87275 0.0158595, first pc:    0.99998 0.00629185
+max idx: 1
+mean:   5.57186 0.0297195, first pc:  0.414897 -0.909868
+max idx: 0
+mean:  5.46586 0.840176, first pc: 0.956143 0.292902
+max idx: 0
+mean:    2.09357 0.00134639, first pc:  0.999241 0.0389516
+[33m[WARN] [1791461909.983880838, 5.004000000]: Frontier t: 0.004000[0m
+0, 
+new num: 1, new dormant: 4
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461910.087825543, 5.104000000]: wait for trigger.[0m
+[0m[INFO] [1791461910.087801820, 5.104000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.70382 -0.166471, first pc:   0.996569 -0.0827649
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461911.129794674, 6.106000000]: wait for trigger.[0m
+[0m[INFO] [1791461911.129771079, 6.106000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461912.156837304, 7.110000000]: wait for trigger.[0m
+[0m[INFO] [1791461912.156814417, 7.110000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461913.190407673, 8.112000000]: wait for trigger.[0m
+[0m[INFO] [1791461913.190385242, 8.112000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461914.236398079, 9.120000000]: wait for trigger.[0m
+[0m[INFO] [1791461914.236376746, 9.120000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461915.265803577, 10.120000000]: wait for trigger.[0m
+[0m[INFO] [1791461915.265781543, 10.120000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461915.655279113, 10.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461916.297018235, 11.120000000]: wait for trigger.[0m
+[0m[INFO] [1791461916.296995592, 11.120000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461917.336362888, 12.122000000]: wait for trigger.[0m
+[0m[INFO] [1791461917.336342852, 12.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461918.369118024, 13.130000000]: wait for trigger.[0m
+[0m[INFO] [1791461918.369090516, 13.130000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461919.398525211, 14.132000000]: wait for trigger.[0m
+[0m[INFO] [1791461919.398501613, 14.132000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461920.435022086, 15.134000000]: wait for trigger.[0m
+[0m[INFO] [1791461920.434997607, 15.134000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461920.806513276, 15.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461921.461744613, 16.140000000]: wait for trigger.[0m
+[0m[INFO] [1791461921.461721795, 16.140000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461922.484670992, 17.142000000]: wait for trigger.[0m
+[0m[INFO] [1791461922.484651771, 17.142000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461923.522021157, 18.150000000]: wait for trigger.[0m
+[0m[INFO] [1791461923.521999965, 18.150000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461924.555727353, 19.152000000]: wait for trigger.[0m
+[0m[INFO] [1791461924.555703537, 19.152000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461925.589162025, 20.160000000]: wait for trigger.[0m
+[0m[INFO] [1791461925.589136891, 20.160000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461925.938662566, 20.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461926.612558157, 21.162000000]: wait for trigger.[0m
+[0m[INFO] [1791461926.612538791, 21.162000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461927.648744073, 22.170000000]: wait for trigger.[0m
+[0m[INFO] [1791461927.648721511, 22.170000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461928.683815635, 23.174000000]: wait for trigger.[0m
+[0m[INFO] [1791461928.683794345, 23.174000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461929.715599850, 24.182000000]: wait for trigger.[0m
+[0m[INFO] [1791461929.715574801, 24.182000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461930.752762865, 25.190000000]: wait for trigger.[0m
+[0m[INFO] [1791461930.752739539, 25.190000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461931.074095313, 25.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461931.784852154, 26.190000000]: wait for trigger.[0m
+[0m[INFO] [1791461931.784828275, 26.190000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461932.822093152, 27.192000000]: wait for trigger.[0m
+[0m[INFO] [1791461932.822065738, 27.192000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461933.866417718, 28.200000000]: wait for trigger.[0m
+[0m[INFO] [1791461933.866392673, 28.200000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461934.904092795, 29.202000000]: wait for trigger.[0m
+[0m[INFO] [1791461934.904069316, 29.202000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461935.943662260, 30.210000000]: wait for trigger.[0m
+[0m[INFO] [1791461935.943636190, 30.210000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461936.240509851, 30.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461936.982825519, 31.210000000]: wait for trigger.[0m
+[0m[INFO] [1791461936.982803015, 31.210000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461938.012094934, 32.210000000]: wait for trigger.[0m
+[0m[INFO] [1791461938.012072161, 32.210000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461939.054114535, 33.212000000]: wait for trigger.[0m
+[0m[INFO] [1791461939.054088072, 33.212000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461940.099575847, 34.220000000]: wait for trigger.[0m
+[0m[INFO] [1791461940.099555605, 34.220000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461941.138119702, 35.220000000]: wait for trigger.[0m
+[0m[INFO] [1791461941.138095800, 35.220000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461941.428269035, 35.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461942.173905171, 36.220000000]: wait for trigger.[0m
+[0m[INFO] [1791461942.173881266, 36.220000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461943.216238836, 37.222000000]: wait for trigger.[0m
+[0m[INFO] [1791461943.216214819, 37.222000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461944.260224830, 38.230000000]: wait for trigger.[0m
+[0m[INFO] [1791461944.260196832, 38.230000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461945.288305953, 39.232000000]: wait for trigger.[0m
+[0m[INFO] [1791461945.288281452, 39.232000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461946.326983286, 40.232000000]: wait for trigger.[0m
+[0m[INFO] [1791461946.326955982, 40.232000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461946.600852079, 40.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461947.357775641, 41.236000000]: wait for trigger.[0m
+[0m[INFO] [1791461947.357746606, 41.236000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461948.403100419, 42.242000000]: wait for trigger.[0m
+[0m[INFO] [1791461948.403075323, 42.242000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461949.443361413, 43.250000000]: wait for trigger.[0m
+[0m[INFO] [1791461949.443333749, 43.250000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461950.469465203, 44.252000000]: wait for trigger.[0m
+[0m[INFO] [1791461950.469442492, 44.252000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461951.509452229, 45.260000000]: wait for trigger.[0m
+[0m[INFO] [1791461951.509426800, 45.260000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461951.753547523, 45.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461952.538112412, 46.262000000]: wait for trigger.[0m
+[0m[INFO] [1791461952.538088853, 46.262000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461953.579296907, 47.262000000]: wait for trigger.[0m
+[0m[INFO] [1791461953.579274100, 47.262000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461954.619553757, 48.262000000]: wait for trigger.[0m
+[0m[INFO] [1791461954.619506987, 48.262000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461955.650883717, 49.262000000]: wait for trigger.[0m
+[0m[INFO] [1791461955.650858267, 49.262000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461956.693074838, 50.262000000]: wait for trigger.[0m
+[0m[INFO] [1791461956.693051534, 50.262000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461956.939544984, 50.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461957.717931049, 51.262000000]: wait for trigger.[0m
+[0m[INFO] [1791461957.717906352, 51.262000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461958.753198549, 52.264000000]: wait for trigger.[0m
+[0m[INFO] [1791461958.753166925, 52.264000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461959.791588885, 53.270000000]: wait for trigger.[0m
+[0m[INFO] [1791461959.791565246, 53.270000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461960.824684915, 54.270000000]: wait for trigger.[0m
+[0m[INFO] [1791461960.824661049, 54.270000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461961.855480927, 55.270000000]: wait for trigger.[0m
+[0m[INFO] [1791461961.855458650, 55.270000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461962.095595050, 55.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461962.895877347, 56.272000000]: wait for trigger.[0m
+[0m[INFO] [1791461962.895843454, 56.272000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461963.926680155, 57.274000000]: wait for trigger.[0m
+[0m[INFO] [1791461963.926656419, 57.274000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461964.951100983, 58.280000000]: wait for trigger.[0m
+[0m[INFO] [1791461964.951073013, 58.280000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461965.977407269, 59.280000000]: wait for trigger.[0m
+[0m[INFO] [1791461965.977379368, 59.280000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461967.020675276, 60.282000000]: wait for trigger.[0m
+[0m[INFO] [1791461967.020649598, 60.282000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461967.247662507, 60.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461968.063242110, 61.282000000]: wait for trigger.[0m
+[0m[INFO] [1791461968.063219264, 61.282000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461969.101565445, 62.290000000]: wait for trigger.[0m
+[0m[INFO] [1791461969.101542313, 62.290000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461970.133579707, 63.290000000]: wait for trigger.[0m
+[0m[INFO] [1791461970.133555274, 63.290000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461971.166245725, 64.294000000]: wait for trigger.[0m
+[0m[INFO] [1791461971.166223640, 64.294000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461972.202479131, 65.302000000]: wait for trigger.[0m
+[0m[INFO] [1791461972.202448763, 65.302000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461972.405654290, 65.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461973.237010658, 66.310000000]: wait for trigger.[0m
+[0m[INFO] [1791461973.236985480, 66.310000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461974.281805239, 67.312000000]: wait for trigger.[0m
+[0m[INFO] [1791461974.281774194, 67.312000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461975.321971540, 68.320000000]: wait for trigger.[0m
+[0m[INFO] [1791461975.321948310, 68.320000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461976.351730641, 69.320000000]: wait for trigger.[0m
+[0m[INFO] [1791461976.351706677, 69.320000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461977.374645765, 70.320000000]: wait for trigger.[0m
+[0m[INFO] [1791461977.374621622, 70.320000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461977.557874830, 70.502000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461978.404549090, 71.320000000]: wait for trigger.[0m
+[0m[INFO] [1791461978.404525245, 71.320000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461979.433304045, 72.322000000]: wait for trigger.[0m
+[0m[INFO] [1791461979.433282402, 72.322000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461980.467089668, 73.322000000]: wait for trigger.[0m
+[0m[INFO] [1791461980.467064456, 73.322000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461981.519338042, 74.330000000]: wait for trigger.[0m
+[0m[INFO] [1791461981.519312851, 74.330000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461982.550352053, 75.330000000]: wait for trigger.[0m
+[0m[INFO] [1791461982.550327234, 75.330000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461983.243095387, 76.000000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461983.583064384, 76.330000000]: wait for trigger.[0m
+[0m[INFO] [1791461983.583040963, 76.330000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461984.606222761, 77.330000000]: wait for trigger.[0m
+[0m[INFO] [1791461984.606198821, 77.330000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461985.632464657, 78.330000000]: wait for trigger.[0m
+[0m[INFO] [1791461985.632443508, 78.330000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461986.660283269, 79.330000000]: wait for trigger.[0m
+[0m[INFO] [1791461986.660260280, 79.330000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461987.690604638, 80.332000000]: wait for trigger.[0m
+[0m[INFO] [1791461987.690560155, 80.332000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461988.375842701, 81.002000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461988.718129717, 81.332000000]: wait for trigger.[0m
+[0m[INFO] [1791461988.718103490, 81.332000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461989.754144479, 82.340000000]: wait for trigger.[0m
+[0m[INFO] [1791461989.754120544, 82.340000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461990.786294912, 83.340000000]: wait for trigger.[0m
+[0m[INFO] [1791461990.786271778, 83.340000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461991.821296625, 84.342000000]: wait for trigger.[0m
+[0m[INFO] [1791461991.821272884, 84.342000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461992.871129671, 85.350000000]: wait for trigger.[0m
+[0m[INFO] [1791461992.871101236, 85.350000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461993.894648944, 86.350000000]: wait for trigger.[0m
+[0m[INFO] [1791461993.894624852, 86.350000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461994.049434637, 86.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461994.927145878, 87.352000000]: wait for trigger.[0m
+[0m[INFO] [1791461994.927121675, 87.352000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461995.981513050, 88.362000000]: wait for trigger.[0m
+[0m[INFO] [1791461995.981489505, 88.362000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461997.017154604, 89.362000000]: wait for trigger.[0m
+[0m[INFO] [1791461997.017132367, 89.362000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461998.061503558, 90.364000000]: wait for trigger.[0m
+[0m[INFO] [1791461998.061477076, 90.364000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791461999.110484760, 91.370000000]: wait for trigger.[0m
+[0m[INFO] [1791461999.110459775, 91.370000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791461999.246222924, 91.502000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462000.151480492, 92.370000000]: wait for trigger.[0m
+[0m[INFO] [1791462000.151455516, 92.370000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462001.183873088, 93.370000000]: wait for trigger.[0m
+[0m[INFO] [1791462001.183846817, 93.370000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462002.222736573, 94.370000000]: wait for trigger.[0m
+[0m[INFO] [1791462002.222709536, 94.370000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462003.263352461, 95.372000000]: wait for trigger.[0m
+[0m[INFO] [1791462003.263328204, 95.372000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462004.300874247, 96.380000000]: wait for trigger.[0m
+[0m[INFO] [1791462004.300838851, 96.380000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791462004.942319325, 97.002000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462005.336716021, 97.382000000]: wait for trigger.[0m
+[0m[INFO] [1791462005.336691296, 97.382000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462006.384907168, 98.384000000]: wait for trigger.[0m
+[0m[INFO] [1791462006.384883365, 98.384000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462007.430226563, 99.386000000]: wait for trigger.[0m
+[0m[INFO] [1791462007.430203351, 99.386000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462008.477408321, 100.394000000]: wait for trigger.[0m
+[0m[INFO] [1791462008.477376174, 100.394000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462009.533760725, 101.402000000]: wait for trigger.[0m
+[0m[INFO] [1791462009.533736203, 101.402000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462010.584316601, 102.410000000]: wait for trigger.[0m
+[0m[INFO] [1791462010.584294425, 102.410000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791462010.675851173, 102.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462011.618259811, 103.410000000]: wait for trigger.[0m
+[0m[INFO] [1791462011.618237405, 103.410000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462012.653146472, 104.414000000]: wait for trigger.[0m
+[0m[INFO] [1791462012.653123640, 104.414000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462013.684727670, 105.414000000]: wait for trigger.[0m
+[0m[INFO] [1791462013.684701805, 105.414000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462014.720408916, 106.420000000]: wait for trigger.[0m
+[0m[INFO] [1791462014.720383422, 106.420000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462015.752511353, 107.422000000]: wait for trigger.[0m
+[0m[INFO] [1791462015.752489594, 107.422000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791462015.831549921, 107.502000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462016.788385552, 108.426000000]: wait for trigger.[0m
+[0m[INFO] [1791462016.788363172, 108.426000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462017.821208570, 109.426000000]: wait for trigger.[0m
+[0m[INFO] [1791462017.821186201, 109.426000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462018.866820251, 110.432000000]: wait for trigger.[0m
+[0m[INFO] [1791462018.866796820, 110.432000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462019.906904053, 111.434000000]: wait for trigger.[0m
+[0m[INFO] [1791462019.906876817, 111.434000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462020.954441126, 112.434000000]: wait for trigger.[0m
+[0m[INFO] [1791462020.954405167, 112.434000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791462021.542522449, 113.002000000]: Frontier t: 0.000000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462022.014237047, 113.442000000]: wait for trigger.[0m
+[0m[INFO] [1791462022.014210179, 113.442000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462023.082675207, 114.450000000]: wait for trigger.[0m
+[0m[INFO] [1791462023.082644100, 114.450000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462024.140060430, 115.452000000]: wait for trigger.[0m
+[0m[INFO] [1791462024.140031863, 115.452000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462025.162590856, 116.452000000]: wait for trigger.[0m
+[0m[INFO] [1791462025.162564728, 116.452000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462026.192448702, 117.452000000]: wait for trigger.[0m
+[0m[INFO] [1791462026.192421925, 117.452000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791462026.751313782, 118.002000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462027.220754452, 118.452000000]: wait for trigger.[0m
+[0m[INFO] [1791462027.220727066, 118.452000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462028.275896486, 119.468000000]: wait for trigger.[0m
+[0m[INFO] [1791462028.275871843, 119.468000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462029.319888832, 120.472000000]: wait for trigger.[0m
+[0m[INFO] [1791462029.319864982, 120.472000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462030.368003555, 121.480000000]: wait for trigger.[0m
+[0m[INFO] [1791462030.367978335, 121.480000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462031.403157583, 122.480000000]: wait for trigger.[0m
+[0m[INFO] [1791462031.403132683, 122.480000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462032.450693907, 123.482000000]: wait for trigger.[0m
+[0m[INFO] [1791462032.450668814, 123.482000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+[33m[WARN] [1791462032.470567079, 123.502000000]: Frontier t: 0.002000[0m
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462033.491920931, 124.490000000]: wait for trigger.[0m
+[0m[INFO] [1791462033.491895931, 124.490000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791462034.532999360, 125.492000000]: wait for trigger.[0m
+[0m[INFO] [1791462034.532977211, 125.492000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+des manager
+[0m[INFO] [1791461902.615308817]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1791461902.615790737]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1791461903.604518277]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1791461903.611309606]: Physics dynamic reconfigure ready.[0m
+[0m[INFO] [1791461904.808815717]: Camera Plugin: Using the 'robotNamespace' param: '/gazebo_fuel'[0m
+[0m[INFO] [1791461904.810061134]: Camera Plugin (ns = /gazebo_fuel)  <tf_prefix_>, set to ""[0m
+[0m[INFO] [1791461904.831242092]: FUEL Gazebo controller loaded for fuel_drone[0m
+[31m[gazebo_gui-2] escalating to SIGTERM[0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [17112][0m
+[1mprocess[gazebo_gui-2]: started with pid [17115][0m
+[1mprocess[fuel_gazebo_camera_pose-3]: started with pid [17120][0m
+[1mprocess[exploration_node-4]: started with pid [17123][0m
+[1mprocess[traj_server-5]: started with pid [17124][0m
+[1mprocess[waypoint_generator-6]: started with pid [17125][0m
+[1mprocess[gazebo_depth_rviz-7]: started with pid [17126][0m
+[gazebo_depth_rviz-7] killing on exit
+[waypoint_generator-6] killing on exit
+[traj_server-5] killing on exit
+[exploration_node-4] killing on exit
+[fuel_gazebo_camera_pose-3] killing on exit
+[gazebo_gui-2] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

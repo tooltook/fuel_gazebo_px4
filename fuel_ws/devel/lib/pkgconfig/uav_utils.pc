@@ -1,0 +1,8 @@
+prefix=/workspace/fuel_ws/devel
+
+Name: uav_utils
+Description: Description of uav_utils
+Version: 0.0.0
+Cflags: -I/workspace/fuel_ws/src/FUEL/uav_simulator/Utils/uav_utils/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy

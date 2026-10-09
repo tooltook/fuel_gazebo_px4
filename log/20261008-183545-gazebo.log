@@ -1,0 +1,629 @@
+... logging to /tmp/.ros/log/d116e86a-c2ff-11f1-9ac3-acf23ca0f2c5/roslaunch-ubuntu-12604.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch
+[1mstarted roslaunch server http://ubuntu:37121/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /exploration_node/astar/allocate_num: 1000000
+ * /exploration_node/astar/lambda_heu: 10000.0
+ * /exploration_node/astar/max_search_time: 0.2
+ * /exploration_node/astar/resolution_astar: 0.2
+ * /exploration_node/bspline/limit_acc: 1.0
+ * /exploration_node/bspline/limit_ratio: 1.1
+ * /exploration_node/bspline/limit_vel: 1.0
+ * /exploration_node/exploration/am: 1.0
+ * /exploration_node/exploration/max_decay: 0.8
+ * /exploration_node/exploration/refine_local: True
+ * /exploration_node/exploration/refined_num: 7
+ * /exploration_node/exploration/refined_radius: 5.0
+ * /exploration_node/exploration/relax_time: 1.0
+ * /exploration_node/exploration/top_view_num: 15
+ * /exploration_node/exploration/tsp_dir: /workspace/fuel_w...
+ * /exploration_node/exploration/vm: 1.0
+ * /exploration_node/exploration/w_dir: 1.5
+ * /exploration_node/exploration/yd: 1.0471975333333332
+ * /exploration_node/exploration/ydd: 1.5707963
+ * /exploration_node/frontier/candidate_dphi: 0.2617993833333333
+ * /exploration_node/frontier/candidate_rmax: 2.5
+ * /exploration_node/frontier/candidate_rmin: 1.5
+ * /exploration_node/frontier/candidate_rnum: 3
+ * /exploration_node/frontier/cluster_min: 100
+ * /exploration_node/frontier/cluster_size_xy: 2.0
+ * /exploration_node/frontier/cluster_size_z: 10.0
+ * /exploration_node/frontier/down_sample: 3
+ * /exploration_node/frontier/min_candidate_clearance: 0.21
+ * /exploration_node/frontier/min_candidate_dist: 0.75
+ * /exploration_node/frontier/min_view_finish_fraction: 0.2
+ * /exploration_node/frontier/min_visib_num: 15
+ * /exploration_node/fsm/replan_time: 0.2
+ * /exploration_node/fsm/thresh_replan1: 0.5
+ * /exploration_node/fsm/thresh_replan2: 0.5
+ * /exploration_node/fsm/thresh_replan3: 1.5
+ * /exploration_node/heading_planner/half_vert_num: 5
+ * /exploration_node/heading_planner/lambda1: 2.0
+ * /exploration_node/heading_planner/lambda2: 1.0
+ * /exploration_node/heading_planner/max_yaw_rate: 0.17453292222222222
+ * /exploration_node/heading_planner/w: 20000.0
+ * /exploration_node/heading_planner/weight_type: 1.0
+ * /exploration_node/heading_planner/yaw_diff: 0.5235987666666666
+ * /exploration_node/manager/clearance_threshold: 0.2
+ * /exploration_node/manager/control_points_distance: 0.35
+ * /exploration_node/manager/dynamic_environment: 0
+ * /exploration_node/manager/local_segment_length: 6.0
+ * /exploration_node/manager/max_acc: 1.0
+ * /exploration_node/manager/max_jerk: 4.0
+ * /exploration_node/manager/max_vel: 1.0
+ * /exploration_node/manager/min_time: True
+ * /exploration_node/manager/use_active_perception: True
+ * /exploration_node/manager/use_geometric_path: True
+ * /exploration_node/manager/use_kinodynamic_path: True
+ * /exploration_node/manager/use_optimization: True
+ * /exploration_node/manager/use_topo_path: True
+ * /exploration_node/map_ros/cx: 320.0
+ * /exploration_node/map_ros/cy: 240.0
+ * /exploration_node/map_ros/depth_filter_margin: 2
+ * /exploration_node/map_ros/depth_filter_maxdist: 5.0
+ * /exploration_node/map_ros/depth_filter_mindist: 0.2
+ * /exploration_node/map_ros/esdf_slice_height: 0.3
+ * /exploration_node/map_ros/frame_id: world
+ * /exploration_node/map_ros/fx: 381.36
+ * /exploration_node/map_ros/fy: 381.36
+ * /exploration_node/map_ros/k_depth_scaling_factor: 1000.0
+ * /exploration_node/map_ros/show_all_map: True
+ * /exploration_node/map_ros/show_esdf_time: False
+ * /exploration_node/map_ros/show_occ_time: False
+ * /exploration_node/map_ros/skip_pixel: 2
+ * /exploration_node/map_ros/visualization_truncate_height: 10.09
+ * /exploration_node/map_ros/visualization_truncate_low: -2.0
+ * /exploration_node/optimization/algorithm1: 15
+ * /exploration_node/optimization/algorithm2: 11
+ * /exploration_node/optimization/dist0: 0.7
+ * /exploration_node/optimization/ld_dist: 10.0
+ * /exploration_node/optimization/ld_end: 0.5
+ * /exploration_node/optimization/ld_feasi: 2.0
+ * /exploration_node/optimization/ld_guide: 1.5
+ * /exploration_node/optimization/ld_smooth: 20.0
+ * /exploration_node/optimization/ld_start: 100.0
+ * /exploration_node/optimization/ld_time: 1.0
+ * /exploration_node/optimization/ld_view: 0.0
+ * /exploration_node/optimization/ld_waypt: 0.3
+ * /exploration_node/optimization/max_acc: 1.0
+ * /exploration_node/optimization/max_iteration_num1: 2
+ * /exploration_node/optimization/max_iteration_num2: 2000
+ * /exploration_node/optimization/max_iteration_num3: 200
+ * /exploration_node/optimization/max_iteration_num4: 200
+ * /exploration_node/optimization/max_iteration_time1: 0.0001
+ * /exploration_node/optimization/max_iteration_time2: 0.005
+ * /exploration_node/optimization/max_iteration_time3: 0.003
+ * /exploration_node/optimization/max_iteration_time4: 0.003
+ * /exploration_node/optimization/max_vel: 1.0
+ * /exploration_node/perception_utils/left_angle: 0.69222
+ * /exploration_node/perception_utils/max_dist: 4.5
+ * /exploration_node/perception_utils/right_angle: 0.68901
+ * /exploration_node/perception_utils/top_angle: 0.56125
+ * /exploration_node/perception_utils/vis_dist: 1.0
+ * /exploration_node/sdf_map/box_max_x: 9.7
+ * /exploration_node/sdf_map/box_max_y: 9.7
+ * /exploration_node/sdf_map/box_max_z: 2.8
+ * /exploration_node/sdf_map/box_min_x: -9.7
+ * /exploration_node/sdf_map/box_min_y: -9.7
+ * /exploration_node/sdf_map/box_min_z: 0.1
+ * /exploration_node/sdf_map/default_dist: 0.0
+ * /exploration_node/sdf_map/ground_height: -1.0
+ * /exploration_node/sdf_map/local_bound_inflate: 0.5
+ * /exploration_node/sdf_map/local_map_margin: 50
+ * /exploration_node/sdf_map/map_size_x: 24.0
+ * /exploration_node/sdf_map/map_size_y: 24.0
+ * /exploration_node/sdf_map/map_size_z: 5.0
+ * /exploration_node/sdf_map/max_ray_length: 4.5
+ * /exploration_node/sdf_map/min_ray_length: 0.5
+ * /exploration_node/sdf_map/obstacles_inflation: 0.199
+ * /exploration_node/sdf_map/optimistic: False
+ * /exploration_node/sdf_map/p_hit: 0.65
+ * /exploration_node/sdf_map/p_max: 0.9
+ * /exploration_node/sdf_map/p_min: 0.12
+ * /exploration_node/sdf_map/p_miss: 0.35
+ * /exploration_node/sdf_map/p_occ: 0.8
+ * /exploration_node/sdf_map/resolution: 0.1
+ * /exploration_node/sdf_map/signed_dist: False
+ * /exploration_node/sdf_map/virtual_ceil_height: -10
+ * /exploration_node/search/allocate_num: 100000
+ * /exploration_node/search/check_num: 10
+ * /exploration_node/search/horizon: 5.0
+ * /exploration_node/search/init_max_tau: 1.0
+ * /exploration_node/search/lambda_heu: 10.0
+ * /exploration_node/search/margin: 0.2
+ * /exploration_node/search/max_acc: 1.0
+ * /exploration_node/search/max_tau: 0.8
+ * /exploration_node/search/max_vel: 1.0
+ * /exploration_node/search/optimistic: False
+ * /exploration_node/search/resolution_astar: 0.025
+ * /exploration_node/search/time_resolution: 0.8
+ * /exploration_node/search/vel_margin: 0.25
+ * /exploration_node/search/w_time: 10.0
+ * /fuel_gazebo_camera_pose/cloud_skip: 2
+ * /fuel_gazebo_camera_pose/sensor_mode: depth
+ * /gazebo/enable_ros_network: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /traj_server/perception_utils/left_angle: 0.69222
+ * /traj_server/perception_utils/max_dist: 4.5
+ * /traj_server/perception_utils/right_angle: 0.68901
+ * /traj_server/perception_utils/top_angle: 0.56125
+ * /traj_server/perception_utils/vis_dist: 1.0
+ * /traj_server/traj_server/init_x: 0.0
+ * /traj_server/traj_server/init_y: 0.0
+ * /traj_server/traj_server/init_z: 1.0
+ * /traj_server/traj_server/pub_traj_id: 4
+ * /traj_server/traj_server/time_forward: 1.5
+ * /use_sim_time: True
+ * /waypoint_generator/waypoint_type: point
+
+NODES
+  /
+    exploration_node (exploration_manager/exploration_node)
+    fuel_gazebo_camera_pose (fuel_gazebo/camera_pose.py)
+    gazebo (gazebo_ros/gzserver)
+    gazebo_depth_rviz (rviz/rviz)
+    gazebo_gui (gazebo_ros/gzclient)
+    traj_server (plan_manage/traj_server)
+    waypoint_generator (waypoint_generator/waypoint_generator)
+
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ros'
+hit: 0.619039, miss: -0.619039, min: -1.99243, max: 2.19722, thresh: 1.38629
+[33m[WARN] [1791455762.068074043]: [Traj server]: init...[0m
+origin_: -12 -12  -1
+map size: 24 24  5
+origin_: -12 -12  -1
+map size: 24 24  5
+yaw diff: 0.523599
+max yaw diff: 0.174533
+vert num: 5
+top:        0
+ 0.84659
+0.532245
+bottom:        0
+-0.84659
+0.532245
+left: 0.769831
+       0
+0.638248
+right: -0.771876
+        0
+ 0.635773
+lefttop: -3.73084  -2.3951      4.5
+leftbottom: -2.87212   2.3951      4.5
+righttop: 2.86098 -2.3951     4.5
+rightbottom: 2.86098  2.3951     4.5
+T_cb:  0 -1  0  0
+ 0  0  1  0
+ 1  0  0  0
+ 0  0  0  1
+T_bc: -0 -0  1  0
+-1 -0  0 -0
+-0  1 -0  0
+ 0 -0  0  1
+origin_: -12 -12  -1
+map size: 24 24  5
+0
+0
+[33m[WARN] [1791455765.458935582, 1.004000000]: no odom.[0m
+[0m[INFO] [1791455765.457122762, 1.002000000]: [FSM]: state: INIT[0m
+[FSM]: from INIT to WAIT_TRIGGER
+[33m[WARN] [1791455765.543349337, 1.088000000]: wait for trigger.[0m
+[33m[WARN] [1791455766.551400875, 2.096000000]: wait for trigger.[0m
+[0m[INFO] [1791455766.466882491, 2.010000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455767.469710587, 3.014000000]: [Traj server]: ready.[0m
+[33m[WARN] [1791455767.556466679, 3.102000000]: wait for trigger.[0m
+[0m[INFO] [1791455767.556444141, 3.102000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455768.562427935, 4.106000000]: wait for trigger.[0m
+[0m[INFO] [1791455768.562407113, 4.106000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 1
+[33m[WARN] [1791455769.458437051, 5.000000000]: Frontier t: 0.000000[0m
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455769.576078149, 5.120000000]: wait for trigger.[0m
+[0m[INFO] [1791455769.576055689, 5.120000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455770.587397481, 6.122000000]: wait for trigger.[0m
+[0m[INFO] [1791455770.587364140, 6.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455771.578481374, 7.122000000]: wait for trigger.[0m
+[0m[INFO] [1791455771.578461240, 7.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455772.581690259, 8.124000000]: wait for trigger.[0m
+[0m[INFO] [1791455772.581665522, 8.124000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455773.582911207, 9.124000000]: wait for trigger.[0m
+[0m[INFO] [1791455773.581636285, 9.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+[33m[WARN] [1791455774.462353771, 10.002000000]: Frontier t: 0.000000[0m
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455774.588693257, 10.128000000]: wait for trigger.[0m
+[0m[INFO] [1791455774.588669912, 10.128000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455775.590272790, 11.132000000]: wait for trigger.[0m
+[0m[INFO] [1791455775.590247592, 11.132000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455776.597047622, 12.132000000]: wait for trigger.[0m
+[0m[INFO] [1791455776.597018875, 12.132000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455777.597727444, 13.134000000]: wait for trigger.[0m
+[0m[INFO] [1791455777.597701322, 13.134000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455778.599522348, 14.134000000]: wait for trigger.[0m
+[0m[INFO] [1791455778.599358601, 14.134000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+[33m[WARN] [1791455779.463910059, 15.000000000]: Frontier t: 0.000000[0m
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791455779.612045601, 15.148000000]: wait for trigger.[0m
+[0m[INFO] [1791455779.612020593, 15.148000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+des manager
+[0m[INFO] [1791455762.249495329]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1791455762.250018200]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1791455762.479188077]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1791455762.491315700]: Physics dynamic reconfigure ready.[0m
+[0m[INFO] [1791455764.439518929]: Camera Plugin: Using the 'robotNamespace' param: '/gazebo_fuel'[0m
+[0m[INFO] [1791455764.441069321]: Camera Plugin (ns = /gazebo_fuel)  <tf_prefix_>, set to ""[0m
+[0m[INFO] [1791455764.446280372]: FUEL Gazebo controller loaded for fuel_drone[0m
+[31m[gazebo_gui-2] escalating to SIGTERM[0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [12618][0m
+[1mprocess[gazebo_gui-2]: started with pid [12621][0m
+[1mprocess[fuel_gazebo_camera_pose-3]: started with pid [12626][0m
+[1mprocess[exploration_node-4]: started with pid [12629][0m
+[1mprocess[traj_server-5]: started with pid [12630][0m
+[1mprocess[waypoint_generator-6]: started with pid [12631][0m
+[1mprocess[gazebo_depth_rviz-7]: started with pid [12632][0m
+[gazebo_depth_rviz-7] killing on exit
+[waypoint_generator-6] killing on exit
+[exploration_node-4] killing on exit
+[fuel_gazebo_camera_pose-3] killing on exit
+[traj_server-5] killing on exit
+[gazebo_gui-2] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

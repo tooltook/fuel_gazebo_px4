@@ -1,0 +1,8 @@
+prefix=/workspace/fuel_ws/devel
+
+Name: quadrotor_msgs
+Description: Description of quadrotor_msgs
+Version: 0.0.0
+Cflags: -I/workspace/fuel_ws/devel/include
+Libs: -L${prefix}/lib -lencode_msgs -ldecode_msgs
+Requires: message_runtime

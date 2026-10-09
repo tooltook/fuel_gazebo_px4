@@ -1,0 +1,8 @@
+prefix=/workspace/fuel_ws/devel
+
+Name: bspline
+Description: Description of bspline
+Version: 0.0.0
+Cflags: -I/workspace/fuel_ws/devel/include -I/workspace/fuel_ws/src/FUEL/fuel_planner/bspline/include
+Libs: -L${prefix}/lib -lbspline
+Requires: message_runtime

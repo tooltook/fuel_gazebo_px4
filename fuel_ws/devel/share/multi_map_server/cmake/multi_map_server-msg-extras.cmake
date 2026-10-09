@@ -1,0 +1,2 @@
+set(multi_map_server_MESSAGE_FILES "/workspace/fuel_ws/src/FUEL/uav_simulator/Utils/multi_map_server/msg/MultiOccupancyGrid.msg;/workspace/fuel_ws/src/FUEL/uav_simulator/Utils/multi_map_server/msg/MultiSparseMap3D.msg;/workspace/fuel_ws/src/FUEL/uav_simulator/Utils/multi_map_server/msg/SparseMap3D.msg;/workspace/fuel_ws/src/FUEL/uav_simulator/Utils/multi_map_server/msg/VerticalOccupancyGridList.msg")
+set(multi_map_server_SERVICE_FILES "")

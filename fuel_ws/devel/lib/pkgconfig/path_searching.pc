@@ -1,0 +1,8 @@
+prefix=/workspace/fuel_ws/devel
+
+Name: path_searching
+Description: Description of path_searching
+Version: 0.0.0
+Cflags: -I/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/include
+Libs: -L${prefix}/lib -lpath_searching
+Requires: plan_env

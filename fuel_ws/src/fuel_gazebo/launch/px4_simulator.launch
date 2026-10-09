@@ -1,0 +1,14 @@
+<launch>
+  <arg name="scene" default="complex"/>
+  <arg name="localization" default="sim_vision"/>
+  <env name="FUEL_LOCALIZATION" value="$(arg localization)"/>
+  <arg name="gui" default="true"/>
+  <include file="$(find px4)/launch/mavros_posix_sitl.launch">
+    <arg name="world" value="$(find fuel_gazebo)/generated/px4_$(arg scene).world"/>
+    <arg name="sdf" value="$(find fuel_gazebo)/generated/iris_fuel.sdf"/>
+    <arg name="vehicle" value="iris"/>
+    <arg name="z" value="0.15"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="interactive" value="false"/>
+  </include>
+</launch>

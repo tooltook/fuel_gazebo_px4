@@ -1,0 +1,5008 @@
+... logging to /home/ros/.ros/log/b6a8a09a-c3bd-11f1-a2a8-acf23ca0f2c5/roslaunch-ubuntu-14747.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch
+[1mstarted roslaunch server http://ubuntu:43245/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /mavros/
+
+PARAMETERS
+ * /exploration_node/astar/allocate_num: 1000000
+ * /exploration_node/astar/lambda_heu: 10000.0
+ * /exploration_node/astar/max_search_time: 0.2
+ * /exploration_node/astar/resolution_astar: 0.2
+ * /exploration_node/bspline/limit_acc: 0.5
+ * /exploration_node/bspline/limit_ratio: 1.1
+ * /exploration_node/bspline/limit_vel: 0.5
+ * /exploration_node/exploration/am: 0.5
+ * /exploration_node/exploration/max_decay: 0.8
+ * /exploration_node/exploration/refine_local: True
+ * /exploration_node/exploration/refined_num: 7
+ * /exploration_node/exploration/refined_radius: 5.0
+ * /exploration_node/exploration/relax_time: 1.0
+ * /exploration_node/exploration/top_view_num: 15
+ * /exploration_node/exploration/tsp_dir: /workspace/fuel_w...
+ * /exploration_node/exploration/vm: 0.5
+ * /exploration_node/exploration/w_dir: 1.5
+ * /exploration_node/exploration/yd: 1.0471975333333332
+ * /exploration_node/exploration/ydd: 1.5707963
+ * /exploration_node/frontier/candidate_dphi: 0.2617993833333333
+ * /exploration_node/frontier/candidate_rmax: 2.5
+ * /exploration_node/frontier/candidate_rmin: 1.5
+ * /exploration_node/frontier/candidate_rnum: 3
+ * /exploration_node/frontier/cluster_min: 100
+ * /exploration_node/frontier/cluster_size_xy: 2.0
+ * /exploration_node/frontier/cluster_size_z: 10.0
+ * /exploration_node/frontier/down_sample: 3
+ * /exploration_node/frontier/min_candidate_clearance: 0.4
+ * /exploration_node/frontier/min_candidate_dist: 0.75
+ * /exploration_node/frontier/min_view_finish_fraction: 0.2
+ * /exploration_node/frontier/min_visib_num: 15
+ * /exploration_node/fsm/replan_time: 0.2
+ * /exploration_node/fsm/thresh_replan1: 0.5
+ * /exploration_node/fsm/thresh_replan2: 0.5
+ * /exploration_node/fsm/thresh_replan3: 1.5
+ * /exploration_node/heading_planner/half_vert_num: 5
+ * /exploration_node/heading_planner/lambda1: 2.0
+ * /exploration_node/heading_planner/lambda2: 1.0
+ * /exploration_node/heading_planner/max_yaw_rate: 0.17453292222222222
+ * /exploration_node/heading_planner/w: 20000.0
+ * /exploration_node/heading_planner/weight_type: 1.0
+ * /exploration_node/heading_planner/yaw_diff: 0.5235987666666666
+ * /exploration_node/manager/clearance_threshold: 0.2
+ * /exploration_node/manager/control_points_distance: 0.35
+ * /exploration_node/manager/dynamic_environment: 0
+ * /exploration_node/manager/local_segment_length: 6.0
+ * /exploration_node/manager/max_acc: 0.5
+ * /exploration_node/manager/max_jerk: 4.0
+ * /exploration_node/manager/max_vel: 0.5
+ * /exploration_node/manager/min_time: True
+ * /exploration_node/manager/use_active_perception: True
+ * /exploration_node/manager/use_geometric_path: True
+ * /exploration_node/manager/use_kinodynamic_path: True
+ * /exploration_node/manager/use_optimization: True
+ * /exploration_node/manager/use_topo_path: True
+ * /exploration_node/map_ros/cx: 320.0
+ * /exploration_node/map_ros/cy: 240.0
+ * /exploration_node/map_ros/depth_filter_margin: 2
+ * /exploration_node/map_ros/depth_filter_maxdist: 5.0
+ * /exploration_node/map_ros/depth_filter_mindist: 0.2
+ * /exploration_node/map_ros/esdf_slice_height: 0.3
+ * /exploration_node/map_ros/frame_id: world
+ * /exploration_node/map_ros/fx: 381.36
+ * /exploration_node/map_ros/fy: 381.36
+ * /exploration_node/map_ros/initial_free_radius: 0.5
+ * /exploration_node/map_ros/k_depth_scaling_factor: 1000.0
+ * /exploration_node/map_ros/sensor_offset_x: 0.35
+ * /exploration_node/map_ros/sensor_offset_z: 0.15
+ * /exploration_node/map_ros/show_all_map: True
+ * /exploration_node/map_ros/show_esdf_time: False
+ * /exploration_node/map_ros/show_occ_time: False
+ * /exploration_node/map_ros/skip_pixel: 2
+ * /exploration_node/map_ros/visualization_truncate_height: 10.09
+ * /exploration_node/map_ros/visualization_truncate_low: -2.0
+ * /exploration_node/optimization/algorithm1: 15
+ * /exploration_node/optimization/algorithm2: 11
+ * /exploration_node/optimization/dist0: 0.7
+ * /exploration_node/optimization/ld_dist: 10.0
+ * /exploration_node/optimization/ld_end: 0.5
+ * /exploration_node/optimization/ld_feasi: 2.0
+ * /exploration_node/optimization/ld_guide: 1.5
+ * /exploration_node/optimization/ld_smooth: 20.0
+ * /exploration_node/optimization/ld_start: 100.0
+ * /exploration_node/optimization/ld_time: 1.0
+ * /exploration_node/optimization/ld_view: 0.0
+ * /exploration_node/optimization/ld_waypt: 0.3
+ * /exploration_node/optimization/max_acc: 0.5
+ * /exploration_node/optimization/max_iteration_num1: 2
+ * /exploration_node/optimization/max_iteration_num2: 2000
+ * /exploration_node/optimization/max_iteration_num3: 200
+ * /exploration_node/optimization/max_iteration_num4: 200
+ * /exploration_node/optimization/max_iteration_time1: 0.0001
+ * /exploration_node/optimization/max_iteration_time2: 0.005
+ * /exploration_node/optimization/max_iteration_time3: 0.003
+ * /exploration_node/optimization/max_iteration_time4: 0.003
+ * /exploration_node/optimization/max_vel: 0.5
+ * /exploration_node/perception_utils/left_angle: 1.04719755
+ * /exploration_node/perception_utils/max_dist: 8.0
+ * /exploration_node/perception_utils/right_angle: 1.04719755
+ * /exploration_node/perception_utils/top_angle: 0.52359878
+ * /exploration_node/perception_utils/vis_dist: 1.0
+ * /exploration_node/sdf_map/box_max_x: 9.7
+ * /exploration_node/sdf_map/box_max_y: 9.7
+ * /exploration_node/sdf_map/box_max_z: 2.8
+ * /exploration_node/sdf_map/box_min_x: -9.7
+ * /exploration_node/sdf_map/box_min_y: -9.7
+ * /exploration_node/sdf_map/box_min_z: 0.1
+ * /exploration_node/sdf_map/default_dist: 0.0
+ * /exploration_node/sdf_map/ground_height: -1.0
+ * /exploration_node/sdf_map/local_bound_inflate: 0.5
+ * /exploration_node/sdf_map/local_map_margin: 50
+ * /exploration_node/sdf_map/map_size_x: 24.0
+ * /exploration_node/sdf_map/map_size_y: 24.0
+ * /exploration_node/sdf_map/map_size_z: 5.0
+ * /exploration_node/sdf_map/max_ray_length: 8.0
+ * /exploration_node/sdf_map/min_ray_length: 0.5
+ * /exploration_node/sdf_map/obstacles_inflation: 0.35
+ * /exploration_node/sdf_map/optimistic: False
+ * /exploration_node/sdf_map/p_hit: 0.65
+ * /exploration_node/sdf_map/p_max: 0.9
+ * /exploration_node/sdf_map/p_min: 0.12
+ * /exploration_node/sdf_map/p_miss: 0.35
+ * /exploration_node/sdf_map/p_occ: 0.8
+ * /exploration_node/sdf_map/resolution: 0.1
+ * /exploration_node/sdf_map/signed_dist: False
+ * /exploration_node/sdf_map/virtual_ceil_height: -10
+ * /exploration_node/search/allocate_num: 100000
+ * /exploration_node/search/check_num: 10
+ * /exploration_node/search/horizon: 5.0
+ * /exploration_node/search/init_max_tau: 1.0
+ * /exploration_node/search/lambda_heu: 10.0
+ * /exploration_node/search/margin: 0.2
+ * /exploration_node/search/max_acc: 0.5
+ * /exploration_node/search/max_tau: 0.8
+ * /exploration_node/search/max_vel: 0.5
+ * /exploration_node/search/optimistic: False
+ * /exploration_node/search/resolution_astar: 0.025
+ * /exploration_node/search/time_resolution: 0.8
+ * /exploration_node/search/vel_margin: 0.25
+ * /exploration_node/search/w_time: 10.0
+ * /fuel_gazebo_camera_pose/depth_z: 0.15
+ * /fuel_gazebo_camera_pose/lidar_z: 0.15
+ * /fuel_gazebo_camera_pose/mask_cylinder: False
+ * /fuel_gazebo_camera_pose/sensor_mode: lidar
+ * /fuel_gazebo_camera_pose/sensor_x: 0.35
+ * /fuel_px4_offboard/sitl_only: True
+ * /fuel_px4_offboard/takeoff_height: 1.0
+ * /gazebo/enable_ros_network: True
+ * /mavros/camera/frame_id: base_link
+ * /mavros/cmd/use_comp_id_system_control: False
+ * /mavros/conn/heartbeat_rate: 1.0
+ * /mavros/conn/system_time_rate: 1.0
+ * /mavros/conn/timeout: 10.0
+ * /mavros/conn/timesync_rate: 10.0
+ * /mavros/distance_sensor/hrlv_ez4_pub/field_of_view: 0.0
+ * /mavros/distance_sensor/hrlv_ez4_pub/frame_id: hrlv_ez4_sonar
+ * /mavros/distance_sensor/hrlv_ez4_pub/id: 0
+ * /mavros/distance_sensor/hrlv_ez4_pub/orientation: PITCH_270
+ * /mavros/distance_sensor/hrlv_ez4_pub/send_tf: True
+ * /mavros/distance_sensor/hrlv_ez4_pub/sensor_position/x: 0.0
+ * /mavros/distance_sensor/hrlv_ez4_pub/sensor_position/y: 0.0
+ * /mavros/distance_sensor/hrlv_ez4_pub/sensor_position/z: -0.1
+ * /mavros/distance_sensor/laser_1_sub/id: 3
+ * /mavros/distance_sensor/laser_1_sub/orientation: PITCH_270
+ * /mavros/distance_sensor/laser_1_sub/subscriber: True
+ * /mavros/distance_sensor/lidarlite_pub/field_of_view: 0.0
+ * /mavros/distance_sensor/lidarlite_pub/frame_id: lidarlite_laser
+ * /mavros/distance_sensor/lidarlite_pub/id: 1
+ * /mavros/distance_sensor/lidarlite_pub/orientation: PITCH_270
+ * /mavros/distance_sensor/lidarlite_pub/send_tf: True
+ * /mavros/distance_sensor/lidarlite_pub/sensor_position/x: 0.0
+ * /mavros/distance_sensor/lidarlite_pub/sensor_position/y: 0.0
+ * /mavros/distance_sensor/lidarlite_pub/sensor_position/z: -0.1
+ * /mavros/distance_sensor/sonar_1_sub/horizontal_fov_ratio: 1.0
+ * /mavros/distance_sensor/sonar_1_sub/id: 2
+ * /mavros/distance_sensor/sonar_1_sub/orientation: PITCH_270
+ * /mavros/distance_sensor/sonar_1_sub/subscriber: True
+ * /mavros/distance_sensor/sonar_1_sub/vertical_fov_ratio: 1.0
+ * /mavros/fake_gps/eph: 2.0
+ * /mavros/fake_gps/epv: 2.0
+ * /mavros/fake_gps/fix_type: 3
+ * /mavros/fake_gps/geo_origin/alt: 408.0
+ * /mavros/fake_gps/geo_origin/lat: 47.3667
+ * /mavros/fake_gps/geo_origin/lon: 8.55
+ * /mavros/fake_gps/gps_rate: 5.0
+ * /mavros/fake_gps/mocap_transform: True
+ * /mavros/fake_gps/satellites_visible: 5
+ * /mavros/fake_gps/tf/child_frame_id: fix
+ * /mavros/fake_gps/tf/frame_id: map
+ * /mavros/fake_gps/tf/listen: False
+ * /mavros/fake_gps/tf/rate_limit: 10.0
+ * /mavros/fake_gps/tf/send: False
+ * /mavros/fake_gps/use_mocap: True
+ * /mavros/fake_gps/use_vision: False
+ * /mavros/fcu_protocol: v2.0
+ * /mavros/fcu_url: udp://:14540@loca...
+ * /mavros/gcs_url: 
+ * /mavros/global_position/child_frame_id: base_link
+ * /mavros/global_position/frame_id: map
+ * /mavros/global_position/gps_uere: 1.0
+ * /mavros/global_position/rot_covariance: 99999.0
+ * /mavros/global_position/tf/child_frame_id: base_link
+ * /mavros/global_position/tf/frame_id: map
+ * /mavros/global_position/tf/global_frame_id: earth
+ * /mavros/global_position/tf/send: False
+ * /mavros/global_position/use_relative_alt: True
+ * /mavros/image/frame_id: px4flow
+ * /mavros/imu/angular_velocity_stdev: 0.0003490659 // 0...
+ * /mavros/imu/frame_id: base_link
+ * /mavros/imu/linear_acceleration_stdev: 0.0003
+ * /mavros/imu/magnetic_stdev: 0.0
+ * /mavros/imu/orientation_stdev: 1.0
+ * /mavros/landing_target/camera/fov_x: 2.0071286398
+ * /mavros/landing_target/camera/fov_y: 2.0071286398
+ * /mavros/landing_target/image/height: 480
+ * /mavros/landing_target/image/width: 640
+ * /mavros/landing_target/land_target_type: VISION_FIDUCIAL
+ * /mavros/landing_target/listen_lt: False
+ * /mavros/landing_target/mav_frame: LOCAL_NED
+ * /mavros/landing_target/target_size/x: 0.3
+ * /mavros/landing_target/target_size/y: 0.3
+ * /mavros/landing_target/tf/child_frame_id: camera_center
+ * /mavros/landing_target/tf/frame_id: landing_target
+ * /mavros/landing_target/tf/listen: False
+ * /mavros/landing_target/tf/rate_limit: 10.0
+ * /mavros/landing_target/tf/send: True
+ * /mavros/local_position/frame_id: map
+ * /mavros/local_position/tf/child_frame_id: base_link
+ * /mavros/local_position/tf/frame_id: map
+ * /mavros/local_position/tf/send: False
+ * /mavros/local_position/tf/send_fcu: False
+ * /mavros/mission/pull_after_gcs: True
+ * /mavros/mission/use_mission_item_int: True
+ * /mavros/mocap/use_pose: True
+ * /mavros/mocap/use_tf: False
+ * /mavros/mount/debounce_s: 4.0
+ * /mavros/mount/err_threshold_deg: 10.0
+ * /mavros/mount/negate_measured_pitch: False
+ * /mavros/mount/negate_measured_roll: False
+ * /mavros/mount/negate_measured_yaw: False
+ * /mavros/odometry/fcu/map_id_des: map
+ * /mavros/odometry/fcu/odom_child_id_des: base_link
+ * /mavros/odometry/fcu/odom_parent_id_des: odom
+ * /mavros/plugin_blacklist: ['safety_area', '...
+ * /mavros/plugin_whitelist: []
+ * /mavros/px4flow/frame_id: px4flow
+ * /mavros/px4flow/ranger_fov: 0.118682
+ * /mavros/px4flow/ranger_max_range: 5.0
+ * /mavros/px4flow/ranger_min_range: 0.3
+ * /mavros/safety_area/p1/x: 1.0
+ * /mavros/safety_area/p1/y: 1.0
+ * /mavros/safety_area/p1/z: 1.0
+ * /mavros/safety_area/p2/x: -1.0
+ * /mavros/safety_area/p2/y: -1.0
+ * /mavros/safety_area/p2/z: -1.0
+ * /mavros/setpoint_accel/send_force: False
+ * /mavros/setpoint_attitude/reverse_thrust: False
+ * /mavros/setpoint_attitude/tf/child_frame_id: target_attitude
+ * /mavros/setpoint_attitude/tf/frame_id: map
+ * /mavros/setpoint_attitude/tf/listen: False
+ * /mavros/setpoint_attitude/tf/rate_limit: 50.0
+ * /mavros/setpoint_attitude/use_quaternion: False
+ * /mavros/setpoint_position/mav_frame: LOCAL_NED
+ * /mavros/setpoint_position/tf/child_frame_id: target_position
+ * /mavros/setpoint_position/tf/frame_id: map
+ * /mavros/setpoint_position/tf/listen: False
+ * /mavros/setpoint_position/tf/rate_limit: 50.0
+ * /mavros/setpoint_raw/thrust_scaling: 1.0
+ * /mavros/setpoint_velocity/mav_frame: LOCAL_NED
+ * /mavros/startup_px4_usb_quirk: False
+ * /mavros/sys/disable_diag: False
+ * /mavros/sys/min_voltage: 10.0
+ * /mavros/target_component_id: 1
+ * /mavros/target_system_id: 1
+ * /mavros/tdr_radio/low_rssi: 40
+ * /mavros/time/time_ref_source: fcu
+ * /mavros/time/timesync_avg_alpha: 0.6
+ * /mavros/time/timesync_mode: MAVLINK
+ * /mavros/vibration/frame_id: base_link
+ * /mavros/vision_pose/tf/child_frame_id: vision_estimate
+ * /mavros/vision_pose/tf/frame_id: odom
+ * /mavros/vision_pose/tf/listen: False
+ * /mavros/vision_pose/tf/rate_limit: 10.0
+ * /mavros/vision_speed/listen_twist: True
+ * /mavros/vision_speed/twist_cov: True
+ * /mavros/wheel_odometry/child_frame_id: base_link
+ * /mavros/wheel_odometry/count: 2
+ * /mavros/wheel_odometry/frame_id: odom
+ * /mavros/wheel_odometry/send_raw: True
+ * /mavros/wheel_odometry/send_twist: False
+ * /mavros/wheel_odometry/tf/child_frame_id: base_link
+ * /mavros/wheel_odometry/tf/frame_id: odom
+ * /mavros/wheel_odometry/tf/send: False
+ * /mavros/wheel_odometry/use_rpm: False
+ * /mavros/wheel_odometry/vel_error: 0.1
+ * /mavros/wheel_odometry/wheel0/radius: 0.05
+ * /mavros/wheel_odometry/wheel0/x: 0.0
+ * /mavros/wheel_odometry/wheel0/y: -0.15
+ * /mavros/wheel_odometry/wheel1/radius: 0.05
+ * /mavros/wheel_odometry/wheel1/x: 0.0
+ * /mavros/wheel_odometry/wheel1/y: 0.15
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /traj_server/perception_utils/left_angle: 1.04719755
+ * /traj_server/perception_utils/max_dist: 8.0
+ * /traj_server/perception_utils/right_angle: 1.04719755
+ * /traj_server/perception_utils/top_angle: 0.52359878
+ * /traj_server/perception_utils/vis_dist: 1.0
+ * /traj_server/traj_server/init_x: 0.0
+ * /traj_server/traj_server/init_y: 0.0
+ * /traj_server/traj_server/init_z: 1.0
+ * /traj_server/traj_server/pub_traj_id: 4
+ * /traj_server/traj_server/time_forward: 1.5
+ * /use_sim_time: True
+ * /waypoint_generator/waypoint_type: point
+
+NODES
+  /
+    exploration_node (exploration_manager/exploration_node)
+    fuel_gazebo_camera_pose (fuel_gazebo/camera_pose.py)
+    fuel_px4_offboard (fuel_gazebo/px4_offboard.py)
+    gazebo (gazebo_ros/gzserver)
+    gazebo_depth_rviz (rviz/rviz)
+    gazebo_gui (gazebo_ros/gzclient)
+    mavros (mavros/mavros_node)
+    sitl (px4/px4)
+    traj_server (plan_manage/traj_server)
+    vehicle_spawn_ubuntu_14747_3720779825397731907 (gazebo_ros/spawn_model)
+    waypoint_generator (waypoint_generator/waypoint_generator)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch http://localhost:11311
+[1mprocess[sitl-1]: started with pid [14762][0m
+
+______  __   __    ___ 
+| ___ \ \ \ / /   /   |
+| |_/ /  \ V /   / /| |
+|  __/   /   \  / /_| |
+| |     / /^\ \ \___  |
+\_|     \/   \/     |_/
+
+px4 starting.
+
+INFO  [px4] startup script: /bin/sh etc/init.d-posix/rcS 0
+[1mprocess[gazebo-2]: started with pid [14773][0m
+INFO  [init] found model autostart file as SYS_AUTOSTART=10015
+[1mprocess[gazebo_gui-3]: started with pid [14782][0m
+[1mprocess[vehicle_spawn_ubuntu_14747_3720779825397731907-4]: started with pid [14786][0m
+INFO  [param] selected parameter default file parameters.bson
+[1mprocess[mavros-5]: started with pid [14791][0m
+INFO  [param] importing from 'parameters.bson'
+INFO  [parameters] BSON document size 274 bytes, decoded 274 bytes (INT32:11, FLOAT:3)
+INFO  [param] selected parameter backup file parameters_backup.bson
+[1mprocess[fuel_gazebo_camera_pose-6]: started with pid [14793][0m
+[1mprocess[exploration_node-7]: started with pid [14798][0m
+[1mprocess[traj_server-8]: started with pid [14803][0m
+[1mprocess[waypoint_generator-9]: started with pid [14815][0m
+[1mprocess[fuel_px4_offboard-10]: started with pid [14820][0m
+[1mprocess[gazebo_depth_rviz-11]: started with pid [14830][0m
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ros'
+INFO  [dataman] data manager file './dataman' size is 7866640 bytes
+etc/init.d-posix/rcS: 39: [: Illegal number: 
+INFO  [init] PX4_SIM_HOSTNAME: localhost
+INFO  [simulator_mavlink] Waiting for simulator to accept connection on TCP port 4560
+[33m[WARN] [1791536283.318955941]: [Traj server]: init...[0m
+hit: 0.619039, miss: -0.619039, min: -1.99243, max: 2.19722, thresh: 1.38629
+[0m[INFO] [1791536283.278197353]: FCU URL: udp://:14540@localhost:14557[0m
+[0m[INFO] [1791536283.279658026]: udp0: Bind address: 0.0.0.0:14540[0m
+[0m[INFO] [1791536283.279715853]: udp0: Remote address: 127.0.0.1:14557[0m
+[0m[INFO] [1791536283.279757182]: GCS bridge disabled[0m
+[0m[INFO] [1791536283.286041962]: Plugin 3dr_radio loaded[0m
+[0m[INFO] [1791536283.287890513]: Plugin 3dr_radio initialized[0m
+[0m[INFO] [1791536283.287927532]: Plugin actuator_control loaded[0m
+[0m[INFO] [1791536283.291932241]: Plugin actuator_control initialized[0m
+[0m[INFO] [1791536283.294547673]: Plugin adsb loaded[0m
+[0m[INFO] [1791536283.299293286]: Plugin adsb initialized[0m
+[0m[INFO] [1791536283.299367683]: Plugin altitude loaded[0m
+[0m[INFO] [1791536283.300818543]: Plugin altitude initialized[0m
+[0m[INFO] [1791536283.300888736]: Plugin cam_imu_sync loaded[0m
+[0m[INFO] [1791536283.302279810]: Plugin cam_imu_sync initialized[0m
+[0m[INFO] [1791536283.302341403]: Plugin camera loaded[0m
+[0m[INFO] [1791536283.302800258]: Plugin camera initialized[0m
+[0m[INFO] [1791536283.302851413]: Plugin cellular_status loaded[0m
+[0m[INFO] [1791536283.305273851]: Plugin cellular_status initialized[0m
+[0m[INFO] [1791536283.305330868]: Plugin command loaded[0m
+[0m[INFO] [1791536283.314024458]: Plugin command initialized[0m
+[0m[INFO] [1791536283.314097913]: Plugin companion_process_status loaded[0m
+[0m[INFO] [1791536283.317763532]: Plugin companion_process_status initialized[0m
+[0m[INFO] [1791536283.317823644]: Plugin debug_value loaded[0m
+[0m[INFO] [1791536283.324020827]: Plugin debug_value initialized[0m
+[0m[INFO] [1791536283.324041368]: Plugin distance_sensor blacklisted[0m
+[0m[INFO] [1791536283.324087888]: Plugin esc_status loaded[0m
+[0m[INFO] [1791536283.324728161]: Plugin esc_status initialized[0m
+[0m[INFO] [1791536283.324769690]: Plugin esc_telemetry loaded[0m
+[0m[INFO] [1791536283.324957170]: Plugin esc_telemetry initialized[0m
+[0m[INFO] [1791536283.325019845]: Plugin fake_gps loaded[0m
+[0m[INFO] [1791536283.329537329]: Plugin fake_gps initialized[0m
+[0m[INFO] [1791536283.329602477]: Plugin ftp loaded[0m
+[0m[INFO] [1791536283.333173325]: Plugin ftp initialized[0m
+[0m[INFO] [1791536283.333242997]: Plugin geofence loaded[0m
+[0m[INFO] [1791536283.334622642]: Plugin geofence initialized[0m
+[0m[INFO] [1791536283.334680194]: Plugin global_position loaded[0m
+[0m[INFO] [1791536283.342705757]: Plugin global_position initialized[0m
+[0m[INFO] [1791536283.342779600]: Plugin gps_input loaded[0m
+[0m[INFO] [1791536283.343711527]: Plugin gps_input initialized[0m
+[0m[INFO] [1791536283.343756620]: Plugin gps_rtk loaded[0m
+[0m[INFO] [1791536283.345263827]: Plugin gps_rtk initialized[0m
+[0m[INFO] [1791536283.345324676]: Plugin gps_status loaded[0m
+[0m[INFO] [1791536283.346624739]: Plugin gps_status initialized[0m
+[0m[INFO] [1791536283.346684233]: Plugin guided_target loaded[0m
+[0m[INFO] [1791536283.348198084]: Plugin guided_target initialized[0m
+[0m[INFO] [1791536283.348246532]: Plugin hil loaded[0m
+[0m[INFO] [1791536283.352304029]: Plugin hil initialized[0m
+[0m[INFO] [1791536283.352355280]: Plugin home_position loaded[0m
+[0m[INFO] [1791536283.353484904]: Plugin home_position initialized[0m
+[0m[INFO] [1791536283.353530086]: Plugin imu loaded[0m
+[0m[INFO] [1791536283.374173901]: Plugin imu initialized[0m
+[0m[INFO] [1791536283.374256503]: Plugin landing_target loaded[0m
+[0m[INFO] [1791536283.379958405]: Plugin landing_target initialized[0m
+[0m[INFO] [1791536283.380033719]: Plugin local_position loaded[0m
+[0m[INFO] [1791536283.384131414]: Plugin local_position initialized[0m
+[0m[INFO] [1791536283.384195949]: Plugin log_transfer loaded[0m
+[0m[INFO] [1791536283.386146158]: Plugin log_transfer initialized[0m
+[0m[INFO] [1791536283.386211279]: Plugin mag_calibration_status loaded[0m
+[0m[INFO] [1791536283.386681929]: Plugin mag_calibration_status initialized[0m
+[0m[INFO] [1791536283.386731920]: Plugin manual_control loaded[0m
+[0m[INFO] [1791536283.387732844]: Plug[33m[WARN] [1791536283.390921682]: Could not retrive negate_measured_roll parameter value, using default (0)[0m
+[33m[WARN] [1791536283.391066737]: Could not retrive negate_measured_pitch parameter value, using default (0)[0m
+[33m[WARN] [1791536283.391194563]: Could not retrive negate_measured_yaw parameter value, using default (0)[0m
+[33m[WARN] [1791536283.391661370]: Could not retrive debounce_s parameter value, using default (4.000000)[0m
+[33m[WARN] [1791536283.391798399]: Could not retrive err_threshold_deg parameter value, using default (10.000000)[0m
+[INFO] [1791536283.410728, 0.000000]: Loading model XML from file /workspace/fuel_ws/src/fuel_gazebo/generated/iris_fuel.sdf
+[INFO] [1791536283.412881, 0.000000]: Waiting for service /gazebo/spawn_sdf_model
+origin_: -12 -12  -1
+map size: 24 24  5
+in manual_control initialized[0m
+[0m[INFO] [1791536283.387801098]: Plugin mocap_pose_estimate loaded[0m
+[0m[INFO] [1791536283.389062951]: Plugin mocap_pose_estimate initialized[0m
+[0m[INFO] [1791536283.389110008]: Plugin mount_control loaded[0m
+[0m[INFO] [1791536283.391820628]: Plugin mount_control initialized[0m
+[0m[INFO] [1791536283.391865295]: Plugin nav_controller_output loaded[0m
+[0m[INFO] [1791536283.392066334]: Plugin nav_controller_output initialized[0m
+[0m[INFO] [1791536283.392100563]: Plugin obstacle_distance loaded[0m
+[0m[INFO] [1791536283.392975967]: Plugin obstacle_distance initialized[0m
+[0m[INFO] [1791536283.393021725]: Plugin odom loaded[0m
+[0m[INFO] [1791536283.403119932]: Plugin odom initialized[0m
+[0m[INFO] [1791536283.403211991]: Plugin onboard_computer_status loaded[0m
+[0m[INFO] [1791536283.404916699]: Plugin onboard_computer_status initialized[0m
+[0m[INFO] [1791536283.404985728]: Plugin param loaded[0m
+[0m[INFO] [1791536283.406832964]: Plugin param initialized[0m
+[0m[INFO] [1791536283.406890466]: Plugin play_tune loaded[0m
+[0m[INFO] [1791536283.408226982]: Plugin play_tune initialized[0m
+[0m[INFO] [1791536283.408288259]: Plugin px4flow loaded[0m
+[0m[INFO] [1791536283.411574161]: Plugin px4flow initialized[0m
+[0m[INFO] [1791536283.411642346]: Plugin rallypoint loaded[0m
+[0m[INFO] [1791536283.412549022]: Plugin rallypoint initialized[0m
+[0m[INFO] [1791536283.412572001]: Plugin rangefinder blacklisted[0m
+[0m[INFO] [1791536283.412629529]: Plugin rc_io loaded[0m
+[0m[INFO] [1791536283.413911391]: Plugin rc_io initialized[0m
+[0m[INFO] [1791536283.413925828]: Plugin safety_area blacklisted[0m
+[0m[INFO] [1791536283.413978844]: Plugin setpoint_accel loaded[0m
+[0m[INFO] [1791536283.415350307]: Plugin setpoint_accel initialized[0m
+[0m[INFO] [1791536283.415419131]: Plugin setpoint_attitude loaded[0m
+[0m[INFO] [1791536283.420321531]: Plugin setpoint_attitude initialized[0m
+[0m[INFO] [1791536283.420392459]: Plugin setpoint_position loaded[0m
+[0m[INFO] [1791536283.433755040]: Plugin setpoint_position initialized[0m
+[0m[INFO] [1791536283.433832900]: Plugin setpoint_raw loaded[0m
+[0m[INFO] [1791536283.442918215]: Plugin setpoint_raw initialized[0m
+[0m[INFO] [1791536283.443000961]: Plugin setpoint_trajectory loaded[0m
+[0m[INFO] [1791536283.447178567]: Plugin setpoint_trajectory initialized[0m
+[0m[INFO] [1791536283.447245271]: Plugin setpoint_velocity loaded[0m
+[0m[INFO] [1791536283.449177767]: Plugin setpoint_velocity initialized[0m
+[0m[INFO] [1791536283.449266887]: Plugin sys_status loaded[0m
+[0m[INFO] [1791536283.453138408]: Plugin sys_status initialized[0m
+[0m[INFO] [1791536283.453312388]: Plugin sys_time loaded[0m
+[0m[INFO] [1791536283.455644619]: TM: Timesync mode: MAVLINK[0m
+[0m[INFO] [1791536283.455796758]: TM: Not publishing sim time[0m
+[0m[INFO] [1791536283.456424311]: Plugin sys_time initialized[0m
+[0m[INFO] [1791536283.456487241]: Plugin terrain loaded[0m
+[0m[INFO] [1791536283.456846733]: Plugin terrain initialized[0m
+[0m[INFO] [1791536283.456920381]: Plugin trajectory loaded[0m
+[0m[INFO] [1791536283.459455115]: Plugin trajectory initialized[0m
+[0m[INFO] [1791536283.459517053]: Plugin tunnel loaded[0m
+[0m[INFO] [1791536283.462353828]: Plugin tunnel initialized[0m
+[0m[INFO] [1791536283.462419726]: Plugin vfr_hud loaded[0m
+[0m[INFO] [1791536283.462693873]: Plugin vfr_hud initialized[0m
+[0m[INFO] [1791536283.462707635]: Plugin vibration blacklisted[0m
+[0m[INFO] [1791536283.462745814]: Plugin vision_pose_estimate loaded[0m
+[0m[INFO] [1791536283.467451721]: Plugin vision_pose_estimate initialized[0m
+[0m[INFO] [1791536283.467498034]: Plugin vision_speed_estimate loaded[0m
+[0m[INFO] [1791536283.469914924]: Plugin vision_speed_estimate initialized[0m
+[0m[INFO] [1791536283.469985572]: Plugin waypoint loaded[0m
+[0m[INFO] [1791536283.482449936]: Plugin waypoint initialized[0m
+[0m[INFO] [1791536283.482495187]: Plugin wheel_odometry blacklisted[0m
+[0m[INFO] [1791536283.482575335]: Plugin wind_estimation origin_: -12 -12  -1
+map size: 24 24  5
+yaw diff: 0.523599
+max yaw diff: 0.174533
+vert num: 5
+top:        0
+ 0.84659
+0.532245
+bottom:        0
+-0.84659
+0.532245
+left: 0.769831
+       0
+0.638248
+right: -0.771876
+        0
+ 0.635773
+lefttop: -3.73084  -2.3951      4.5
+leftbottom: -2.87212   2.3951      4.5
+righttop: 2.86098 -2.3951     4.5
+rightbottom: 2.86098  2.3951     4.5
+T_cb:  0 -1  0  0
+ 0  0  1  0
+ 1  0  0  0
+ 0  0  0  1
+T_bc: -0 -0  1  0
+-1 -0  0 -0
+-0  1 -0  0
+ 0 -0  0  1
+origin_: -12 -12  -1
+map size: 24 24  5
+[INFO] [1791536284.016711, 0.130000]: Calling service /gazebo/spawn_sdf_model
+[0m[INFO] [1791536283.553522870]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1791536283.556150232]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1791536283.888846499, 0.008000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1791536283.901234681, 0.020000000]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser.cc:833][0m XML Attribute[version] in element[sdf] not defined in SDF, ignoring.
+[INFO] [1791536285.821922, 0.150000]: Spawn status: SpawnModel: Successfully spawned entity
+INFO  [simulator_mavlink] Simulator connected on TCP port 4560.
+INFO  [lockstep_scheduler] setting initial absolute time to 156000 us
+INFO  [commander] LED: open /dev/led0 failed (22)
+INFO  [mavlink] mode: Normal, data rate: 4000000 B/s on udp port 18570 remote port 14550
+[33m[WARN] [1791536286.172592979, 0.254000000]: Negative sensor update time difference detected.[0m
+INFO  [mavlink] mode: Onboard, data rate: 4000000 B/s on udp port 14580 remote port 14540
+INFO  [mavlink] mode: Onboard, data rate: 4000 B/s on udp port 14280 remote port 14030
+INFO  [mavlink] mode: Gimbal, data rate: 400000 B/s on udp port 13030 remote port 13280
+INFO  [logger] logger started (mode=all)
+INFO  [logger] Start file log (type: full)
+INFO  [logger] [logger] ./log/2026-10-09/08_58_06.ulg	
+INFO  [logger] Opened full log file: ./log/2026-10-09/08_58_06.ulg
+INFO  [mavlink] MAVLink only on localhost (set param MAV_{i}_BROADCAST = 1 to enable network)
+INFO  [mavlink] MAVLink only on localhost (set param MAV_{i}_BROADCAST = 1 to enable network)
+INFO  [px4] Startup script returned successfully
+INFO  [mavlink] partner IP: 127.0.0.1
+[1m[vehicle_spawn_ubuntu_14747_3720779825397731907-4] process has finished cleanly
+log file: /home/ros/.ros/log/b6a8a09a-c3bd-11f1-a2a8-acf23ca0f2c5/vehicle_spawn_ubuntu_14747_3720779825397731907-4*.log[0m
+INFO  [tone_alarm] home set
+0
+0
+[33m[WARN] [1791536287.148288853, 1.152000000]: no odom.[0m
+INFO  [tone_alarm] notify negative
+[33m[WARN] [1791536288.220477688, 2.152000000]: no odom.[0m
+[33m[WARN] [1791536289.406524985, 3.152000000]: no odom.[0m
+[33m[WARN] [1791536289.550788462, 3.202000000]: [Traj server]: ready.[0m
+[33m[WARN] [1791536290.592971544, 4.152000000]: no odom.[0m
+[33m[WARN] [1791536291.679646447, 5.156000000]: no odom.[0m
+[33m[WARN] [1791536292.768194435, 6.162000000]: no odom.[0m
+INFO  [commander] [32mReady for takeoff![0m
+[33m[WARN] [1791536293.837702285, 7.162000000]: no odom.[0m
+[33m[WARN] [1791536294.921474443, 8.162000000]: no odom.[0m
+[INFO] [1791536295.475152, 8.668000]: PX4 world/local frame aligned; takeoff target z=1.00
+[33m[WARN] [1791536295.991567843, 9.162000000]: no odom.[0m
+[33m[WARN] [1791536297.049736365, 10.162000000]: no odom.[0m
+[33m[WARN] [1791536298.144133494, 11.162000000]: no odom.[0m
+[33m[WARN] [1791536298.506538311, 11.500000000]: CMD: Unexpected command 176, result 0[0m
+[33m[WARN] [1791536299.220026150, 12.162000000]: no odom.[0m
+[33m[WARN] [1791536300.304606190, 13.162000000]: no odom.[0m
+INFO  [commander] Armed by external command	
+INFO  [tone_alarm] arming warning
+[33m[WARN] [1791536301.387495085, 14.162000000]: no odom.[0m
+INFO  [commander] Takeoff detected	
+[33m[WARN] [1791536302.428813829, 15.162000000]: no odom.[0m
+[33m[WARN] [1791536303.599354712, 16.162000000]: no odom.[0m
+[33m[WARN] [1791536304.671896854, 17.162000000]: no odom.[0m
+[33m[WARN] [1791536305.756908814, 18.162000000]: no odom.[0m
+[33m[WARN] [1791536306.845148283, 19.162000000]: no odom.[0m
+[33m[WARN] [1791536308.014364049, 20.162000000]: no odom.[0m
+[33m[WARN] [1791536309.059765719, 21.162000000]: no odom.[0m
+[33m[WARN] [1791536310.122333649, 22.162000000]: no odom.[0m
+[33m[WARN] [1791536311.181885276, 23.162000000]: no odom.[0m
+[INFO] [1791536311.189800, 23.168000]: PX4_READY: hover reached; use RViz 2D Nav Goal to explore
+[0m[INFO] [1791536287.146928757, 1.152000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536288.220453240, 2.152000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536289.406499597, 3.152000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536290.592950483, 4.152000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536291.679624400, 5.156000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536292.768166045, 6.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536293.837674752, 7.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536294.921430982, 8.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536295.991544643, 9.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536297.049712497, 10.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536298.144106458, 11.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536299.220000136, 12.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536300.304583331, 13.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536301.387466646, 14.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536302.428787206, 15.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536303.599330863, 16.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536304.671872767, 17.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536305.756880519, 18.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536306.845117725, 19.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536308.014338977, 20.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536309.059736777, 21.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536310.122303556, 22.162000000]: [FSM]: state: INIT[0m
+[0m[INFO] [1791536311.181860301, 23.162000000]: [FSM]: state: INIT[0m
+[FSM]: from INIT to WAIT_TRIGGER
+[33m[WARN] [1791536311.241950652, 23.216000000]: wait for trigger.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.1288 0.0241135, first pc:  0.999672 0.0256164
+max idx: 0
+mean:   5.60481 0.0405764, first pc: 0.976864  0.21386
+max idx: 1
+mean:  6.38685 0.324448, first pc: 0.0829818 -0.996551
+max idx: 0
+mean:     2.4306 0.00517241, first pc: 0.999397 0.034719
+[33m[WARN] [1791536311.557371945, 23.504000000]: Frontier t: 0.004000[0m
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.1488 0.0285915, first pc: 0.999727 0.023353
+max idx: 0
+mean:   5.64118 0.0465839, first pc: 0.986969 0.160912
+max idx: 0
+mean:  2.44101 0.008002, first pc:    0.99997 0.00768538
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536312.318120776, 24.222000000]: wait for trigger.[0m
+[0m[INFO] [1791536312.267833468, 24.170000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.17398 0.0305729, first pc:  0.999866 0.0163843
+max idx: 0
+mean:   5.69095 0.0374814, first pc: 0.926236 0.376945
+max idx: 1
+mean:  6.42001 0.442421, first pc:  0.357129 -0.934055
+max idx: 0
+mean:   2.48752 0.0228926, first pc:  0.999818 0.0190811
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.17215 0.0304155, first pc:  0.999923 0.0124097
+max idx: 0
+mean:   5.74851 0.0443408, first pc: 0.941566 0.336828
+max idx: 0
+mean:   2.47833 0.0154527, first pc:   0.999985 0.00545882
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536313.402534699, 25.226000000]: wait for trigger.[0m
+[0m[INFO] [1791536313.346346709, 25.176000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.15727 0.0206104, first pc:  0.999915 0.0130387
+max idx: 0
+mean:   5.77241 0.0336259, first pc: 0.996322 0.085693
+max idx: 0
+mean:    2.44831 0.00683891, first pc: 0.999928 0.011999
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.16563 0.0176827, first pc:  0.999924 0.0123606
+max idx: 0
+mean:   5.79724 0.0238614, first pc: 0.916834 0.399269
+max idx: 0
+mean:   2.46076 0.0112265, first pc:  0.999983 0.0058691
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536314.488535778, 26.232000000]: wait for trigger.[0m
+[0m[INFO] [1791536314.436275888, 26.178000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.24448 0.0191826, first pc:  0.999921 0.0125329
+max idx: 0
+mean:   5.87551 0.0351017, first pc: 0.963439 0.267929
+max idx: 0
+mean:     2.4861 0.00202055, first pc:   0.999478 -0.0323107
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.28072 0.0185961, first pc:  0.999912 0.0132697
+max idx: 0
+mean:   5.95573 0.0206511, first pc: 0.952963 0.303088
+max idx: 0
+mean:   2.51294 0.0164274, first pc:   0.999983 0.00579059
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536315.579819869, 27.240000000]: wait for trigger.[0m
+[0m[INFO] [1791536315.517919590, 27.180000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.27072 0.0160977, first pc:   0.999979 0.00641719
+max idx: 0
+mean:    5.9401 0.0225568, first pc: 0.981335 0.192308
+max idx: 0
+mean:    2.50796 0.00927728, first pc:  0.999879 0.0155433
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.27847 0.00472535, first pc:   0.999996 0.00272479
+max idx: 0
+mean:    5.94101 0.00583554, first pc: 0.983956 0.178409
+max idx: 0
+mean:    2.51662 0.00354884, first pc:  0.999936 0.0112949
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536316.673934440, 28.244000000]: wait for trigger.[0m
+[0m[INFO] [1791536316.620228920, 28.190000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.26184 -0.00145228, first pc:           1 6.93712e-05
+max idx: 0
+mean:    5.92915 0.00331754, first pc:  0.995521 0.0945372
+max idx: 0
+mean:    2.52148 -0.0064311, first pc:  0.999921 0.0125937
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.27318 -0.00557869, first pc:    0.999999 -0.00124119
+max idx: 0
+mean:     5.93507 -0.00189189, first pc:  0.998329 0.0577791
+max idx: 0
+mean:     2.51821 -0.00947199, first pc:  0.999945 0.0105047
+[33m[WARN] [1791536317.486867824, 29.008000000]: Frontier t: 0.004000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536317.751227989, 29.248000000]: wait for trigger.[0m
+[0m[INFO] [1791536317.698828166, 29.204000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.28188 -0.019913, first pc:    0.999998 -0.00195991
+max idx: 0
+mean:  5.94599 -0.02139, first pc:   0.999983 0.00582619
+max idx: 0
+mean:    2.51145 -0.0183417, first pc:  0.999902 0.0139801
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.26178 -0.0243344, first pc:            1 -0.000724651
+max idx: 0
+mean: 5.93624   -0.03, first pc:    0.999989 -0.00458636
+max idx: 0
+mean:    2.51408 -0.0184211, first pc:  0.999845 0.0176236
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536318.824497395, 30.250000000]: wait for trigger.[0m
+[0m[INFO] [1791536318.782901794, 30.208000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.27365 -0.0302194, first pc:    0.999995 -0.00312394
+max idx: 0
+mean:    5.94353 -0.0344512, first pc:   0.998024 -0.0628332
+max idx: 0
+mean:    2.50743 -0.0257435, first pc:  0.999931 0.0117174
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.27458 -0.0322001, first pc:    0.999999 -0.00148815
+max idx: 0
+mean:    5.94468 -0.0372542, first pc:   0.999997 0.00233809
+max idx: 0
+mean:    2.50617 -0.0268485, first pc:  0.999933 0.0116115
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536319.898224990, 31.256000000]: wait for trigger.[0m
+[0m[INFO] [1791536319.860124058, 31.216000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.27214 -0.0322955, first pc:    0.999994 -0.00340318
+max idx: 0
+mean:    5.94409 -0.0400543, first pc:  0.999862 -0.016613
+max idx: 0
+mean:   2.50479 -0.024094, first pc:  0.999941 0.0108586
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.27463 -0.0261318, first pc:    0.999989 -0.00465342
+max idx: 0
+mean:    5.94936 -0.0342105, first pc:           1 0.000176771
+max idx: 0
+mean:   2.50245 -0.017583, first pc:   0.999984 0.00572376
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536320.944914283, 32.256000000]: wait for trigger.[0m
+[0m[INFO] [1791536320.906529724, 32.218000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.27441 -0.017964, first pc:    0.999974 -0.00714625
+max idx: 0
+mean:    5.95135 -0.0282755, first pc:    0.999961 -0.00880928
+max idx: 0
+mean:     2.50384 -0.00707681, first pc:  0.999977 0.0068543
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.29151 -0.00523826, first pc:     0.99997 -0.00771996
+max idx: 0
+mean:    5.96386 -0.0137575, first pc:    0.999951 -0.00986718
+max idx: 0
+mean:    2.50553 0.00385984, first pc:  0.999941 0.0108907
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536322.004489051, 33.262000000]: wait for trigger.[0m
+[0m[INFO] [1791536321.964719304, 33.222000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     5.11346 0.000579648, first pc:   0.999671 -0.0256613
+max idx: 1
+mean:    6.42734 -0.0104371, first pc: -0.0572254  -0.998361
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.31056 0.00757472, first pc:    0.999995 -0.00323594
+max idx: 0
+mean:    5.98584 0.00222552, first pc: 0.993634 0.112659
+max idx: 0
+mean:   2.51003 0.0133239, first pc:  0.999927 0.0121018
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536323.050782229, 34.264000000]: wait for trigger.[0m
+[0m[INFO] [1791536323.011539688, 34.224000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.31711 0.0113749, first pc:    0.999999 -0.00109757
+max idx: 0
+mean:    5.99292 0.00861956, first pc: 0.992868 0.119221
+max idx: 0
+mean:   2.50046 0.0143617, first pc: 0.999795 0.020226
+[33m[WARN] [1791536323.306718758, 34.504000000]: Frontier t: 0.004000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.13387 0.0188472, first pc:    0.999972 -0.00744727
+max idx: 1
+mean:   6.44495 0.0211716, first pc: -0.155144 -0.987892
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[33m[WARN] [1791536324.099086968, 35.264000000]: wait for trigger.[0m
+[0m[INFO] [1791536324.059464190, 35.224000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.32176 0.0191565, first pc:     0.99999 -0.00443626
+max idx: 0
+mean:   5.99902 0.0180365, first pc:  0.998224 0.0595765
+max idx: 0
+mean:   2.50976 0.0203665, first pc:  0.999738 0.0228731
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.31926 0.0137492, first pc:    0.999977 -0.00679482
+max idx: 0
+mean:   5.99637 0.0124755, first pc:  0.999681 0.0252423
+max idx: 0
+mean:    2.4995 0.0151311, first pc:  0.999722 0.0235585
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[33m[WARN] [1791536325.147427030, 36.268000000]: wait for trigger.[0m
+[0m[INFO] [1791536325.110362157, 36.230000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.3161 0.012141, first pc:    0.999977 -0.00681554
+max idx: 0
+mean:    5.9969 0.0123203, first pc:  0.999639 0.0268567
+max idx: 0
+mean:   2.49549 0.0119469, first pc:  0.999583 0.0288637
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.32758 0.0105584, first pc:    0.999981 -0.00611207
+max idx: 0
+mean:   6.00929 0.0149271, first pc:   0.999768 -0.0215578
+max idx: 0
+mean:     2.4911 0.00578761, first pc:  0.999731 0.0231783
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Triggered!
+[triggerCallback]: from WAIT_TRIGGER to PLAN_TRAJ
+start pos: -0.0234342 -0.0431395    1.06112, vel: 0.00926861  0.0422463 -0.0631337, acc: 0 0 0
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 5
+[33m[WARN] [1791536326.076255079, 37.140000000]: No coverable frontier.[0m
+[FSM]: from PLAN_TRAJ to FINISH
+[0m[INFO] [1791536326.082448710, 37.146000000]: finish exploration.[0m
+[0m[INFO] [1791536326.178992619, 37.236000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.31932 0.00810719, first pc:    0.999979 -0.00651708
+max idx: 0
+mean:   6.00476 0.0113177, first pc:  0.999884 -0.015236
+max idx: 0
+mean:    2.49332 0.00462898, first pc: 0.999783 0.020853
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.3234 0.00913222, first pc:    0.999953 -0.00974146
+max idx: 0
+mean:    5.99953 0.00145758, first pc:   0.999617 -0.0276674
+max idx: 0
+mean:   2.48135 0.0175666, first pc:  0.999729 0.0232783
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536327.147999573, 38.148000000]: finish exploration.[0m
+[0m[INFO] [1791536327.247598029, 38.238000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.4795 0.0239193, first pc:  0.999736 0.0229888
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.13692 0.0288228, first pc:   0.99936 -0.035758
+max idx: 1
+mean:     6.46759 -0.00547412, first pc: -0.054655 -0.998505
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536328.206051265, 39.154000000]: finish exploration.[0m
+[0m[INFO] [1791536328.304713449, 39.244000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.30316 0.0170919, first pc:    0.999953 -0.00967238
+max idx: 0
+mean:   5.98224 0.0085738, first pc:   0.999928 -0.0120109
+max idx: 0
+mean:   2.48607 0.0263101, first pc:  0.999764 0.0217106
+[33m[WARN] [1791536328.577826181, 39.504000000]: Frontier t: 0.004000[0m
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.13589 0.0270833, first pc:   0.999272 -0.0381479
+max idx: 1
+mean:    6.47127 -0.0094396, first pc: -0.0566668  -0.998393
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536329.360488193, 40.156000000]: finish exploration.[0m
+[0m[INFO] [1791536329.458457843, 40.246000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.30484 0.0153033, first pc:    0.999952 -0.00982343
+max idx: 0
+mean:    5.97828 0.00976214, first pc:   0.999608 -0.0279938
+max idx: 0
+mean:   2.49054 0.0213109, first pc:  0.999723 0.0235189
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.30411 0.0103787, first pc:    0.999966 -0.00822186
+max idx: 0
+mean:    5.97778 0.00618386, first pc:  0.999856 0.0169914
+max idx: 0
+mean:   2.48747 0.0149318, first pc:  0.999667 0.0257895
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536330.413630382, 41.158000000]: finish exploration.[0m
+[0m[INFO] [1791536330.505420021, 41.248000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.14618 0.0141788, first pc:  0.999626 -0.027354
+max idx: 1
+mean:    6.47481 -0.0205345, first pc: -0.131871 -0.991267
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     4.3062 0.00969995, first pc:    0.999994 -0.00333251
+max idx: 0
+mean:    5.98009 0.00648148, first pc:  0.998225 0.0595517
+max idx: 0
+mean:   2.48211 0.0132072, first pc:   0.99974 0.0228108
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536331.465845989, 42.164000000]: finish exploration.[0m
+[0m[INFO] [1791536331.559720848, 42.254000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.31241 0.00754555, first pc:    0.999996 -0.00277803
+max idx: 0
+mean:    5.9858 0.0020751, first pc: 0.998534 0.054137
+max idx: 0
+mean:   2.48623 0.0135155, first pc:  0.999742 0.0227344
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.31575 0.00463599, first pc:   0.999989 -0.0046115
+max idx: 0
+mean:     5.97365 -0.00164979, first pc:  0.999695 0.0247148
+max idx: 0
+mean:   2.47903 0.0115997, first pc:  0.999814 0.0192916
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536332.513965295, 43.164000000]: finish exploration.[0m
+[0m[INFO] [1791536332.610084815, 43.254000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   2.47915 0.0125361, first pc:  0.999818 0.0190818
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.32016 0.0015084, first pc:    0.999991 -0.00424258
+max idx: 0
+mean:     5.98574 -0.00840419, first pc:  0.999785 0.0207331
+max idx: 0
+mean:  2.48537 0.012428, first pc:  0.9998 0.01999
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536333.567328150, 44.166000000]: finish exploration.[0m
+[0m[INFO] [1791536333.663483712, 44.256000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   2.48792 0.0167271, first pc:  0.999684 0.0251427
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.3411 0.00749871, first pc:           1 -0.00025078
+max idx: 0
+mean:     5.99353 0.000878334, first pc:    0.9993 0.0374031
+max idx: 0
+mean:   2.49197 0.0149072, first pc:  0.999606 0.0280611
+[33m[WARN] [1791536334.457053888, 45.004000000]: Frontier t: 0.004000[0m
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536334.618459310, 45.166000000]: finish exploration.[0m
+[0m[INFO] [1791536334.711760583, 45.256000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.34938 0.0100928, first pc:   0.999999 0.00133903
+max idx: 0
+mean:   6.02038 0.0156137, first pc:  0.999236 0.0390833
+max idx: 0
+mean:    2.52072 0.00405113, first pc:  0.999781 0.0209213
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.36625 0.0150171, first pc:           1 0.000602066
+max idx: 0
+mean:   6.06337 0.0112508, first pc:   0.99885 0.0479546
+max idx: 0
+mean:   2.55909 0.0190275, first pc: 0.999578 0.029047
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536335.676828661, 46.170000000]: finish exploration.[0m
+[0m[INFO] [1791536335.771233342, 46.260000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:  5.20529 0.032149, first pc:    0.99981 -0.0195101
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.38785 0.0199221, first pc:   0.999999 0.00116766
+max idx: 0
+mean:   6.07924 0.0214146, first pc: 0.998321 0.057929
+max idx: 0
+mean:   2.56067 0.0183099, first pc:  0.999577 0.0290795
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[31m[ERROR] [1791536336.756523759, 47.196000000]: TM : Time jump detected. Resetting time synchroniser.[0m
+[0m[INFO] [1791536336.737472166, 47.178000000]: finish exploration.[0m
+[0m[INFO] [1791536336.829060092, 47.268000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.3964 0.0223455, first pc:   0.999999 0.00144653
+max idx: 0
+mean:   6.09002 0.0252198, first pc:  0.998557 0.0537104
+max idx: 0
+mean:   2.56115 0.0192308, first pc:   0.99964 0.0268144
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.23267 0.0337529, first pc:    0.99988 -0.0155079
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536337.812574757, 48.182000000]: finish exploration.[0m
+[0m[INFO] [1791536337.900659080, 48.272000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.23632 0.0363578, first pc:    0.999977 -0.00675134
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.24307 0.0343325, first pc:    0.999957 -0.00926005
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536338.867496686, 49.188000000]: finish exploration.[0m
+[0m[INFO] [1791536338.958033880, 49.278000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.23725 0.0320055, first pc:     0.99995 -0.00995891
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:  5.24675 0.028441, first pc:   0.999792 -0.0204041
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536339.913532028, 50.190000000]: finish exploration.[0m
+[0m[INFO] [1791536340.000076189, 50.280000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.26062 0.0277591, first pc:   0.999831 -0.0184029
+[33m[WARN] [1791536340.236789799, 50.504000000]: Frontier t: 0.004000[0m
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.44144 0.0193737, first pc:           1 0.000105616
+max idx: 0
+mean:   6.11738 0.0174779, first pc:  0.998998 0.0447543
+max idx: 0
+mean: 2.55303 0.02151, first pc:  0.999756 0.0220926
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536340.949704198, 51.198000000]: finish exploration.[0m
+[0m[INFO] [1791536341.045171027, 51.288000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.44329 0.0171288, first pc:   0.999997 0.00244413
+max idx: 0
+mean:   6.11821 0.0172354, first pc:  0.997821 0.0659719
+max idx: 0
+mean:   2.56478 0.0170092, first pc:  0.999763 0.0217907
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536341.987488462, 52.198000000]: finish exploration.[0m
+[0m[INFO] [1791536342.084246182, 52.288000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.43548 0.0123759, first pc:   0.999998 0.00214251
+max idx: 0
+mean:   6.11343 0.0192871, first pc:  0.997925 0.0643927
+max idx: 0
+mean:    2.55325 0.00462335, first pc:  0.999932 0.0116758
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:  4.43499 0.010778, first pc:            1 -0.000826613
+max idx: 0
+mean:   6.11303 0.0175908, first pc: 0.998431 0.055987
+max idx: 0
+mean:    2.55439 0.00314286, first pc:   0.99989 0.0148524
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536343.035644447, 53.204000000]: finish exploration.[0m
+[0m[INFO] [1791536343.124463612, 53.290000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.42577 0.0130981, first pc:   0.999993 0.00376109
+max idx: 0
+mean:   6.10517 0.0241229, first pc:  0.996915 0.0784916
+max idx: 0
+mean:    2.55355 0.00080732, first pc:  0.999886 0.0151257
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.42992 0.0117119, first pc:   0.999999 0.00137491
+max idx: 0
+mean:  6.10949 0.023691, first pc:  0.999628 0.0272778
+max idx: 0
+mean:     2.55388 -0.00166846, first pc:  0.999884 0.0152435
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536344.105670248, 54.212000000]: finish exploration.[0m
+[0m[INFO] [1791536344.188205301, 54.292000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.4344 0.00938399, first pc:  0.999996 0.0029453
+max idx: 0
+mean:    6.1133 0.0211538, first pc:  0.999935 0.0114066
+max idx: 0
+mean:     2.55624 -0.00378272, first pc:  0.999842 0.0177768
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.44049 0.00476351, first pc:            1 -0.000970332
+max idx: 0
+mean:    6.1167 0.0126156, first pc:    0.99992 -0.0126175
+max idx: 0
+mean:    2.55363 -0.0040754, first pc:  0.999798 0.0201176
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536345.165177514, 55.214000000]: finish exploration.[0m
+[0m[INFO] [1791536345.251598708, 55.294000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.44142 -0.00304629, first pc:    0.999999 -0.00141201
+max idx: 0
+mean:    6.11443 0.00981428, first pc:   0.999853 -0.0171408
+max idx: 0
+mean:    2.54357 -0.0176353, first pc:  0.999804 0.0197922
+[33m[WARN] [1791536345.476838998, 55.506000000]: Frontier t: 0.004000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.47355 -0.00865922, first pc:   0.999988 0.00479626
+max idx: 0
+mean:    6.18315 -0.0018362, first pc: 0.974764 0.223238
+max idx: 0
+mean:    2.61473 -0.0160777, first pc:  0.999849 0.0173783
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536346.254505495, 56.222000000]: finish exploration.[0m
+[0m[INFO] [1791536346.343315624, 56.304000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.49394 -0.0193315, first pc:            1 -0.000390033
+max idx: 0
+mean:    6.18788 -0.0113153, first pc:  0.997434 0.0715897
+max idx: 0
+mean:    2.60175 -0.0282859, first pc:  0.999904 0.0138805
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.46824 -0.0113699, first pc:   0.999971 0.00766308
+max idx: 0
+mean:   6.17028 0.0101581, first pc:  0.98837 0.152068
+max idx: 0
+mean:    2.59469 -0.0350671, first pc:  0.999916 0.0129427
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536347.349697467, 57.226000000]: finish exploration.[0m
+[0m[INFO] [1791536347.436866940, 57.308000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.59421 -0.0346935, first pc:  0.999914 0.0130801
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.47147 -0.0115451, first pc:   0.999991 0.00415893
+max idx: 0
+mean:    6.17156 0.00667324, first pc: 0.994662 0.103189
+max idx: 0
+mean:    2.59563 -0.0316467, first pc:  0.999913 0.0131828
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536348.399426555, 58.230000000]: finish exploration.[0m
+[0m[INFO] [1791536348.481471284, 58.310000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:       4.459 -0.00949784, first pc:   0.999995 0.00308985
+max idx: 0
+mean:     6.1618 0.00966192, first pc: 0.994494 0.104792
+max idx: 0
+mean:     2.5963 -0.0304569, first pc:  0.999948 0.0102038
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.45839 -0.0115943, first pc:  0.999996 0.0029256
+max idx: 0
+mean:    6.16226 0.00871438, first pc: 0.994518 0.104565
+max idx: 0
+mean:    2.59861 -0.0337613, first pc:   0.999956 0.00941323
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536349.465772940, 59.234000000]: finish exploration.[0m
+[0m[INFO] [1791536349.549199572, 59.314000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.45873 -0.0147853, first pc:   0.999995 0.00305856
+max idx: 0
+mean:    6.15964 0.00140775, first pc:  0.99472 0.102623
+max idx: 0
+mean:    2.59617 -0.0325172, first pc:   0.999967 0.00814512
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+max idx: 0
+mean:      6.15933 -0.000314465, first pc: 0.994792 0.101923
+0, 
+new num: 0, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536350.524313984, 60.234000000]: finish exploration.[0m
+[0m[INFO] [1791536350.615884235, 60.322000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+max idx: 0
+mean:     6.1561 0.00177446, first pc: 0.992587 0.121535
+0, 
+new num: 0, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.45502 -0.0149344, first pc:    0.999997 -0.00235307
+max idx: 0
+mean:     6.15872 -0.00142102, first pc:   0.99597 0.0896822
+max idx: 0
+mean:   2.59118 -0.029718, first pc:    0.999992 -0.00406134
+[33m[WARN] [1791536351.349658498, 61.006000000]: Frontier t: 0.004000[0m
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536351.589636255, 61.238000000]: finish exploration.[0m
+[0m[INFO] [1791536351.689772589, 61.332000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.46335 -0.0171637, first pc:    0.999993 -0.00386744
+max idx: 0
+mean:     6.16735 -0.00675941, first pc:   0.99616 0.0875547
+max idx: 0
+mean:    2.59079 -0.0285971, first pc:    0.999974 -0.00727746
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.32862 -0.0206874, first pc:   0.999972 0.00750516
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536352.667462316, 62.246000000]: finish exploration.[0m
+[0m[INFO] [1791536352.758323992, 62.336000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.46738 -0.012108, first pc:    0.999995 -0.00323339
+max idx: 0
+mean:    6.17475 0.00241988, first pc:  0.996368 0.0851556
+max idx: 0
+mean:    2.58723 -0.0281059, first pc:    0.999972 -0.00752641
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.47468 -0.0139809, first pc:    0.999997 -0.00252109
+max idx: 0
+mean:      6.1817 -0.00143043, first pc: 0.994318 0.106453
+max idx: 0
+mean:    2.58728 -0.0278577, first pc:    0.999973 -0.00737835
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536353.718301310, 63.246000000]: finish exploration.[0m
+[0m[INFO] [1791536353.812438267, 63.336000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.46916 -0.0135477, first pc:    0.999995 -0.00320021
+max idx: 0
+mean:    6.17832 0.00265905, first pc: 0.997425 0.071718
+max idx: 0
+mean:    2.58545 -0.0314096, first pc:    0.999957 -0.00930876
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.32341 -0.0141973, first pc:  0.999913 0.0132281
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536354.767137400, 64.250000000]: finish exploration.[0m
+[0m[INFO] [1791536354.862478656, 64.340000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     5.31509 -0.00640244, first pc:  0.999851 0.0172413
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     4.43822 -0.00435986, first pc:   0.999998 0.00200759
+max idx: 0
+mean:   6.10019 0.0198387, first pc: 0.994484  0.10489
+max idx: 0
+mean:    2.51578 -0.0323507, first pc:    0.999963 -0.00862583
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536355.821938373, 65.256000000]: finish exploration.[0m
+[0m[INFO] [1791536355.921465018, 65.346000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.51409 -0.0305151, first pc:    0.999981 -0.00612161
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536356.854944953, 66.256000000]: finish exploration.[0m
+[0m[INFO] [1791536356.947234436, 66.346000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.51494 -0.0257228, first pc:    0.999994 -0.00359733
+[33m[WARN] [1791536357.118325158, 66.502000000]: Frontier t: 0.002000[0m
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.51135 -0.0260684, first pc:    0.999994 -0.00338211
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536357.905846652, 67.262000000]: finish exploration.[0m
+[0m[INFO] [1791536358.002032547, 67.352000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   2.50557 -0.031676, first pc:    0.999983 -0.00577052
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     4.43126 -0.00706381, first pc:    0.999998 -0.00186262
+max idx: 0
+mean:   6.09803 0.0144839, first pc:  0.996898 0.0787063
+max idx: 0
+mean:    2.50542 -0.0319605, first pc:    0.999967 -0.00810502
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536358.972460558, 68.262000000]: finish exploration.[0m
+[0m[INFO] [1791536359.062410317, 68.352000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 1
+max idx: 0
+mean:   6.10024 0.0162689, first pc:  0.998306 0.0581848
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536360.029106101, 69.264000000]: finish exploration.[0m
+[0m[INFO] [1791536360.124463989, 69.354000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.50373 -0.0308209, first pc:    0.999967 -0.00814223
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536361.078586724, 70.266000000]: finish exploration.[0m
+[0m[INFO] [1791536361.171685145, 70.356000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.50342 -0.0315092, first pc:     0.99998 -0.00627512
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     5.2691 0.00295664, first pc:  0.999794 0.0202819
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536362.122027298, 71.268000000]: finish exploration.[0m
+[0m[INFO] [1791536362.214967161, 71.358000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.27082 0.00513466, first pc:  0.999792 0.0204162
+[33m[WARN] [1791536362.370233314, 71.502000000]: Frontier t: 0.002000[0m
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.26746 0.00736842, first pc:  0.999785 0.0207369
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536363.173166362, 72.276000000]: finish exploration.[0m
+[0m[INFO] [1791536363.267473871, 72.368000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.26952 0.0103202, first pc:  0.999815 0.0192356
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.26894 0.0100835, first pc:   0.99983 0.0184629
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536364.214731440, 73.280000000]: finish exploration.[0m
+[0m[INFO] [1791536364.314817465, 73.370000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.28318 0.0205548, first pc:  0.999814 0.0192642
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.28949 0.0269634, first pc:  0.999835 0.0181884
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 2
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536365.273605880, 74.280000000]: finish exploration.[0m
+[0m[INFO] [1791536365.367939462, 74.370000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.28878 0.0266194, first pc:   0.99984 0.0179094
+max idx: 1
+mean:   6.66249 0.0765728, first pc:  -0.20262 -0.979258
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.28685 0.0258944, first pc:  0.999838 0.0179846
+max idx: 1
+mean:   6.66091 0.0760931, first pc: -0.201544 -0.979479
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536366.337917708, 75.282000000]: finish exploration.[0m
+[0m[INFO] [1791536366.438471921, 75.374000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.28941 0.0283589, first pc:  0.999907 0.0136271
+max idx: 1
+mean:   6.66139 0.0757062, first pc: -0.201777 -0.979431
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.2794 0.0247091, first pc:   0.99994 0.0109184
+max idx: 1
+mean:   6.65465 0.0650522, first pc: -0.188859 -0.982004
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536367.393443264, 76.288000000]: finish exploration.[0m
+[0m[INFO] [1791536367.487535269, 76.378000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:  4.91397 0.299901, first pc: 0.944685 0.327978
+[33m[WARN] [1791536367.630359858, 76.510000000]: Frontier t: 0.004000[0m
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:  5.28207 0.024161, first pc:  0.999878 0.0156335
+max idx: 1
+mean:   6.65493 0.0647797, first pc: -0.184764 -0.982783
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536368.447326887, 77.288000000]: finish exploration.[0m
+[0m[INFO] [1791536368.539463777, 77.378000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.9107 0.302771, first pc: 0.945391 0.325938
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:  3.96354 0.224529, first pc: 0.989761 0.142737
+max idx: 0
+mean:  5.57497 0.467939, first pc: 0.890591 0.454805
+max idx: 0
+mean:    2.18623 -0.0439394, first pc:   0.998575 -0.0533607
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536369.509690992, 78.290000000]: finish exploration.[0m
+[0m[INFO] [1791536369.600425976, 78.380000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.47609 -0.380789, first pc:  0.856487 -0.516169
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:  4.79952 0.312206, first pc: 0.953607 0.301053
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536370.772985961, 79.298000000]: finish exploration.[0m
+[0m[INFO] [1791536370.861960732, 79.388000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   4.41401 0.0101652, first pc:   0.999999 0.00154389
+max idx: 0
+mean:   6.07256 0.0314234, first pc:   0.99619 0.0872108
+max idx: 0
+mean:    2.48094 -0.0146119, first pc:   0.999974 0.00716044
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.49037 -0.0212448, first pc:            1 -0.000373093
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536371.831399607, 80.306000000]: finish exploration.[0m
+[0m[INFO] [1791536371.917101833, 80.388000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     4.40639 -0.00243624, first pc:   0.999999 0.00111379
+max idx: 0
+mean:   6.06701 0.0165135, first pc:  0.996906 0.0785993
+max idx: 0
+mean:    2.48967 -0.0243085, first pc:   0.999999 0.00112514
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     4.41247 -0.00724307, first pc:    0.999999 -0.00170014
+max idx: 0
+mean:    6.07338 0.00987574, first pc:  0.998157 0.0606866
+max idx: 0
+mean:    2.49149 -0.0270424, first pc:    0.999999 -0.00155002
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536372.882705330, 81.306000000]: finish exploration.[0m
+[0m[INFO] [1791536372.978822822, 81.396000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:     4.43186 -0.00539302, first pc:    0.999996 -0.00295583
+max idx: 0
+mean:    6.08173 0.00247074, first pc:  0.998645 0.0520449
+max idx: 0
+mean:    2.47844 -0.0147036, first pc:   0.999998 0.00173384
+[33m[WARN] [1791536373.102234300, 81.512000000]: Frontier t: 0.006000[0m
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    2.47728 -0.0123701, first pc:   0.999998 0.00223147
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536373.940122679, 82.308000000]: finish exploration.[0m
+[0m[INFO] [1791536374.037977336, 82.406000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536375.003910414, 83.312000000]: finish exploration.[0m
+[0m[INFO] [1791536375.100216645, 83.406000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536376.056469514, 84.316000000]: finish exploration.[0m
+[0m[INFO] [1791536376.154556954, 84.406000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.29819 -0.0178564, first pc:    0.999995 -0.00300941
+max idx: 1
+mean:    6.65005 -0.0161451, first pc: -0.110872 -0.993835
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536377.106652227, 85.320000000]: finish exploration.[0m
+[0m[INFO] [1791536377.202173981, 85.412000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.30271 -0.0194623, first pc:    0.999967 -0.00807036
+max idx: 1
+mean:    6.65382 -0.0199717, first pc: -0.0862757  -0.996271
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.30117 -0.0184653, first pc:   0.999948 -0.0101887
+max idx: 1
+mean:     6.6552 -0.0184459, first pc: -0.0745084   -0.99722
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536378.141827603, 86.322000000]: finish exploration.[0m
+[0m[INFO] [1791536378.236011961, 86.412000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   3.93925 -0.233698, first pc:  0.988468 -0.151433
+max idx: 0
+mean:    5.4906 -0.468845, first pc:  0.900537 -0.434779
+max idx: 0
+mean:   2.12983 0.0405669, first pc:  0.998031 0.0627259
+0, 1, 
+new num: 2, new dormant: 2
+to visit: 2, dormant: 3
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 0
+max idx: 0
+mean:    5.18948 -0.0130026, first pc:   0.999944 -0.0106097
+max idx: 1
+mean:     6.5858 -0.0131627, first pc: -0.113091 -0.993585
+max idx: 0
+mean:    3.94133 -0.0128595, first pc:   0.99215 -0.125051
+[33m[WARN] [1791536378.863254407, 87.006000000]: Frontier t: 0.002000[0m
+0, 1, 
+new num: 2, new dormant: 2
+to visit: 2, dormant: 3
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+[0m[INFO] [1791536379.196168639, 87.326000000]: finish exploration.[0m
+[0m[INFO] [1791536379.288857280, 87.416000000]: [FSM]: state: FINISH[0m
+Before remove: 2
+After remove: 0
+max idx: 0
+mean:    5.19344 -0.0124171, first pc:   0.999939 -0.0110177
+max idx: 1
+mean:    6.58894 -0.0113749, first pc: -0.111524 -0.993762
+max idx: 0
+mean:    3.94123 -0.0133523, first pc:  0.992019 -0.126088
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:      5.1854 -0.00837629, first pc:    0.999977 -0.00680681
+max idx: 1
+mean:      6.5839 -0.00287409, first pc: -0.133552 -0.991042
+max idx: 0
+mean:    3.94127 -0.0132711, first pc:  0.992154 -0.125019
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536380.233398399, 88.334000000]: finish exploration.[0m
+[0m[INFO] [1791536380.325584116, 88.424000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:      5.18495 -0.000107527, first pc:    0.999985 -0.00548601
+max idx: 1
+mean:    6.58158 0.00996344, first pc: -0.140678 -0.990055
+max idx: 0
+mean:     3.94374 -0.00905768, first pc:  0.990923 -0.134432
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.19454 0.0062982, first pc:    0.999989 -0.00461499
+max idx: 1
+mean:    6.5896 0.0198686, first pc: -0.151147 -0.988511
+max idx: 0
+mean:    3.94346 -0.0058716, first pc:  0.990662 -0.136343
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536381.280033683, 89.342000000]: finish exploration.[0m
+[0m[INFO] [1791536381.371419637, 89.432000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.20134 0.0128071, first pc:    0.999976 -0.00691815
+max idx: 1
+mean:   6.59786 0.0282785, first pc: -0.138817 -0.990318
+max idx: 0
+mean:     3.94265 -0.00113729, first pc:   0.99034 -0.138659
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.21175 0.0182418, first pc:     0.99999 -0.00455344
+max idx: 1
+mean:   6.60399 0.0392905, first pc: -0.168268 -0.985741
+max idx: 0
+mean:       3.9419 -0.000956451, first pc:  0.990467 -0.137748
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536382.324775385, 90.346000000]: finish exploration.[0m
+[0m[INFO] [1791536382.418614603, 90.436000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.21526 0.0208909, first pc:   0.999986 -0.0053642
+max idx: 1
+mean:   6.60639 0.0431909, first pc: -0.172439  -0.98502
+max idx: 0
+mean:     3.94251 0.000488599, first pc: 0.990489 -0.13759
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:      5.84445 -0.000591883, first pc: 0.993514  0.11371
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 4
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536383.385885249, 91.346000000]: finish exploration.[0m
+[0m[INFO] [1791536383.495025487, 91.436000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.21254 0.0228319, first pc:    0.999993 -0.00364881
+max idx: 1
+mean:  6.60067 0.049554, first pc: -0.170964 -0.985277
+max idx: 0
+mean:     3.94278 -0.00161159, first pc:  0.990516 -0.137396
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:  4.81117 0.313373, first pc: 0.954654 0.297718
+max idx: 0
+mean:  6.28415 0.925832, first pc: 0.978325 0.207076
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536384.450063510, 92.348000000]: finish exploration.[0m
+[0m[INFO] [1791536384.548223058, 92.440000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+[33m[WARN] [1791536384.611403363, 92.500000000]: Frontier t: 0.000000[0m
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.19429 0.0128326, first pc:    0.999984 -0.00567861
+max idx: 1
+mean:   6.58769 0.0308617, first pc: -0.154647  -0.98797
+max idx: 0
+mean:     3.94279 -0.00336049, first pc:  0.990404 -0.138202
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536385.501078254, 93.348000000]: finish exploration.[0m
+[0m[INFO] [1791536385.610639088, 93.448000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    5.19511 0.00838523, first pc:  0.999995 0.0030203
+max idx: 1
+mean:   6.59022 0.0248979, first pc: -0.220382 -0.975414
+max idx: 0
+mean:     3.94271 -0.00643847, first pc:  0.990862 -0.134877
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     5.1915 0.00615318, first pc:   0.999999 0.00163519
+max idx: 1
+mean:   6.58654 0.0207517, first pc: -0.216356 -0.976315
+max idx: 0
+mean:     3.94319 -0.00690991, first pc:  0.991476 -0.130289
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536386.555130816, 94.348000000]: finish exploration.[0m
+[0m[INFO] [1791536386.668470587, 94.448000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.7778 0.299155, first pc: 0.955409 0.295285
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:  4.79232 0.305347, first pc: 0.955247 0.295809
+max idx: 0
+mean:  6.25939 0.919358, first pc: 0.979092 0.203418
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[31m[ERROR] [1791536387.458471789, 95.198000000]: TM : Time jump detected. Resetting time synchroniser.[0m
+[0m[INFO] [1791536387.628552834, 95.356000000]: finish exploration.[0m
+[0m[INFO] [1791536387.735011991, 95.456000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.21882 0.0214775, first pc:   0.999993 0.00382782
+max idx: 1
+mean:   6.60329 0.0420429, first pc:  -0.21931 -0.975655
+max idx: 0
+mean:    3.94589 0.00256885, first pc:  0.991523 -0.129935
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536388.679475725, 96.364000000]: finish exploration.[0m
+[0m[INFO] [1791536388.783473139, 96.464000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:  5.22415 0.024279, first pc:   0.999991 0.00412753
+max idx: 1
+mean:   6.60721 0.0475089, first pc:  -0.22108 -0.975256
+max idx: 0
+mean:    3.94626 0.00281545, first pc:  0.991537 -0.129821
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536389.729739365, 97.370000000]: finish exploration.[0m
+[0m[INFO] [1791536389.834045315, 97.470000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+[33m[WARN] [1791536389.871077424, 97.502000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536390.781863040, 98.374000000]: finish exploration.[0m
+[0m[INFO] [1791536390.896465678, 98.476000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   2.11334 0.0351765, first pc:  0.997296 0.0734927
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536391.861180663, 99.378000000]: finish exploration.[0m
+[0m[INFO] [1791536391.967499231, 99.480000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    5.86934 0.00515267, first pc: 0.993758 0.111555
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536392.910415364, 100.378000000]: finish exploration.[0m
+[0m[INFO] [1791536393.027096048, 100.488000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.84385 0.0569697, first pc: 0.992774     0.12
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.84764 0.0593741, first pc: 0.991982 0.126379
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536393.964534741, 101.380000000]: finish exploration.[0m
+[0m[INFO] [1791536394.080006967, 101.490000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.83214 0.0521413, first pc: 0.994077 0.108675
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.83341 0.0519584, first pc: 0.994389 0.105789
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536395.007221662, 102.380000000]: finish exploration.[0m
+[0m[INFO] [1791536395.118094669, 102.490000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+[33m[WARN] [1791536395.133209095, 102.502000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.13558 0.0317065, first pc:    0.999967 -0.00817371
+max idx: 1
+mean:   6.60598 0.0717852, first pc:  0.229129 -0.973396
+max idx: 0
+mean:     3.88416 -0.00240343, first pc:  0.991494 -0.130152
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536396.056680275, 103.380000000]: finish exploration.[0m
+[0m[INFO] [1791536396.168577228, 103.492000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     5.12103 -0.00123308, first pc:   0.999845 -0.0176224
+max idx: 0
+mean:     3.88416 -0.00424893, first pc:    0.9913 -0.131625
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536397.122619230, 104.380000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536397.362546640, 104.610000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536398.170304721, 105.386000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536398.416540065, 105.618000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536399.211404615, 106.386000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536399.459798304, 106.624000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    5.78874 -0.0178138, first pc:   0.99801 0.0630552
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536400.256956165, 107.386000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536400.512570095, 107.624000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     5.80893 -0.00499187, first pc:  0.998366 0.0571492
+[33m[WARN] [1791536400.904764418, 108.002000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536401.320063243, 108.388000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    5.82654 0.00540497, first pc:  0.997987 0.0634227
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 5
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536401.574377664, 108.626000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536402.363391155, 109.392000000]: finish exploration.[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536402.613754325, 109.626000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536403.404629585, 110.394000000]: finish exploration.[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 1
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536403.646384194, 110.626000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+0, 
+new num: 1, new dormant: 0
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536404.429744673, 111.394000000]: finish exploration.[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536404.678604419, 111.628000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+max idx: 0
+mean:   2.05497 0.0255112, first pc:  0.998835 0.0482486
+0, 
+new num: 0, new dormant: 3
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536405.471489761, 112.396000000]: finish exploration.[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 3
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536405.716777187, 112.634000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean: 3.90269 0.16218, first pc: 0.994069 0.108754
+max idx: 0
+mean:  5.50615 0.324905, first pc: 0.918962 0.394347
+max idx: 0
+mean:   2.08759 -0.022023, first pc:    0.99888 -0.0473201
+[33m[WARN] [1791536406.103831069, 113.004000000]: Frontier t: 0.004000[0m
+0, 
+new num: 1, new dormant: 3
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536406.520682949, 113.398000000]: finish exploration.[0m
+Before remove: 1
+After remove: 1
+max idx: 0
+mean:    2.08847 -0.0218182, first pc:    0.99872 -0.0505741
+0, 
+new num: 0, new dormant: 4
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536406.765865820, 113.634000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+max idx: 0
+mean:    2.09555 -0.0286292, first pc:   0.998032 -0.0627106
+0, 
+new num: 0, new dormant: 4
+to visit: 1, dormant: 6
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536407.576280074, 114.406000000]: finish exploration.[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    4.29707 0.00849167, first pc:    0.999992 -0.00409999
+max idx: 0
+mean:   6.06168 0.0209118, first pc:  0.999802 0.0198847
+max idx: 0
+mean:     2.38631 -0.00495716, first pc:   0.999969 0.00790261
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536407.810158971, 114.636000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.29566 0.00488737, first pc:    0.999986 -0.00528627
+max idx: 0
+mean:   6.06177 0.0128065, first pc:  0.999899 0.0142454
+max idx: 0
+mean:     2.38778 -0.00366748, first pc:  0.999946 0.0104393
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536408.626022838, 115.414000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536408.863045629, 115.642000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536409.678608497, 116.416000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:      2.3901 -0.00798696, first pc:    0.99997 0.00773199
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536409.913291124, 116.642000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     2.39142 -0.00947819, first pc:   0.999965 0.00837747
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536410.736464713, 117.424000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   2.39213 -0.010155, first pc:   0.999964 0.00845389
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536410.967703981, 117.646000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536411.782610801, 118.426000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+[33m[WARN] [1791536411.866415217, 118.506000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536412.015676772, 118.650000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    6.05084 0.00282443, first pc:   0.999961 0.00887242
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536412.832812281, 119.434000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536413.057462825, 119.652000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     6.028 0.0559669, first pc:   0.996002 -0.0893275
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536413.881308467, 120.440000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.20569 0.0376886, first pc:   0.999922 -0.0125151
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536414.099273192, 120.652000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.21022 0.0386861, first pc:    0.999958 -0.00916327
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536414.934032960, 121.442000000]: finish exploration.[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536415.154559779, 121.652000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536415.988889805, 122.446000000]: finish exploration.[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:    5.19989 0.00565588, first pc:   0.999903 -0.0138985
+0, 
+new num: 1, new dormant: 2
+to visit: 1, dormant: 4
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536416.205593023, 122.656000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:      4.29225 -0.000265174, first pc:    0.999997 -0.00224612
+max idx: 0
+mean:   6.04902 0.0112684, first pc:   0.999057 -0.0434248
+max idx: 0
+mean:    2.38657 -0.0127764, first pc: 0.999958 0.009195
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536417.035581782, 123.448000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   6.04769 0.0103481, first pc:   0.999063 -0.0432711
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536417.257481346, 123.660000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    2.38657 -0.0127764, first pc: 0.999958 0.009195
+[33m[WARN] [1791536417.618579252, 124.004000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536418.083077032, 124.456000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 7
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536418.309968513, 124.670000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.28008 -0.00253602, first pc:    0.999992 -0.00404389
+max idx: 0
+mean:    6.03873 0.00696877, first pc:   0.998856 -0.0478287
+max idx: 0
+mean:    2.38814 -0.0127612, first pc:    0.99997 0.00780229
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536419.131467145, 125.460000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     4.28114 -0.00357849, first pc:    0.999993 -0.00382387
+max idx: 0
+mean:    6.03612 0.00558521, first pc:   0.998803 -0.0489132
+max idx: 0
+mean:    2.39066 -0.0134497, first pc:   0.999954 0.00963045
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536419.355726359, 125.670000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    4.3259 0.0285004, first pc:   0.999988 0.00494152
+max idx: 0
+mean:    6.0079 0.0653433, first pc:   0.996934 -0.0782501
+max idx: 0
+mean:    2.39215 -0.0138569, first pc:   0.999968 0.00801533
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536420.187813482, 126.468000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.32653 0.0295907, first pc:   0.999989 0.00471863
+max idx: 0
+mean:   6.00645 0.0676618, first pc:   0.996976 -0.0777115
+max idx: 0
+mean:    2.39369 -0.0142123, first pc:   0.999972 0.00754075
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536420.399393986, 126.672000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.31658 0.0257913, first pc:   0.999994 0.00348684
+max idx: 0
+mean:    5.9961 0.0603126, first pc:   0.996644 -0.0818626
+max idx: 0
+mean:    2.39309 -0.0137449, first pc:   0.999975 0.00702349
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536421.223689024, 127.476000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.31817 0.0254934, first pc:   0.999994 0.00344014
+max idx: 0
+mean:   5.99623 0.0601148, first pc:   0.996671 -0.0815261
+max idx: 0
+mean:    2.39369 -0.0142123, first pc:   0.999974 0.00725174
+
+new num: 0, new dormant: 5
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536421.431286052, 127.674000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536422.282142211, 128.476000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    2.39347 -0.0132771, first pc:   0.999968 0.00799775
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536422.487080134, 128.674000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    2.39362 -0.0128089, first pc:   0.999967 0.00809284
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536423.332082487, 129.478000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+[33m[WARN] [1791536423.360667968, 129.502000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536423.547650180, 129.680000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536424.483377799, 130.486000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536424.688357477, 130.684000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536425.527380478, 131.492000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536425.729543983, 131.684000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536426.582620611, 132.498000000]: finish exploration.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536426.774463457, 132.686000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 0
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536427.741449517, 133.602000000]: finish exploration.[0m
+[0m[INFO] [1791536427.831338579, 133.692000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 1
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536428.781567329, 134.606000000]: finish exploration.[0m
+[0m[INFO] [1791536428.878691266, 134.698000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+[33m[WARN] [1791536429.191800912, 135.000000000]: Frontier t: 0.000000[0m
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536429.824694390, 135.610000000]: finish exploration.[0m
+[0m[INFO] [1791536429.920849602, 135.700000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.30992 0.0343738, first pc:   0.999989 0.00470141
+max idx: 0
+mean:   5.98715 0.0719134, first pc:    0.99742 -0.0717924
+max idx: 0
+mean:     2.39012 -0.00859504, first pc:   0.999985 0.00547942
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536430.871890992, 136.612000000]: finish exploration.[0m
+[0m[INFO] [1791536430.965246582, 136.702000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.31509 0.0368426, first pc:   0.999986 0.00522264
+max idx: 0
+mean:  5.99014 0.076955, first pc:   0.997103 -0.0760593
+max idx: 0
+mean:     2.39114 -0.00923013, first pc:   0.999986 0.00533626
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536431.920622914, 137.620000000]: finish exploration.[0m
+[0m[INFO] [1791536432.017472237, 137.710000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     2.39054 -0.00879917, first pc:   0.999985 0.00540844
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    2.39351 -0.0102564, first pc:    0.99998 0.00631359
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536432.973322073, 138.624000000]: finish exploration.[0m
+[0m[INFO] [1791536433.072585909, 138.716000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536434.026559404, 139.632000000]: finish exploration.[0m
+[0m[INFO] [1791536434.125967082, 139.726000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:     2.39286 -0.00978486, first pc:    0.99998 0.00637996
+[33m[WARN] [1791536434.413016704, 140.000000000]: Frontier t: 0.000000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536435.067339593, 140.632000000]: finish exploration.[0m
+[0m[INFO] [1791536435.167480980, 140.726000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:  4.30968 0.028219, first pc:  0.999982 0.0060341
+max idx: 0
+mean:   5.98338 0.0618264, first pc:   0.996929 -0.0783057
+max idx: 0
+mean:    2.39973 -0.0101321, first pc:   0.999995 0.00309084
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.30695 0.0282935, first pc:   0.999978 0.00660264
+max idx: 0
+mean:   5.98264 0.0619565, first pc:   0.996774 -0.0802608
+max idx: 0
+mean:     2.40526 -0.00990954, first pc:   0.999996 0.00284591
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536436.117089117, 141.632000000]: finish exploration.[0m
+[0m[INFO] [1791536436.222814643, 141.734000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    2.40678 -0.0105177, first pc:   0.999996 0.00272504
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536437.165329947, 142.632000000]: finish exploration.[0m
+[0m[INFO] [1791536437.277463324, 142.740000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:    2.40809 -0.0109696, first pc:   0.999996 0.00272669
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[31m[ERROR] [1791536438.057485110, 143.494000000]: TM : Time jump detected. Resetting time synchroniser.[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 2
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536438.212017340, 143.632000000]: finish exploration.[0m
+[0m[INFO] [1791536438.326626772, 143.742000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+
+new num: 0, new dormant: 3
+to visit: 0, dormant: 6
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:  4.30203 0.041048, first pc:   0.999954 0.00958802
+max idx: 0
+mean:  5.97939 0.086178, first pc: 0.997729 -0.06735
+max idx: 0
+mean:      2.4093 -0.00987654, first pc:   0.999984 0.00559277
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536439.245001800, 144.636000000]: finish exploration.[0m
+[0m[INFO] [1791536439.362794264, 144.746000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.30754 0.0418987, first pc:   0.999961 0.00879602
+max idx: 0
+mean:   5.98231 0.0867904, first pc:   0.997523 -0.0703431
+max idx: 0
+mean:    2.40891 -0.0089934, first pc:   0.999981 0.00620922
+[33m[WARN] [1791536439.635187850, 145.002000000]: Frontier t: 0.002000[0m
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   4.31208 0.0434041, first pc:    0.99996 0.00891432
+max idx: 0
+mean:  5.98822 0.087677, first pc:   0.997632 -0.0687739
+max idx: 0
+mean:     2.41177 -0.00679012, first pc:   0.999981 0.00618562
+
+new num: 0, new dormant: 4
+to visit: 0, dormant: 5
+cost mat size before remove: 
+
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+
+[0m[INFO] [1791536440.311461694, 145.644000000]: finish exploration.[0m
+[0m[INFO] [1791536440.425223918, 145.754000000]: [FSM]: state: FINISH[0m
+Before remove: 0
+After remove: 0
+max idx: 0
+mean:   5.17284 0.0602977, first pc:           1 0.000733369
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+Before remove: 1
+After remove: 0
+max idx: 0
+mean:   5.17216 0.0606046, first pc:          1 0.00085924
+0, 
+new num: 1, new dormant: 1
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), 
+cost mat size final: 
+(1,1), 
+[0m[INFO] [1791536441.363615472, 146.644000000]: finish exploration.[0m
+[0m[INFO] [1791536441.478552303, 146.754000000]: [FSM]: state: FINISH[0m
+Before remove: 1
+After remove: 1
+0, 
+new num: 0, new dormant: 0
+to visit: 1, dormant: 3
+cost mat size before remove: 
+(1,1), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(1,1), 
+[gazebo_depth_rviz-11] killing on exit
+[fuel_px4_offboard-10] killing on exit
+[waypoint_generator-9] killing on exit
+[traj_server-8] killing on exit
+[exploration_node-7] killing on exit
+[fuel_gazebo_camera_pose-6] killing on exit
+[mavros-5] killing on exit
+[gazebo_gui-3] killing on exit
+[gazebo-2] killing on exit
+[sitl-1] killing on exit
+
+PX4 Exiting...
+Exiting NOW.
+des manager
+[0m[INFO] [1791536285.812863476, 0.150000000]: Camera Plugin: Using the 'robotNamespace' param: '/gazebo_fuel'[0m
+[0m[INFO] [1791536285.814517854, 0.150000000]: Camera Plugin (ns = /gazebo_fuel)  <tf_prefix_>, set to ""[0m
+loaded[0m
+[0m[INFO] [1791536283.482940467]: Plugin wind_estimation initialized[0m
+[0m[INFO] [1791536283.483046692]: Built-in SIMD instructions: SSE, SSE2[0m
+[0m[INFO] [1791536283.483058158]: Built-in MAVLink package version: 2025.5.5[0m
+[0m[INFO] [1791536283.483070519]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous loweheiser matrixpilot paparazzi standard storm32 uAvionix ualberta[0m
+[0m[INFO] [1791536283.483079143]: MAVROS started. MY ID 1.240, TARGET ID 1.1[0m
+[0m[INFO] [1791536286.240164028, 0.324000000]: udp0: Remote address: 127.0.0.1:14580[0m
+[0m[INFO] [1791536286.240252569, 0.324000000]: IMU: High resolution IMU detected![0m
+[0m[INFO] [1791536287.303713844, 1.304000000]: CON: Got HEARTBEAT, connected. FCU: PX4 Autopilot[0m
+[0m[INFO] [1791536287.304558328, 1.304000000]: IMU: High resolution IMU detected![0m
+[0m[INFO] [1791536287.314909720, 1.316000000]: IMU: Attitude quaternion IMU detected![0m
+[0m[INFO] [1791536288.313680756, 2.244000000]: GF: Using MISSION_ITEM_INT[0m
+[0m[INFO] [1791536288.313737208, 2.244000000]: RP: Using MISSION_ITEM_INT[0m
+[0m[INFO] [1791536288.313761279, 2.244000000]: WP: Using MISSION_ITEM_INT[0m
+[0m[INFO] [1791536288.313792203, 2.244000000]: VER: 1.1: Capabilities         0x000000000000ecff[0m
+[0m[INFO] [1791536288.313815143, 2.244000000]: VER: 1.1: Flight software:     010e04ff (1555f2bd22000000)[0m
+[0m[INFO] [1791536288.313829156, 2.244000000]: VER: 1.1: Middleware software: 010e04ff (1555f2bd22000000)[0m
+[0m[INFO] [1791536288.313847256, 2.244000000]: VER: 1.1: OS software:         070000ff (0000000000000000)[0m
+[0m[INFO] [1791536288.313866637, 2.244000000]: VER: 1.1: Board hardware:      00000001[0m
+[0m[INFO] [1791536288.313891049, 2.244000000]: VER: 1.1: VID/PID:             0000:0000[0m
+[0m[INFO] [1791536288.313907032, 2.244000000]: VER: 1.1: UID:                 4954414c44494e4f[0m
+[0m[INFO] [1791536303.750401976, 16.304000000]: GF: mission received[0m
+[0m[INFO] [1791536303.750518606, 16.304000000]: WP: mission received[0m
+[0m[INFO] [1791536303.750551366, 16.304000000]: RP: mission received[0m
+[0m[INFO] [1791536283.285316795]: rviz version 1.14.26[0m
+[0m[INFO] [1791536283.285345618]: compiled against Qt version 5.12.8[0m
+[0m[INFO] [1791536283.285350434]: compiled against OGRE version 1.9.0 (Ghadamon)[0m
+[0m[INFO] [1791536283.296753597]: Forcing OpenGl version 0.[0m
+[0m[INFO] [1791536283.421426104]: Stereo is NOT SUPPORTED[0m
+[0m[INFO] [1791536283.421467586]: OpenGL device: llvmpipe (LLVM 12.0.0, 256 bits)[0m
+[0m[INFO] [1791536283.421478758]: OpenGl version: 3.1 (GLSL 1.4).[0m
+[0m[INFO] [1791536301.167104727, 13.956000000]: Setting goal: Frame:world, Position(0.588, 5.953, 0.000), Orientation(0.000, 0.000, -0.734, 0.679) = Angle: -1.649
+[0m
+Traceback (most recent call last):
+  File "/workspace/fuel_ws/devel/lib/fuel_gazebo/px4_offboard.py", line 15, in <module>
+    exec(compile(fh.read(), python_script, 'exec'), context)
+  File "/workspace/fuel_ws/src/fuel_gazebo/scripts/px4_offboard.py", line 108, in <module>
+    rospy.init_node('fuel_px4_offboard'); Offboard().run()
+  File "/workspace/fuel_ws/src/fuel_gazebo/scripts/px4_offboard.py", line 105, in run
+    rate.sleep()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 103, in sleep
+    sleep(self._remaining(curr_time))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 165, in sleep
+    raise rospy.exceptions.ROSInterruptException("ROS shutdown request")
+rospy.exceptions.ROSInterruptException: ROS shutdown request
+[31m[gazebo_gui-3] escalating to SIGTERM[0m
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

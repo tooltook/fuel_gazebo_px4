@@ -1,0 +1,26 @@
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ros'
+... logging to /tmp/.ros/log/d116e86a-c2ff-11f1-9ac3-acf23ca0f2c5/roslaunch-ubuntu-4558.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/rviz_depth.launch
+[1mstarted roslaunch server http://ubuntu:45399/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /
+    gazebo_depth_rviz (rviz/rviz)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/rviz_depth.launch http://localhost:11311
+[1mprocess[gazebo_depth_rviz-1]: started with pid [4572][0m
+[gazebo_depth_rviz-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

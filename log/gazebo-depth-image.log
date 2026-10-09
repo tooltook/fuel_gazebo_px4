@@ -1,0 +1,4 @@
+
+(Gazebo Depth Camera:1302): dbind-WARNING **: 10:00:16.597: Couldn't connect to accessibility bus: Failed to connect to socket /run/user/1000/at-spi/bus_1: No such file or directory
+Gtk-Message: 10:00:16.627: Failed to load module "canberra-gtk-module"
+Gtk-Message: 10:00:16.627: Failed to load module "canberra-gtk-module"

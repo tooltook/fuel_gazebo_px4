@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libquadrotor_dynamics.so -o /workspace/fuel_ws/devel/lib/libquadrotor_dynamics.so CMakeFiles/quadrotor_dynamics.dir/src/dynamics/Quadrotor.cpp.o   -L/workspace/fuel_ws/src/FUEL/uav_simulator/Utils/cmake_utils/lib/mosek8 

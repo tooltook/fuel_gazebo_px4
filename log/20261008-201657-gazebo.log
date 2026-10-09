@@ -1,0 +1,2359 @@
+... logging to /tmp/.ros/log/d116e86a-c2ff-11f1-9ac3-acf23ca0f2c5/roslaunch-ubuntu-16314.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch
+[1mstarted roslaunch server http://ubuntu:42901/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /exploration_node/astar/allocate_num: 1000000
+ * /exploration_node/astar/lambda_heu: 10000.0
+ * /exploration_node/astar/max_search_time: 0.2
+ * /exploration_node/astar/resolution_astar: 0.2
+ * /exploration_node/bspline/limit_acc: 1.0
+ * /exploration_node/bspline/limit_ratio: 1.1
+ * /exploration_node/bspline/limit_vel: 1.0
+ * /exploration_node/exploration/am: 1.0
+ * /exploration_node/exploration/max_decay: 0.8
+ * /exploration_node/exploration/refine_local: True
+ * /exploration_node/exploration/refined_num: 7
+ * /exploration_node/exploration/refined_radius: 5.0
+ * /exploration_node/exploration/relax_time: 1.0
+ * /exploration_node/exploration/top_view_num: 15
+ * /exploration_node/exploration/tsp_dir: /workspace/fuel_w...
+ * /exploration_node/exploration/vm: 1.0
+ * /exploration_node/exploration/w_dir: 1.5
+ * /exploration_node/exploration/yd: 1.0471975333333332
+ * /exploration_node/exploration/ydd: 1.5707963
+ * /exploration_node/frontier/candidate_dphi: 0.2617993833333333
+ * /exploration_node/frontier/candidate_rmax: 2.5
+ * /exploration_node/frontier/candidate_rmin: 1.5
+ * /exploration_node/frontier/candidate_rnum: 3
+ * /exploration_node/frontier/cluster_min: 100
+ * /exploration_node/frontier/cluster_size_xy: 2.0
+ * /exploration_node/frontier/cluster_size_z: 10.0
+ * /exploration_node/frontier/down_sample: 3
+ * /exploration_node/frontier/min_candidate_clearance: 0.21
+ * /exploration_node/frontier/min_candidate_dist: 0.75
+ * /exploration_node/frontier/min_view_finish_fraction: 0.2
+ * /exploration_node/frontier/min_visib_num: 15
+ * /exploration_node/fsm/replan_time: 0.2
+ * /exploration_node/fsm/thresh_replan1: 0.5
+ * /exploration_node/fsm/thresh_replan2: 0.5
+ * /exploration_node/fsm/thresh_replan3: 1.5
+ * /exploration_node/heading_planner/half_vert_num: 5
+ * /exploration_node/heading_planner/lambda1: 2.0
+ * /exploration_node/heading_planner/lambda2: 1.0
+ * /exploration_node/heading_planner/max_yaw_rate: 0.17453292222222222
+ * /exploration_node/heading_planner/w: 20000.0
+ * /exploration_node/heading_planner/weight_type: 1.0
+ * /exploration_node/heading_planner/yaw_diff: 0.5235987666666666
+ * /exploration_node/manager/clearance_threshold: 0.2
+ * /exploration_node/manager/control_points_distance: 0.35
+ * /exploration_node/manager/dynamic_environment: 0
+ * /exploration_node/manager/local_segment_length: 6.0
+ * /exploration_node/manager/max_acc: 1.0
+ * /exploration_node/manager/max_jerk: 4.0
+ * /exploration_node/manager/max_vel: 1.0
+ * /exploration_node/manager/min_time: True
+ * /exploration_node/manager/use_active_perception: True
+ * /exploration_node/manager/use_geometric_path: True
+ * /exploration_node/manager/use_kinodynamic_path: True
+ * /exploration_node/manager/use_optimization: True
+ * /exploration_node/manager/use_topo_path: True
+ * /exploration_node/map_ros/cx: 320.0
+ * /exploration_node/map_ros/cy: 240.0
+ * /exploration_node/map_ros/depth_filter_margin: 2
+ * /exploration_node/map_ros/depth_filter_maxdist: 5.0
+ * /exploration_node/map_ros/depth_filter_mindist: 0.2
+ * /exploration_node/map_ros/esdf_slice_height: 0.3
+ * /exploration_node/map_ros/frame_id: world
+ * /exploration_node/map_ros/fx: 381.36
+ * /exploration_node/map_ros/fy: 381.36
+ * /exploration_node/map_ros/k_depth_scaling_factor: 1000.0
+ * /exploration_node/map_ros/show_all_map: True
+ * /exploration_node/map_ros/show_esdf_time: False
+ * /exploration_node/map_ros/show_occ_time: False
+ * /exploration_node/map_ros/skip_pixel: 2
+ * /exploration_node/map_ros/visualization_truncate_height: 10.09
+ * /exploration_node/map_ros/visualization_truncate_low: -2.0
+ * /exploration_node/optimization/algorithm1: 15
+ * /exploration_node/optimization/algorithm2: 11
+ * /exploration_node/optimization/dist0: 0.7
+ * /exploration_node/optimization/ld_dist: 10.0
+ * /exploration_node/optimization/ld_end: 0.5
+ * /exploration_node/optimization/ld_feasi: 2.0
+ * /exploration_node/optimization/ld_guide: 1.5
+ * /exploration_node/optimization/ld_smooth: 20.0
+ * /exploration_node/optimization/ld_start: 100.0
+ * /exploration_node/optimization/ld_time: 1.0
+ * /exploration_node/optimization/ld_view: 0.0
+ * /exploration_node/optimization/ld_waypt: 0.3
+ * /exploration_node/optimization/max_acc: 1.0
+ * /exploration_node/optimization/max_iteration_num1: 2
+ * /exploration_node/optimization/max_iteration_num2: 2000
+ * /exploration_node/optimization/max_iteration_num3: 200
+ * /exploration_node/optimization/max_iteration_num4: 200
+ * /exploration_node/optimization/max_iteration_time1: 0.0001
+ * /exploration_node/optimization/max_iteration_time2: 0.005
+ * /exploration_node/optimization/max_iteration_time3: 0.003
+ * /exploration_node/optimization/max_iteration_time4: 0.003
+ * /exploration_node/optimization/max_vel: 1.0
+ * /exploration_node/perception_utils/left_angle: 0.69222
+ * /exploration_node/perception_utils/max_dist: 4.5
+ * /exploration_node/perception_utils/right_angle: 0.68901
+ * /exploration_node/perception_utils/top_angle: 0.56125
+ * /exploration_node/perception_utils/vis_dist: 1.0
+ * /exploration_node/sdf_map/box_max_x: 9.7
+ * /exploration_node/sdf_map/box_max_y: 9.7
+ * /exploration_node/sdf_map/box_max_z: 2.8
+ * /exploration_node/sdf_map/box_min_x: -9.7
+ * /exploration_node/sdf_map/box_min_y: -9.7
+ * /exploration_node/sdf_map/box_min_z: 0.1
+ * /exploration_node/sdf_map/default_dist: 0.0
+ * /exploration_node/sdf_map/ground_height: -1.0
+ * /exploration_node/sdf_map/local_bound_inflate: 0.5
+ * /exploration_node/sdf_map/local_map_margin: 50
+ * /exploration_node/sdf_map/map_size_x: 24.0
+ * /exploration_node/sdf_map/map_size_y: 24.0
+ * /exploration_node/sdf_map/map_size_z: 5.0
+ * /exploration_node/sdf_map/max_ray_length: 4.5
+ * /exploration_node/sdf_map/min_ray_length: 0.5
+ * /exploration_node/sdf_map/obstacles_inflation: 0.199
+ * /exploration_node/sdf_map/optimistic: False
+ * /exploration_node/sdf_map/p_hit: 0.65
+ * /exploration_node/sdf_map/p_max: 0.9
+ * /exploration_node/sdf_map/p_min: 0.12
+ * /exploration_node/sdf_map/p_miss: 0.35
+ * /exploration_node/sdf_map/p_occ: 0.8
+ * /exploration_node/sdf_map/resolution: 0.1
+ * /exploration_node/sdf_map/signed_dist: False
+ * /exploration_node/sdf_map/virtual_ceil_height: -10
+ * /exploration_node/search/allocate_num: 100000
+ * /exploration_node/search/check_num: 10
+ * /exploration_node/search/horizon: 5.0
+ * /exploration_node/search/init_max_tau: 1.0
+ * /exploration_node/search/lambda_heu: 10.0
+ * /exploration_node/search/margin: 0.2
+ * /exploration_node/search/max_acc: 1.0
+ * /exploration_node/search/max_tau: 0.8
+ * /exploration_node/search/max_vel: 1.0
+ * /exploration_node/search/optimistic: False
+ * /exploration_node/search/resolution_astar: 0.025
+ * /exploration_node/search/time_resolution: 0.8
+ * /exploration_node/search/vel_margin: 0.25
+ * /exploration_node/search/w_time: 10.0
+ * /fuel_gazebo_camera_pose/sensor_mode: depth
+ * /gazebo/enable_ros_network: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /traj_server/perception_utils/left_angle: 0.69222
+ * /traj_server/perception_utils/max_dist: 4.5
+ * /traj_server/perception_utils/right_angle: 0.68901
+ * /traj_server/perception_utils/top_angle: 0.56125
+ * /traj_server/perception_utils/vis_dist: 1.0
+ * /traj_server/traj_server/init_x: 0.0
+ * /traj_server/traj_server/init_y: 0.0
+ * /traj_server/traj_server/init_z: 1.0
+ * /traj_server/traj_server/pub_traj_id: 4
+ * /traj_server/traj_server/time_forward: 1.5
+ * /use_sim_time: True
+ * /waypoint_generator/waypoint_type: point
+
+NODES
+  /
+    exploration_node (exploration_manager/exploration_node)
+    fuel_gazebo_camera_pose (fuel_gazebo/camera_pose.py)
+    gazebo (gazebo_ros/gzserver)
+    gazebo_depth_rviz (rviz/rviz)
+    gazebo_gui (gazebo_ros/gzclient)
+    traj_server (plan_manage/traj_server)
+    waypoint_generator (waypoint_generator/waypoint_generator)
+
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ros'
+[33m[WARN] [1791461833.749113461]: [Traj server]: init...[0m
+hit: 0.619039, miss: -0.619039, min: -1.99243, max: 2.19722, thresh: 1.38629
+origin_: -12 -12  -1
+map size: 24 24  5
+origin_: -12 -12  -1
+map size: 24 24  5
+yaw diff: 0.523599
+max yaw diff: 0.174533
+vert num: 5
+top:        0
+ 0.84659
+0.532245
+bottom:        0
+-0.84659
+0.532245
+left: 0.769831
+       0
+0.638248
+right: -0.771876
+        0
+ 0.635773
+lefttop: -3.73084  -2.3951      4.5
+leftbottom: -2.87212   2.3951      4.5
+righttop: 2.86098 -2.3951     4.5
+rightbottom: 2.86098  2.3951     4.5
+T_cb:  0 -1  0  0
+ 0  0  1  0
+ 1  0  0  0
+ 0  0  0  1
+T_bc: -0 -0  1  0
+-1 -0  0 -0
+-0  1 -0  0
+ 0 -0  0  1
+origin_: -12 -12  -1
+map size: 24 24  5
+0
+0
+[33m[WARN] [1791461837.148822573, 1.002000000]: no odom.[0m
+[0m[INFO] [1791461837.148298830, 1.002000000]: [FSM]: state: INIT[0m
+[FSM]: from INIT to WAIT_TRIGGER
+[33m[WARN] [1791461837.228430807, 1.078000000]: wait for trigger.[0m
+[33m[WARN] [1791461838.227096787, 2.080000000]: wait for trigger.[0m
+[0m[INFO] [1791461838.162574086, 2.014000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 0
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461839.159850905, 3.010000000]: [Traj server]: ready.[0m
+[33m[WARN] [1791461839.251746427, 3.102000000]: wait for trigger.[0m
+[0m[INFO] [1791461839.251726206, 3.102000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461840.259232214, 4.104000000]: wait for trigger.[0m
+[0m[INFO] [1791461840.259214201, 4.104000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 1
+[33m[WARN] [1791461841.153263125, 5.000000000]: Frontier t: 0.000000[0m
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461841.266322993, 5.110000000]: wait for trigger.[0m
+[0m[INFO] [1791461841.266303318, 5.110000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461842.272177797, 6.114000000]: wait for trigger.[0m
+[0m[INFO] [1791461842.272158930, 6.114000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 0
+0, 1, 
+new num: 2, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(0,0), (0,0), 
+cost mat size remove: 
+
+cost mat add: 
+(0,0), (0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461843.271148371, 7.120000000]: wait for trigger.[0m
+[0m[INFO] [1791461843.271128738, 7.120000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461844.276174577, 8.122000000]: wait for trigger.[0m
+[0m[INFO] [1791461844.276158187, 8.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461845.289308114, 9.122000000]: wait for trigger.[0m
+[0m[INFO] [1791461845.289284855, 9.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+[33m[WARN] [1791461846.161775613, 10.000000000]: Frontier t: 0.000000[0m
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461846.282687941, 10.122000000]: wait for trigger.[0m
+[0m[INFO] [1791461846.282655985, 10.122000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461847.287624878, 11.130000000]: wait for trigger.[0m
+[0m[INFO] [1791461847.287604051, 11.130000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461848.287739633, 12.132000000]: wait for trigger.[0m
+[0m[INFO] [1791461848.287716769, 12.132000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461849.299316626, 13.144000000]: wait for trigger.[0m
+[0m[INFO] [1791461849.299293754, 13.144000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461850.300452350, 14.144000000]: wait for trigger.[0m
+[0m[INFO] [1791461850.300432266, 14.144000000]: [FSM]: state: WAIT_TRIGGER[0m
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+Before remove: 2
+After remove: 2
+[33m[WARN] [1791461851.157268164, 15.002000000]: Frontier t: 0.002000[0m
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+[33m[WARN] [1791461851.308191440, 15.152000000]: wait for trigger.[0m
+[0m[INFO] [1791461851.308166084, 15.152000000]: [FSM]: state: WAIT_TRIGGER[0m
+Triggered!
+[triggerCallback]: from WAIT_TRIGGER to PLAN_TRAJ
+start pos: 0 0 1, vel:           0           0 1.05524e-13, acc: 0 0 0
+Before remove: 2
+After remove: 2
+0, 1, 
+new num: 0, new dormant: 0
+to visit: 2, dormant: 0
+[33m[WARN] [1791461851.438586374, 15.282000000]: Frontier: 2, t: 0.000000, viewpoint: 2, t: 0.000000[0m
+cost mat size before remove: 
+(2,2), (2,2), 
+cost mat size remove: 
+
+cost mat add: 
+
+cost mat size final: 
+(2,2), (2,2), 
+
+[33m[WARN] [1791461851.439144481, 15.282000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 12, 1, 
+Node: 14, edge: 24
+[33m[WARN] [1791461851.439192776, 15.282000000]: Local refine time: 0.000000[0m
+Next view:   1.94927 -0.653539   1.57887, 0.493245
+Mid goal
+[Kino replan]: start: 0 0 1,           0           0 1.05524e-13, 0 0 0, goal:  1.94927 -0.653539   1.57887, 0 0 0
+reach end
+Iter num: 267, time: 0.002, point num: 12, comb time: 0.002
+State error: (0.019675, 0.151462, 0.0743965)
+[33m[WARN] [1791461851.440566664, 15.284000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.437558, start yaw: 0 0 0, end: 0.493245
+[33m[WARN] [1791461851.440710046, 15.284000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461851.440716034, 15.284000000]: Total time: 0.002000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[33m[WARN] [1791461851.647938364, 15.492000000]: start flight[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461852.148226987, 15.992000000]: Replan: cluster covered=====================================[0m
+start pos:  0.148915 0.0281739   1.01914, vel:  0.226143   0.02916 0.0347813, acc:   0.135449 -0.0113404  0.0326192
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+[33m[WARN] [1791461852.159987938, 16.004000000]: Frontier: 2, t: 0.000000, viewpoint: 2, t: 0.002000[0m
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+
+[33m[WARN] [1791461852.160397432, 16.004000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 12, 1, 
+Node: 14, edge: 24
+[33m[WARN] [1791461852.160449085, 16.004000000]: Local refine time: 0.000000[0m
+Next view:    1.89487 0.00184705    1.57257, 0.212791
+Mid goal
+[Kino replan]: start:  0.148915 0.0281739   1.01914,  0.226143   0.02916 0.0347813,   0.135449 -0.0113404  0.0326192, goal:   1.89487 0.00184705    1.57257, 0 0 0
+reach end
+Iter num: 124, time: 0, point num: 11, comb time: 0
+State error: (0.0188189, 0.0480991, 0.0255715)
+[33m[WARN] [1791461852.161213994, 16.004000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.265686, start yaw: 0.00192097 0.00593132 0.00927141, end: 0.212791
+[33m[WARN] [1791461852.161368819, 16.004000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461852.161375971, 16.004000000]: Total time: 0.002000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461852.309062879, 16.152000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461852.868816707, 16.712000000]: Replan: cluster covered=====================================[0m
+start pos:  0.414648 0.0485826   1.06561, vel:   0.423508 0.00872485  0.0866492, acc:   0.214853 -0.0312965  0.0831435
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+[33m[WARN] [1791461852.880226459, 16.724000000]: Frontier: 2, t: 0.000000, viewpoint: 2, t: 0.002000[0m
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+
+[33m[WARN] [1791461852.880537709, 16.724000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 14, 1, 
+Node: 16, edge: 28
+[33m[WARN] [1791461852.880574318, 16.724000000]: Local refine time: 0.000000[0m
+Next view:   2.03491 0.0133921   1.56041, 0.13546
+Mid goal
+[Kino replan]: start:  0.414648 0.0485826   1.06561,   0.423508 0.00872485  0.0866492,   0.214853 -0.0312965  0.0831435, goal:  2.03491 0.0133921   1.56041, 0 0 0
+reach end
+Iter num: 132, time: 0, point num: 11, comb time: 0
+State error: (0.0114987, 0.0180438, 0.0074133)
+[33m[WARN] [1791461852.881424972, 16.724000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.168931, start yaw: 0.00916339  0.0141181  0.0113182, end: 0.13546
+[33m[WARN] [1791461852.881522154, 16.724000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461852.881527735, 16.724000000]: Total time: 0.002000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461853.311323579, 17.152000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461853.589266732, 17.432000000]: Replan: cluster covered=====================================[0m
+start pos:  0.831758 0.0496168   1.15325, vel:    0.703643 -0.00281828    0.167369, acc:  0.380951 -0.016048  0.165783
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+[33m[WARN] [1791461853.600551835, 17.444000000]: Frontier: 2, t: 0.000000, viewpoint: 2, t: 0.002000[0m
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+
+[33m[WARN] [1791461853.600938927, 17.444000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 15, 1, 
+Node: 17, edge: 30
+[33m[WARN] [1791461853.600993426, 17.444000000]: Local refine time: 0.000000[0m
+Next view:     2.29054 -0.00380307     1.57421, 0.169718
+Mid goal
+[Kino replan]: start:  0.831758 0.0496168   1.15325,    0.703643 -0.00281828    0.167369,  0.380951 -0.016048  0.165783, goal:    2.29054 -0.00380307     1.57421, 0 0 0
+reach end
+Iter num: 124, time: 0.002, point num: 11, comb time: 0
+State error: (0.00341476, 0.0059547, 0.00135445)
+[33m[WARN] [1791461853.601721698, 17.446000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.131375, start yaw: 0.0263716 0.0303595 0.0199806, end: 0.169718
+[33m[WARN] [1791461853.601812975, 17.446000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461853.601819212, 17.446000000]: Total time: 0.004000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461854.306251402, 18.144000000]: Replan: cluster covered=====================================[0m
+[0m[INFO] [1791461854.314312753, 18.152000000]: [FSM]: state: PLAN_TRAJ[0m
+start pos:   1.43799 0.0430271   1.30343, vel:   0.973774 -0.0203772   0.256571, acc:   0.260472 -0.0455934    0.14325
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+[33m[WARN] [1791461854.316517030, 18.156000000]: Frontier: 2, t: 0.002000, viewpoint: 2, t: 0.002000[0m
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+
+[33m[WARN] [1791461854.316871576, 18.156000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 10, 1, 
+Node: 12, edge: 20
+[33m[WARN] [1791461854.316909329, 18.156000000]: Local refine time: 0.000000[0m
+Next view:   2.99349 0.0105007   1.58574, 0.0502995
+Mid goal
+[Kino replan]: start:   1.43799 0.0430271   1.30343,   0.973774 -0.0203772   0.256571,   0.260472 -0.0455934    0.14325, goal:  2.99349 0.0105007   1.58574, 0 0 0
+reach end
+Iter num: 192, time: 0, point num: 11, comb time: 0
+State error: (0.00103914, 0.0036405, 0.000514508)
+[33m[WARN] [1791461854.318087998, 18.156000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.0713133, start yaw: 0.0543244 0.0479216 0.0248758, end: 0.0502995
+[33m[WARN] [1791461854.318238188, 18.158000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461854.318246271, 18.158000000]: Total time: 0.006000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461854.871525856, 18.712000000]: Replan: traj fully executed=================================[0m
+start pos:    2.01715 -0.0121408    1.53567, vel:    1.0255 -0.104003  0.644629, acc: -0.0317116   0.384028    1.00243
+Before remove: 2
+After remove: 1
+0, 1, 
+new num: 1, new dormant: 0
+to visit: 2, dormant: 0
+[33m[WARN] [1791461854.883778072, 18.724000000]: Frontier: 2, t: 0.002000, viewpoint: 2, t: 0.000000[0m
+cost mat size before remove: 
+(2,2), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (1,1), 
+cost mat size final: 
+(2,2), (2,2), 
+
+[33m[WARN] [1791461854.884091513, 18.724000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 8, 1, 
+Node: 10, edge: 16
+[33m[WARN] [1791461854.884150988, 18.724000000]: Local refine time: 0.000000[0m
+Next view:     2.98415 -0.00219124     1.59548, 0.0361434
+duration: 1.93779, seg_num: 8, dt: 0.242224
+Iter num: 286, time: 0.002, point num: 11, comb time: 0
+dt_yaw: 0.0815818, start yaw:  0.0840189  0.0550974 0.00596629, end: 0.0361434
+[33m[WARN] [1791461854.885795333, 18.726000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461854.885802394, 18.726000000]: Total time: 0.004000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461855.317515421, 19.152000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461855.563475216, 19.402000000]: Replan: traj fully executed=================================[0m
+start pos:      2.72947 -7.45862e-05      2.06259, vel:   1.00179 0.0637879  0.717022, acc:  -0.193113 -0.0781356  -0.402358
+Before remove: 2
+After remove: 1
+max idx: 0
+mean:  5.43834 -1.75451, first pc:  0.951015 -0.309144
+0, 1, 2, 3, 4, 
+new num: 4, new dormant: 0
+to visit: 5, dormant: 0
+[33m[WARN] [1791461855.579297353, 19.418000000]: Frontier: 5, t: 0.002000, viewpoint: 5, t: 0.002000[0m
+cost mat size before remove: 
+(2,2), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(1,1), 
+cost mat add: 
+(0,1), (0,2), (0,3), (0,4), (1,1), (1,2), (1,3), (1,4), (2,2), (2,3), (2,4), (3,3), (3,4), (4,4), 
+cost mat size final: 
+(5,5), (5,5), (5,5), (5,5), (5,5), 
+
+[33m[WARN] [1791461855.579892438, 19.420000000]: Cost mat: 0.000000, TSP: 0.002000[0m
+Local tour graph: 3, 7, 11, 4, 1, 
+Node: 27, edge: 149
+[33m[WARN] [1791461855.580020886, 19.420000000]: Local refine time: 0.000000[0m
+Next view:   3.28114 -0.632456   1.65761, 2.6904
+duration: 1.86361, seg_num: 8, dt: 0.232951
+Iter num: 172, time: 0, point num: 11, comb time: 0
+[31m[ERROR] [1791461855.580970946, 19.420000000]: Lower bound not satified![0m
+dt_yaw: 0.193343, start yaw:   0.120818  0.0499228 -0.0137051, end: 2.6904
+[31m[ERROR] [1791461855.580989985, 19.420000000]: Yaw change rapidly![0m
+start yaw: 0.120818, -3.59279
+[33m[WARN] [1791461855.581078773, 19.420000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461855.581086068, 19.420000000]: Total time: 0.006000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+
+libcurl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to fuel.gazebosim.org:443 
+
+libcurl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to fuel.ignitionrobotics.org:443 
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461856.281991374, 20.122000000]: Replan: cluster covered=====================================[0m
+start pos:   3.34049 0.0436225   2.40924, vel:  0.660845 0.0407792  0.243422, acc:  -0.668984 -0.0678506  -0.753398
+Before remove: 5
+After remove: 2
+max idx: 0
+mean: 5.91787  2.1786, first pc: 0.965576 0.260121
+[33m[WARN] [1791461856.296681756, 20.134000000]: Frontier t: 0.002000[0m
+0, 1, 2, 3, 4, 5, 
+new num: 4, new dormant: 0
+to visit: 6, dormant: 0
+[33m[WARN] [1791461856.299081273, 20.136000000]: Frontier: 6, t: 0.002000, viewpoint: 6, t: 0.002000[0m
+cost mat size before remove: 
+(5,5), (5,5), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(2,2), (2,2), 
+cost mat add: 
+(0,2), (0,3), (0,4), (0,5), (1,2), (1,3), (1,4), (1,5), (2,2), (2,3), (2,4), (2,5), (3,3), (3,4), (3,5), (4,4), (4,5), (5,5), 
+cost mat size final: 
+(6,6), (6,6), (6,6), (6,6), (6,6), (6,6), 
+
+[33m[WARN] [1791461856.299678028, 20.136000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 9, 5, 8, 12, 4, 1, 
+Node: 40, edge: 242
+[33m[WARN] [1791461856.299955640, 20.136000000]: Local refine time: 0.000000[0m
+Next view:   3.36632 0.0145918   1.65761, 2.97737
+duration: 1.50528, seg_num: 8, dt: 0.18816
+Iter num: 86, time: 0.002, point num: 11, comb time: 0
+[31m[ERROR] [1791461856.300492113, 20.138000000]: Lower bound not satified![0m
+dt_yaw: 0.23433, start yaw: -0.206749  -1.15683  -1.97708, end: 2.97737
+[33m[WARN] [1791461856.300591606, 20.138000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461856.300596873, 20.138000000]: Total time: 0.006000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461856.314021199, 20.152000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461857.002008801, 20.842000000]: Replan: cluster covered=====================================[0m
+start pos:    3.6724 0.0609645   2.46392, vel:   0.267115 0.00757271  -0.104882, acc:  -0.502952 -0.0395408   -0.39647
+Before remove: 6
+After remove: 2
+max idx: 0
+mean:  5.63457 -2.46183, first pc:  0.912499 -0.409078
+0, 1, 2, 3, 4, 5, 
+new num: 4, new dormant: 0
+to visit: 6, dormant: 0
+[33m[WARN] [1791461857.017586912, 20.856000000]: Frontier: 6, t: 0.002000, viewpoint: 6, t: 0.002000[0m
+cost mat size before remove: 
+(6,6), (6,6), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(2,2), (2,2), 
+cost mat add: 
+(0,2), (0,3), (0,4), (0,5), (1,2), (1,3), (1,4), (1,5), (2,2), (2,3), (2,4), (2,5), (3,3), (3,4), (3,5), (4,4), (4,5), (5,5), 
+cost mat size final: 
+(6,6), (6,6), (6,6), (6,6), (6,6), (6,6), 
+
+[33m[WARN] [1791461857.018271385, 20.858000000]: Cost mat: 0.002000, TSP: 0.000000[0m
+Local tour graph: 12, 8, 5, 9, 5, 1, 
+Node: 41, edge: 243
+[33m[WARN] [1791461857.018903778, 20.858000000]: Local refine time: 0.000000[0m
+Next view:   5.40664 0.0337641   1.60756, 0.202673
+Mid goal
+[Kino replan]: start:    3.6724 0.0609645   2.46392,   0.267115 0.00757271  -0.104882,  -0.502952 -0.0395408   -0.39647, goal:  5.40664 0.0337641   1.60756, 0 0 0
+reach end
+Iter num: 139, time: 0.002, point num: 11, comb time: 0
+State error: (0.0104032, 0.117182, 0.0663501)
+[33m[WARN] [1791461857.019468467, 20.860000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.227248, start yaw:  -1.41392  -1.97251 -0.220847, end: 0.202673
+[33m[WARN] [1791461857.019565885, 20.860000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461857.019571073, 20.860000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461857.314920154, 21.152000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461857.725879405, 21.562000000]: Replan: cluster covered=====================================[0m
+start pos:  3.96209 0.059946  2.29318, vel:    0.525007 -0.00811199    -0.33504, acc:    0.532202 -0.00985486   -0.194375
+Before remove: 6
+After remove: 3
+max idx: 0
+mean:  5.49199 -2.76697, first pc: 0.988575  0.15073
+max idx: 1
+mean:  4.59137 -2.94616, first pc:   0.25691 -0.966435
+0, 1, 2, 3, 4, 5, 6, 
+new num: 4, new dormant: 0
+to visit: 7, dormant: 0
+[33m[WARN] [1791461857.742962189, 21.578000000]: Frontier: 7, t: 0.002000, viewpoint: 7, t: 0.004000[0m
+cost mat size before remove: 
+(6,6), (6,6), (6,6), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(3,3), (3,3), (3,3), 
+cost mat add: 
+(0,3), (0,4), (0,5), (0,6), (1,3), (1,4), (1,5), (1,6), (2,3), (2,4), (2,5), (2,6), (3,3), (3,4), (3,5), (3,6), (4,4), (4,5), (4,6), (5,5), (5,6), (6,6), 
+cost mat size final: 
+(7,7), (7,7), (7,7), (7,7), (7,7), (7,7), (7,7), 
+
+[33m[WARN] [1791461857.743925574, 21.578000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 8, 9, 5, 13, 10, 14, 1, 
+Node: 61, edge: 474
+[33m[WARN] [1791461857.744426732, 21.580000000]: Local refine time: 0.002000[0m
+Next view:   4.86143 -0.486323   1.52534, 1.34175
+duration: 2.60523, seg_num: 8, dt: 0.325654
+Iter num: 98, time: 0, point num: 11, comb time: 0
+[31m[ERROR] [1791461857.745029198, 21.580000000]: Lower bound not satified![0m
+dt_yaw: 0.181759, start yaw:  -2.50057 -0.810972   2.36889, end: 1.34175
+[31m[ERROR] [1791461857.745043009, 21.580000000]: Yaw change rapidly![0m
+start yaw: -2.50057, 1.34175
+[33m[WARN] [1791461857.745126059, 21.580000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461857.745131355, 21.580000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461858.320996535, 22.152000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461858.445754972, 22.278000000]: Replan: cluster covered=====================================[0m
+start pos:   4.37822 0.0188074   2.03116, vel:  0.599085 -0.115521 -0.386788, acc:   -0.150114   -0.232176 -0.00105612
+Before remove: 7
+After remove: 4
+max idx: 1
+mean:  0.206945 -0.332473, first pc: -0.223951   -0.9746
+max idx: 1
+mean:  4.50565 -3.04404, first pc:  0.206379 -0.978472
+0, 1, 2, 3, 4, 5, 6, 7, 
+new num: 4, new dormant: 0
+to visit: 8, dormant: 0
+[33m[WARN] [1791461858.452496338, 22.286000000]: Frontier: 8, t: 0.002000, viewpoint: 8, t: 0.002000[0m
+cost mat size before remove: 
+(7,7), (7,7), (7,7), (7,7), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(4,4), (4,4), (4,4), (4,4), 
+cost mat add: 
+(0,4), (0,5), (0,6), (0,7), (1,4), (1,5), (1,6), (1,7), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,4), (4,5), (4,6), (4,7), (5,5), (5,6), (5,7), (6,6), (6,7), (7,7), 
+cost mat size final: 
+(8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (8,8), 
+
+[33m[WARN] [1791461858.453574830, 22.288000000]: Cost mat: 0.000000, TSP: 0.002000[0m
+Local tour graph: 5, 5, 13, 10, 13, 5, 1, 
+Node: 53, edge: 425
+[33m[WARN] [1791461858.454515331, 22.288000000]: Local refine time: 0.000000[0m
+Next view:   5.50848 -0.401137   1.52534, 1.64557
+duration: 2.61511, seg_num: 8, dt: 0.326889
+Iter num: 119, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.185705, start yaw: -2.24738  1.52283  2.75371, end: 1.64557
+[31m[ERROR] [1791461858.455144254, 22.288000000]: Yaw change rapidly![0m
+start yaw: -2.24738, 1.64557
+[33m[WARN] [1791461858.455247652, 22.288000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461858.455256100, 22.288000000]: Total time: 0.006000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461859.158038811, 22.992000000]: Replan: cluster covered=====================================[0m
+start pos:   4.77406 -0.113036   1.76291, vel:  0.506055 -0.244262 -0.354362, acc: -0.115641 -0.145687 0.0735021
+Before remove: 8
+After remove: 3
+max idx: 1
+mean:  0.187868 -0.333144, first pc: -0.228993 -0.973428
+max idx: 0
+mean:  4.86952 -3.13959, first pc: 0.961009 0.276517
+max idx: 1
+mean:  6.31338 -2.86644, first pc: -0.418124  -0.90839
+max idx: 1
+mean:  5.91474 -3.83517, first pc: -0.0152208  -0.999884
+max idx: 0
+mean: 6.65856 -2.0276, first pc:   0.95357 -0.301171
+max idx: 1
+mean: 3.64793 -3.3707, first pc: 0.0660394 -0.997817
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+new num: 8, new dormant: 0
+to visit: 11, dormant: 0
+[33m[WARN] [1791461859.177461257, 23.010000000]: Frontier: 11, t: 0.002000, viewpoint: 11, t: 0.006000[0m
+cost mat size before remove: 
+(8,8), (8,8), (8,8), (0,0), (0,0), (0,0), (0,0), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(3,3), (3,3), (3,3), 
+cost mat add: 
+(0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9), (0,10), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8), (1,9), (1,10), (2,3), (2,4), (2,5), (2,6), (2,7), (2,8), (2,9), (2,10), (3,3), (3,4), (3,5), (3,6), (3,7), (3,8), (3,9), (3,10), (4,4), (4,5), (4,6), (4,7), (4,8), (4,9), (4,10), (5,5), (5,6), (5,7), (5,8), (5,9), (5,10), (6,6), (6,7), (6,8), (6,9), (6,10), (7,7), (7,8), (7,9), (7,10), (8,8), (8,9), (8,10), (9,9), (9,10), (10,10), 
+cost mat size final: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), 
+
+[33m[WARN] [1791461859.179534465, 23.012000000]: Cost mat: 0.002000, TSP: 0.000000[0m
+Local tour graph: 11, 5, 2, 10, 9, 15, 1, 
+Node: 54, edge: 336
+[33m[WARN] [1791461859.180085371, 23.014000000]: Local refine time: 0.002000[0m
+Next view:   5.78573 0.0337638   1.60849, 0.217325
+duration: 2.06773, seg_num: 8, dt: 0.258467
+Iter num: 169, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.0722151, start yaw: -0.735647   2.32865 -0.148422, end: 0.217325
+[33m[WARN] [1791461859.181551025, 23.014000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461859.181561464, 23.014000000]: Total time: 0.012000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461859.319360944, 23.152000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461859.739594469, 23.572000000]: Replan: traj fully executed=================================[0m
+start pos:   5.11891 -0.223154     1.577, vel:   0.759655 -0.0772866  -0.281671, acc: 0.707704   0.5156 0.152943
+Before remove: 11
+After remove: 4
+max idx: 0
+mean:  4.99428 -3.27892, first pc:  0.997061 0.0766124
+max idx: 1
+mean:  6.75773 -3.21156, first pc: -0.283046 -0.959106
+max idx: 0
+mean: 7.08922 -2.1438, first pc:  0.785811 -0.618466
+max idx: 1
+mean:  3.54641 -3.33422, first pc: -0.104613 -0.994513
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+new num: 6, new dormant: 0
+to visit: 10, dormant: 0
+[33m[WARN] [1791461859.763196919, 23.592000000]: Frontier: 10, t: 0.004000, viewpoint: 10, t: 0.006000[0m
+cost mat size before remove: 
+(11,11), (11,11), (11,11), (11,11), (0,0), (0,0), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(4,4), (4,4), (4,4), (4,4), 
+cost mat add: 
+(0,4), (0,5), (0,6), (0,7), (0,8), (0,9), (1,4), (1,5), (1,6), (1,7), (1,8), (1,9), (2,4), (2,5), (2,6), (2,7), (2,8), (2,9), (3,4), (3,5), (3,6), (3,7), (3,8), (3,9), (4,4), (4,5), (4,6), (4,7), (4,8), (4,9), (5,5), (5,6), (5,7), (5,8), (5,9), (6,6), (6,7), (6,8), (6,9), (7,7), (7,8), (7,9), (8,8), (8,9), (9,9), 
+cost mat size final: 
+(10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), 
+
+[33m[WARN] [1791461859.764723624, 23.594000000]: Cost mat: 0.000000, TSP: 0.002000[0m
+Local tour graph: 3, 5, 6, 14, 15, 12, 1, 
+Node: 57, edge: 534
+[33m[WARN] [1791461859.766581155, 23.596000000]: Local refine time: 0.002000[0m
+Next view:   5.7781 0.425964  1.52534, 1.90719
+duration: 1.85317, seg_num: 8, dt: 0.231646
+Iter num: 99, time: 0, point num: 11, comb time: 0
+[31m[ERROR] [1791461859.767139113, 23.596000000]: Lower bound not satified![0m
+dt_yaw: 0.111354, start yaw: 0.336339  1.06254 -3.38657, end: 1.90719
+[33m[WARN] [1791461859.767312946, 23.596000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461859.767323449, 23.596000000]: Total time: 0.014000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461860.315151112, 24.152000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461860.459162272, 24.292000000]: Replan: cluster covered=====================================[0m
+start pos:    5.62897 -0.0660488    1.47157, vel:   0.501231   0.559511 -0.0040781, acc: -0.863584  0.997505   0.39199
+Before remove: 10
+After remove: 6
+0, 1, 2, 3, 4, 5, 6, 7, 
+new num: 2, new dormant: 0
+to visit: 8, dormant: 0
+[33m[WARN] [1791461860.472825695, 24.306000000]: Frontier: 8, t: 0.002000, viewpoint: 8, t: 0.002000[0m
+cost mat size before remove: 
+(10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (0,0), (0,0), 
+cost mat size remove: 
+(6,6), (6,6), (6,6), (6,6), (6,6), (6,6), 
+cost mat add: 
+(0,6), (0,7), (1,6), (1,7), (2,6), (2,7), (3,6), (3,7), (4,6), (4,7), (5,6), (5,7), (6,6), (6,7), (7,7), 
+cost mat size final: 
+(8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (8,8), 
+
+[33m[WARN] [1791461860.473975091, 24.308000000]: Cost mat: 0.000000, TSP: 0.002000[0m
+Local tour graph: 3, 4, 10, 12, 12, 15, 1, 
+Node: 58, edge: 514
+[33m[WARN] [1791461860.476714735, 24.310000000]: Local refine time: 0.002000[0m
+Next view: 5.17087 1.21569 1.61347, 1.10589
+duration: 2.73704, seg_num: 8, dt: 0.34213
+Iter num: 112, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.12691, start yaw: 0.787228 0.580543 0.149742, end: 1.10589
+[33m[WARN] [1791461860.477346180, 24.310000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461860.477357492, 24.310000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461861.181051992, 25.012000000]: Replan: cluster covered=====================================[0m
+start pos:  5.63077 0.534524  1.53755, vel: -0.38759 0.975914 0.143878, acc:  -1.12539 0.0575003 0.0453168
+Before remove: 8
+After remove: 6
+max idx: 1
+mean:  6.0675 3.14765, first pc:  -0.40237 -0.915477
+max idx: 0
+mean: 5.89686 2.10461, first pc: 0.991633 0.129089
+0, 1, 2, 3, 4, 5, 6, 7, 8, 
+new num: 3, new dormant: 0
+to visit: 9, dormant: 0
+[33m[WARN] [1791461861.195923581, 25.026000000]: Frontier: 9, t: 0.000000, viewpoint: 9, t: 0.004000[0m
+cost mat size before remove: 
+(8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(6,6), (6,6), (6,6), (6,6), (6,6), (6,6), 
+cost mat add: 
+(0,6), (0,7), (0,8), (1,6), (1,7), (1,8), (2,6), (2,7), (2,8), (3,6), (3,7), (3,8), (4,6), (4,7), (4,8), (5,6), (5,7), (5,8), (6,6), (6,7), (6,8), (7,7), (7,8), (8,8), 
+cost mat size final: 
+(9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), 
+
+[33m[WARN] [1791461861.197232563, 25.028000000]: Cost mat: 0.002000, TSP: 0.000000[0m
+Local tour graph: 5, 4, 3, 10, 12, 12, 1, 
+Node: 48, edge: 343
+[33m[WARN] [1791461861.197617898, 25.028000000]: Local refine time: 0.000000[0m
+Next view: 5.57881 1.70085 1.56815, 1.51592
+duration: 2.33578, seg_num: 8, dt: 0.291972
+Iter num: 303, time: 0.002, point num: 11, comb time: 0
+dt_yaw: 0.125694, start yaw:   1.18519   0.42574 -0.547526, end: 1.51592
+[33m[WARN] [1791461861.198814426, 25.030000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461861.198821877, 25.030000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461861.321754580, 25.154000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461861.891838434, 25.732000000]: Replan: cluster covered=====================================[0m
+start pos:  5.2719 1.21418 1.60915, vel: -0.318959  0.877784 0.0323851, acc:  0.967622 -0.290926 -0.225278
+Before remove: 9
+After remove: 6
+max idx: 0
+mean: 6.18475 3.58631, first pc:   0.995766 -0.0919198
+max idx: 1
+mean: 7.68809 3.41157, first pc: -0.183031 -0.983107
+max idx: 1
+mean: 4.50685 3.78135, first pc: -0.0231364  -0.999732
+[33m[WARN] [1791461861.912104066, 25.752000000]: Frontier t: 0.004000[0m
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+new num: 4, new dormant: 0
+to visit: 10, dormant: 0
+[33m[WARN] [1791461861.917711217, 25.758000000]: Frontier: 10, t: 0.004000, viewpoint: 10, t: 0.006000[0m
+cost mat size before remove: 
+(9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(6,6), (6,6), (6,6), (6,6), (6,6), (6,6), 
+cost mat add: 
+(0,6), (0,7), (0,8), (0,9), (1,6), (1,7), (1,8), (1,9), (2,6), (2,7), (2,8), (2,9), (3,6), (3,7), (3,8), (3,9), (4,6), (4,7), (4,8), (4,9), (5,6), (5,7), (5,8), (5,9), (6,6), (6,7), (6,8), (6,9), (7,7), (7,8), (7,9), (8,8), (8,9), (9,9), 
+cost mat size final: 
+(10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), 
+
+[33m[WARN] [1791461861.920047022, 25.760000000]: Cost mat: 0.000000, TSP: 0.002000[0m
+Local tour graph: 8, 10, 4, 6, 5, 4, 1, 
+Node: 39, edge: 206
+[33m[WARN] [1791461861.921710146, 25.762000000]: Local refine time: 0.002000[0m
+Next view: 5.05552 2.27712 1.54828, 0.194961
+duration: 2.17289, seg_num: 8, dt: 0.271612
+Iter num: 159, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.095354, start yaw:  1.40329 0.203757 -0.23519, end: 0.194961
+[33m[WARN] [1791461861.922531390, 25.762000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461861.922543434, 25.762000000]: Total time: 0.014000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461862.323322275, 26.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461862.612686783, 26.452000000]: Replan: cluster covered=====================================[0m
+start pos: 5.30735 1.87115 1.59215, vel:   0.258771   0.993582 -0.0546514, acc:   0.120479  0.0681249 -0.0949449
+Before remove: 10
+After remove: 6
+max idx: 1
+mean:  4.0967 3.20217, first pc:  0.429502 -0.903066
+max idx: 1
+mean: 7.61838 3.82608, first pc: 0.0655984 -0.997846
+max idx: 0
+mean: 7.85058 2.53656, first pc: 0.773943 0.633256
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+new num: 5, new dormant: 0
+to visit: 11, dormant: 0
+[33m[WARN] [1791461862.629778916, 26.470000000]: Frontier: 11, t: 0.002000, viewpoint: 11, t: 0.006000[0m
+cost mat size before remove: 
+(10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (0,0), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(6,6), (6,6), (6,6), (6,6), (6,6), (6,6), 
+cost mat add: 
+(0,6), (0,7), (0,8), (0,9), (0,10), (1,6), (1,7), (1,8), (1,9), (1,10), (2,6), (2,7), (2,8), (2,9), (2,10), (3,6), (3,7), (3,8), (3,9), (3,10), (4,6), (4,7), (4,8), (4,9), (4,10), (5,6), (5,7), (5,8), (5,9), (5,10), (6,6), (6,7), (6,8), (6,9), (6,10), (7,7), (7,8), (7,9), (7,10), (8,8), (8,9), (8,10), (9,9), (9,10), (10,10), 
+cost mat size final: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), 
+
+[33m[WARN] [1791461862.632972542, 26.472000000]: Cost mat: 0.002000, TSP: 0.000000[0m
+Local tour graph: 4, 3, 6, 6, 5, 5, 1, 
+Node: 31, edge: 130
+[33m[WARN] [1791461862.634936062, 26.474000000]: Local refine time: 0.002000[0m
+Next view: 6.47647 3.33268 1.56767, -2.88801
+Mid goal
+[Kino replan]: start: 5.30735 1.87115 1.59215,   0.258771   0.993582 -0.0546514,   0.120479  0.0681249 -0.0949449, goal:6.47647 3.33268 1.56767, 0 0 0
+reach end
+Iter num: 106, time: 0, point num: 11, comb time: 0
+State error: (0.00136586, 0.00329689, 0.00209885)
+[33m[WARN] [1791461862.635647211, 26.474000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.159699, start yaw:   1.31746 -0.437993 -0.422017, end: -2.88801
+[33m[WARN] [1791461862.635817792, 26.476000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461862.635827011, 26.476000000]: Total time: 0.014000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461863.321729385, 27.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461863.331640666, 27.172000000]: Replan: cluster covered=====================================[0m
+start pos: 5.51961 2.56898 1.54466, vel:   0.319665    0.90803 -0.0604586, acc: 0.0463018 -0.251548 0.0552807
+Before remove: 11
+After remove: 8
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+new num: 3, new dormant: 0
+to visit: 11, dormant: 0
+[33m[WARN] [1791461863.347805201, 27.188000000]: Frontier: 11, t: 0.002000, viewpoint: 11, t: 0.004000[0m
+cost mat size before remove: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (8,8), (8,8), 
+cost mat add: 
+(0,8), (0,9), (0,10), (1,8), (1,9), (1,10), (2,8), (2,9), (2,10), (3,8), (3,9), (3,10), (4,8), (4,9), (4,10), (5,8), (5,9), (5,10), (6,8), (6,9), (6,10), (7,8), (7,9), (7,10), (8,8), (8,9), (8,10), (9,9), (9,10), (10,10), 
+cost mat size final: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), 
+
+[33m[WARN] [1791461863.350658738, 27.190000000]: Cost mat: 0.002000, TSP: 0.000000[0m
+Local tour graph: 5, 8, 5, 4, 3, 5, 1, 
+Node: 32, edge: 137
+[33m[WARN] [1791461863.351973733, 27.192000000]: Local refine time: 0.002000[0m
+Next view: 5.94058 3.63334 1.59577, 2.74359
+duration: 2.29146, seg_num: 8, dt: 0.286432
+Iter num: 116, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.111618, start yaw:  1.29167 0.652307  2.04905, end: 2.74359
+[33m[WARN] [1791461863.352915425, 27.192000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461863.352926004, 27.192000000]: Total time: 0.010000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461864.053276326, 27.892000000]: Replan: cluster covered=====================================[0m
+start pos: 5.75227 3.16901 1.53293, vel: 0.314374 0.776168 0.042687, acc: -0.0631291  -0.137431   0.193863
+Before remove: 11
+After remove: 9
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+new num: 2, new dormant: 0
+to visit: 11, dormant: 0
+[33m[WARN] [1791461864.068879227, 27.908000000]: Frontier: 11, t: 0.002000, viewpoint: 11, t: 0.004000[0m
+cost mat size before remove: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (0,0), (0,0), 
+cost mat size remove: 
+(9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), 
+cost mat add: 
+(0,9), (0,10), (1,9), (1,10), (2,9), (2,10), (3,9), (3,10), (4,9), (4,10), (5,9), (5,10), (6,9), (6,10), (7,9), (7,10), (8,9), (8,10), (9,9), (9,10), (10,10), 
+cost mat size final: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), 
+
+[33m[WARN] [1791461864.071261573, 27.910000000]: Cost mat: 0.000000, TSP: 0.002000[0m
+Local tour graph: 4, 8, 13, 3, 3, 1, 
+Node: 33, edge: 191
+[33m[WARN] [1791461864.072994092, 27.912000000]: Local refine time: 0.002000[0m
+Next view: 6.02577 4.28038 1.59577, 3.00576
+duration: 2.29251, seg_num: 8, dt: 0.286563
+Iter num: 109, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.104042, start yaw:   2.09475   1.24857 -0.686049, end: 3.00576
+[33m[WARN] [1791461864.073911662, 27.912000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461864.073921737, 27.912000000]: Total time: 0.010000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461864.322835724, 28.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461864.776178830, 28.614000000]: Replan: cluster covered=====================================[0m
+start pos: 5.92615 3.76899  1.5916, vel:  0.150387  0.932068 0.0771739, acc:  -0.27768  0.286669 -0.119349
+Before remove: 11
+After remove: 9
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+new num: 2, new dormant: 0
+to visit: 11, dormant: 0
+[33m[WARN] [1791461864.789267479, 28.626000000]: Frontier: 11, t: 0.002000, viewpoint: 11, t: 0.002000[0m
+cost mat size before remove: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (0,0), (0,0), 
+cost mat size remove: 
+(9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), 
+cost mat add: 
+(0,9), (0,10), (1,9), (1,10), (2,9), (2,10), (3,9), (3,10), (4,9), (4,10), (5,9), (5,10), (6,9), (6,10), (7,9), (7,10), (8,9), (8,10), (9,9), (9,10), (10,10), 
+cost mat size final: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), 
+
+[33m[WARN] [1791461864.791026225, 28.628000000]: Cost mat: 0.002000, TSP: 0.000000[0m
+Local tour graph: 9, 8, 8, 3, 5, 1, 
+Node: 35, edge: 189
+[33m[WARN] [1791461864.792126071, 28.630000000]: Local refine time: 0.002000[0m
+Next view: 6.39484 4.42097 1.59405, 1.00437
+duration: 1.60594, seg_num: 8, dt: 0.200743
+Iter num: 84, time: 0, point num: 11, comb time: 0
+[31m[ERROR] [1791461864.792540794, 28.630000000]: Lower bound not satified![0m
+dt_yaw: 0.112405, start yaw:   2.7908 0.659029 -1.01246, end: 1.00437
+[33m[WARN] [1791461864.792713569, 28.630000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461864.792719950, 28.630000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461865.328223270, 29.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461865.500549286, 29.332000000]: Replan: cluster covered=====================================[0m
+start pos: 6.07419 4.29826 1.61226, vel:    0.348882    0.430396 -0.00712557, acc:   0.571714  -0.936651 -0.0666483
+Before remove: 11
+After remove: 10
+max idx: 1
+mean: 2.26455  3.4537, first pc:  0.664725 -0.747088
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+new num: 2, new dormant: 0
+to visit: 12, dormant: 0
+[33m[WARN] [1791461865.517545216, 29.350000000]: Frontier: 12, t: 0.004000, viewpoint: 12, t: 0.002000[0m
+cost mat size before remove: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (0,0), (0,0), 
+cost mat size remove: 
+(10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), (10,10), 
+cost mat add: 
+(0,10), (0,11), (1,10), (1,11), (2,10), (2,11), (3,10), (3,11), (4,10), (4,11), (5,10), (5,11), (6,10), (6,11), (7,10), (7,11), (8,10), (8,11), (9,10), (9,11), (10,10), (10,11), (11,11), 
+cost mat size final: 
+(12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), 
+
+[33m[WARN] [1791461865.522220180, 29.354000000]: Cost mat: 0.004000, TSP: 0.000000[0m
+Local tour graph: 7, 6, 14, 7, 4, 7, 1, 
+Node: 47, edge: 294
+[33m[WARN] [1791461865.526216926, 29.358000000]: Local refine time: 0.004000[0m
+Next view: 6.56739 5.06492 1.59405, 1.12534
+duration: 1.82357, seg_num: 8, dt: 0.227946
+Iter num: 177, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.1324, start yaw:  2.47106 -1.44548 -1.14722, end: 1.12534
+[33m[WARN] [1791461865.526924722, 29.360000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461865.526936026, 29.360000000]: Total time: 0.016000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461866.215499958, 30.052000000]: Replan: cluster covered=====================================[0m
+start pos:  6.4212 4.52984 1.59926, vel:   0.487631   0.327307 -0.0204059, acc: -0.252147  0.319955 0.0171536
+Before remove: 12
+After remove: 9
+max idx: 1
+mean: 2.19128 3.39745, first pc:  0.667884 -0.744266
+max idx: 0
+mean: 6.50024 7.51179, first pc:  0.734866 -0.678212
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 
+new num: 4, new dormant: 0
+to visit: 13, dormant: 0
+[33m[WARN] [1791461866.232443699, 30.064000000]: Frontier: 13, t: 0.002000, viewpoint: 13, t: 0.000000[0m
+cost mat size before remove: 
+(12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), (9,9), 
+cost mat add: 
+(0,9), (0,10), (0,11), (0,12), (1,9), (1,10), (1,11), (1,12), (2,9), (2,10), (2,11), (2,12), (3,9), (3,10), (3,11), (3,12), (4,9), (4,10), (4,11), (4,12), (5,9), (5,10), (5,11), (5,12), (6,9), (6,10), (6,11), (6,12), (7,9), (7,10), (7,11), (7,12), (8,9), (8,10), (8,11), (8,12), (9,9), (9,10), (9,11), (9,12), (10,10), (10,11), (10,12), (11,11), (11,12), (12,12), 
+cost mat size final: 
+(13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), 
+
+[33m[WARN] [1791461866.237367142, 30.064000000]: Cost mat: 0.000000, TSP: 0.000000[0m
+Local tour graph: 5, 3, 3, 7, 12, 7, 1, 
+Node: 39, edge: 225
+[33m[WARN] [1791461866.238162566, 30.066000000]: Local refine time: 0.002000[0m
+Next view: 6.58617 5.77525 1.54527, 1.55214
+duration: 2.51488, seg_num: 8, dt: 0.31436
+Iter num: 266, time: 0.002, point num: 11, comb time: 0
+dt_yaw: 0.125795, start yaw:  1.38783 -1.25125  1.34922, end: 1.55214
+[33m[WARN] [1791461866.239952790, 30.068000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461866.239961128, 30.068000000]: Total time: 0.006000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461866.336223042, 30.162000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461866.942665356, 30.772000000]: Replan: cluster covered=====================================[0m
+start pos: 6.75337 4.88748 1.56833, vel:   0.450984   0.683726 -0.0580103, acc: -0.00803672    0.529862   0.0379414
+Before remove: 13
+After remove: 11
+max idx: 1
+mean: 6.10298 8.11848, first pc: -0.515059 -0.857155
+[33m[WARN] [1791461866.954461295, 30.784000000]: Frontier t: 0.002000[0m
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+new num: 3, new dormant: 1
+to visit: 14, dormant: 1
+[33m[WARN] [1791461866.958232800, 30.788000000]: Frontier: 14, t: 0.002000, viewpoint: 14, t: 0.004000[0m
+cost mat size before remove: 
+(13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), (11,11), 
+cost mat add: 
+(0,11), (0,12), (0,13), (1,11), (1,12), (1,13), (2,11), (2,12), (2,13), (3,11), (3,12), (3,13), (4,11), (4,12), (4,13), (5,11), (5,12), (5,13), (6,11), (6,12), (6,13), (7,11), (7,12), (7,13), (8,11), (8,12), (8,13), (9,11), (9,12), (9,13), (10,11), (10,12), (10,13), (11,11), (11,12), (11,13), (12,12), (12,13), (13,13), 
+cost mat size final: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), 
+
+[33m[WARN] [1791461866.963421156, 30.794000000]: Cost mat: 0.004000, TSP: 0.002000[0m
+Local tour graph: 9, 10, 15, 1, 7, 12, 1, 
+Node: 56, edge: 367
+[33m[WARN] [1791461866.964085141, 30.794000000]: Local refine time: 0.000000[0m
+Next view: 7.38568 6.65211 1.60357, 1.68127
+Mid goal
+[Kino replan]: start: 6.75337 4.88748 1.56833,   0.450984   0.683726 -0.0580103, -0.00803672    0.529862   0.0379414, goal:7.38568 6.65211 1.60357, 0 0 0
+reach end
+Iter num: 175, time: 0.002, point num: 11, comb time: 0
+State error: (0.000973404, 0.00506091, 0.00077294)
+[33m[WARN] [1791461866.965204620, 30.796000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.0778123, start yaw:   0.931868 -0.0320842    1.31173, end: 1.68127
+[33m[WARN] [1791461866.965322181, 30.796000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461866.965329885, 30.796000000]: Total time: 0.014000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461867.328449409, 31.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461867.581147412, 31.416000000]: Replan: traj fully executed=================================[0m
+start pos: 6.99988 5.45448 1.54124, vel:  0.275318   1.02233 0.0154886, acc: -0.404492  0.151365  0.320705
+Before remove: 14
+After remove: 12
+max idx: 0
+mean: 7.04959 9.31179, first pc:  0.99782 0.065991
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+new num: 4, new dormant: 0
+to visit: 16, dormant: 0
+[33m[WARN] [1791461867.595237654, 31.430000000]: Frontier: 16, t: 0.002000, viewpoint: 16, t: 0.004000[0m
+cost mat size before remove: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), 
+cost mat add: 
+(0,12), (0,13), (0,14), (0,15), (1,12), (1,13), (1,14), (1,15), (2,12), (2,13), (2,14), (2,15), (3,12), (3,13), (3,14), (3,15), (4,12), (4,13), (4,14), (4,15), (5,12), (5,13), (5,14), (5,15), (6,12), (6,13), (6,14), (6,15), (7,12), (7,13), (7,14), (7,15), (8,12), (8,13), (8,14), (8,15), (9,12), (9,13), (9,14), (9,15), (10,12), (10,13), (10,14), (10,15), (11,12), (11,13), (11,14), (11,15), (12,12), (12,13), (12,14), (12,15), (13,13), (13,14), (13,15), (14,14), (14,15), (15,15), 
+cost mat size final: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+
+[33m[WARN] [1791461867.606050394, 31.440000000]: Cost mat: 0.008000, TSP: 0.002000[0m
+Local tour graph: 15, 2, 15, 9, 6, 2, 1, 
+Node: 51, edge: 278
+[33m[WARN] [1791461867.606777924, 31.442000000]: Local refine time: 0.002000[0m
+Next view: 7.24979 7.06527 1.61151, 1.90205
+Mid goal
+[Kino replan]: start: 6.99988 5.45448 1.54124,  0.275318   1.02233 0.0154886, -0.404492  0.151365  0.320705, goal:7.24979 7.06527 1.61151, 0 0 0
+reach end
+Iter num: 108, time: 0, point num: 11, comb time: 0
+State error: (0.0005981, 0.00161168, 0.00176899)
+[33m[WARN] [1791461867.607559045, 31.442000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.13188, start yaw:   1.20126  0.600135 -0.804425, end: 1.90205
+[33m[WARN] [1791461867.607679847, 31.442000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461867.607687672, 31.442000000]: Total time: 0.018000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461868.300702858, 32.132000000]: Replan: cluster covered=====================================[0m
+start pos: 7.12656 6.21344 1.59929, vel: 0.111452  1.05873 0.107944, acc:   -0.104248  -0.0158182 -0.00506004
+Before remove: 16
+After remove: 12
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+new num: 4, new dormant: 0
+to visit: 16, dormant: 0
+[33m[WARN] [1791461868.318223764, 32.150000000]: Frontier: 16, t: 0.002000, viewpoint: 16, t: 0.002000[0m
+cost mat size before remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), (12,12), 
+cost mat add: 
+(0,12), (0,13), (0,14), (0,15), (1,12), (1,13), (1,14), (1,15), (2,12), (2,13), (2,14), (2,15), (3,12), (3,13), (3,14), (3,15), (4,12), (4,13), (4,14), (4,15), (5,12), (5,13), (5,14), (5,15), (6,12), (6,13), (6,14), (6,15), (7,12), (7,13), (7,14), (7,15), (8,12), (8,13), (8,14), (8,15), (9,12), (9,13), (9,14), (9,15), (10,12), (10,13), (10,14), (10,15), (11,12), (11,13), (11,14), (11,15), (12,12), (12,13), (12,14), (12,15), (13,13), (13,14), (13,15), (14,14), (14,15), (15,15), 
+cost mat size final: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+
+[33m[WARN] [1791461868.325398192, 32.156000000]: Cost mat: 0.006000, TSP: 0.000000[0m
+Local tour graph: 10, 7, 6, 8, 2, 7, 1, 
+Node: 42, edge: 207
+[33m[WARN] [1791461868.326196613, 32.156000000]: Local refine time: 0.000000[0m
+Next view: 7.11379 7.63609 1.60344, -0.550755
+duration: 2.84542, seg_num: 8, dt: 0.355678
+Iter num: 105, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.15994, start yaw:   1.52698  0.374346 -0.155987, end: -0.550755
+[33m[WARN] [1791461868.326972350, 32.156000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461868.326980621, 32.156000000]: Total time: 0.010000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461868.332368062, 32.162000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461869.020368321, 32.852000000]: Replan: cluster covered=====================================[0m
+start pos: 7.17812 6.94047 1.66718, vel: 0.0316825  0.954539 0.0748882, acc:  -0.116314  -0.225068 -0.0745113
+Before remove: 16
+After remove: 13
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+new num: 3, new dormant: 0
+to visit: 16, dormant: 0
+[33m[WARN] [1791461869.037694709, 32.868000000]: Frontier: 16, t: 0.002000, viewpoint: 16, t: 0.002000[0m
+cost mat size before remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), (13,13), 
+cost mat add: 
+(0,13), (0,14), (0,15), (1,13), (1,14), (1,15), (2,13), (2,14), (2,15), (3,13), (3,14), (3,15), (4,13), (4,14), (4,15), (5,13), (5,14), (5,15), (6,13), (6,14), (6,15), (7,13), (7,14), (7,15), (8,13), (8,14), (8,15), (9,13), (9,14), (9,15), (10,13), (10,14), (10,15), (11,13), (11,14), (11,15), (12,13), (12,14), (12,15), (13,13), (13,14), (13,15), (14,14), (14,15), (15,15), 
+cost mat size final: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+
+[33m[WARN] [1791461869.045579932, 32.876000000]: Cost mat: 0.006000, TSP: 0.002000[0m
+Local tour graph: 7, 4, 7, 7, 4, 8, 1, 
+Node: 39, edge: 180
+[33m[WARN] [1791461869.046851290, 32.876000000]: Local refine time: 0.000000[0m
+Next view: 7.47636  8.1872 1.73825, -2.76385
+duration: 2.56776, seg_num: 8, dt: 0.32097
+Iter num: 100, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.148416, start yaw:   1.59536 -0.291036  -1.15686, end: -2.76385
+[33m[WARN] [1791461869.047717966, 32.878000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461869.047729248, 32.878000000]: Total time: 0.014000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461869.335219125, 33.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461869.738808581, 33.572000000]: Replan: cluster covered=====================================[0m
+start pos: 7.19019 7.55505 1.70693, vel: 0.0184873  0.753599 0.0401128, acc:   0.046923  -0.313416 -0.0333051
+Before remove: 16
+After remove: 14
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+new num: 2, new dormant: 0
+to visit: 16, dormant: 0
+[33m[WARN] [1791461869.749580013, 33.582000000]: Frontier: 16, t: 0.000000, viewpoint: 16, t: 0.000000[0m
+cost mat size before remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (0,0), (0,0), 
+cost mat size remove: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), 
+cost mat add: 
+(0,14), (0,15), (1,14), (1,15), (2,14), (2,15), (3,14), (3,15), (4,14), (4,15), (5,14), (5,15), (6,14), (6,15), (7,14), (7,15), (8,14), (8,15), (9,14), (9,15), (10,14), (10,15), (11,14), (11,15), (12,14), (12,15), (13,14), (13,15), (14,14), (14,15), (15,15), 
+cost mat size final: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+
+[33m[WARN] [1791461869.754049595, 33.586000000]: Cost mat: 0.004000, TSP: 0.000000[0m
+Local tour graph: 5, 5, 8, 8, 4, 8, 1, 
+Node: 40, edge: 206
+[33m[WARN] [1791461869.755703352, 33.590000000]: Local refine time: 0.004000[0m
+Next view: 6.84336 8.46926 1.73825, -2.52238
+duration: 1.95659, seg_num: 8, dt: 0.244573
+Iter num: 74, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.164359, start yaw:  1.62932 0.765705  2.16189, end: -2.52238
+[33m[WARN] [1791461869.756248289, 33.590000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461869.756258081, 33.590000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461870.329731682, 34.162000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461870.465241196, 34.292000000]: Replan: cluster covered=====================================[0m
+start pos: 7.17791  8.0119 1.72827, vel: -0.0794614   0.524451  0.0199212, acc:   -0.25324  -0.302718 -0.0243759
+Before remove: 16
+After remove: 15
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+new num: 1, new dormant: 0
+to visit: 16, dormant: 0
+[33m[WARN] [1791461870.479443824, 34.304000000]: Frontier: 16, t: 0.000000, viewpoint: 16, t: 0.000000[0m
+cost mat size before remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (0,0), 
+cost mat size remove: 
+(15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), 
+cost mat add: 
+(0,15), (1,15), (2,15), (3,15), (4,15), (5,15), (6,15), (7,15), (8,15), (9,15), (10,15), (11,15), (12,15), (13,15), (14,15), (15,15), 
+cost mat size final: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+
+[33m[WARN] [1791461870.483978767, 34.308000000]: Cost mat: 0.002000, TSP: 0.002000[0m
+Local tour graph: 3, 4, 8, 11, 4, 8, 1, 
+Node: 40, edge: 219
+[33m[WARN] [1791461870.485384228, 34.310000000]: Local refine time: 0.002000[0m
+Next view: 7.02489 9.24863 1.60068, 2.9224
+duration: 2.50536, seg_num: 8, dt: 0.31317
+Iter num: 199, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.263201, start yaw:   2.51051   1.42498 -0.024435, end: 2.9224
+[33m[WARN] [1791461870.486234092, 34.310000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461870.486246812, 34.310000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461871.191254970, 35.016000000]: Replan: cluster covered=====================================[0m
+start pos: 7.12867 8.34813 1.72065, vel: -0.0929234    0.40481 -0.0235442, acc: -0.00445889   -0.141232  -0.0401579
+Before remove: 16
+After remove: 14
+max idx: 1
+mean: 4.08324 7.64179, first pc:  0.620489 -0.784215
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+new num: 2, new dormant: 0
+to visit: 16, dormant: 0
+[33m[WARN] [1791461871.201509109, 35.026000000]: Frontier: 16, t: 0.002000, viewpoint: 16, t: 0.002000[0m
+cost mat size before remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (0,0), (0,0), 
+cost mat size remove: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), 
+cost mat add: 
+(0,14), (0,15), (1,14), (1,15), (2,14), (2,15), (3,14), (3,15), (4,14), (4,15), (5,14), (5,15), (6,14), (6,15), (7,14), (7,15), (8,14), (8,15), (9,14), (9,15), (10,14), (10,15), (11,14), (11,15), (12,14), (12,15), (13,14), (13,15), (14,14), (14,15), (15,15), 
+cost mat size final: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+
+[33m[WARN] [1791461871.206297985, 35.030000000]: Cost mat: 0.004000, TSP: 0.000000[0m
+Local tour graph: 3, 4, 7, 13, 4, 8, 1, 
+Node: 41, edge: 226
+[33m[WARN] [1791461871.207503634, 35.030000000]: Local refine time: 0.000000[0m
+Next view: 5.74071 9.60698 1.75855, -2.76568
+Mid goal
+[Kino replan]: start: 7.12867 8.34813 1.72065, -0.0929234    0.40481 -0.0235442, -0.00445889   -0.141232  -0.0401579, goal:5.74071 9.60698 1.75855, 0 0 0
+reach end
+Iter num: 87, time: 0, point num: 12, comb time: 0
+State error: (0.00357035, 0.038378, 0.0235703)
+[33m[WARN] [1791461871.208109033, 35.030000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.274526, start yaw:  3.21427 0.331166 -1.97623, end: -2.76568
+[33m[WARN] [1791461871.208243665, 35.030000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461871.208252388, 35.030000000]: Total time: 0.008000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461871.337694139, 35.162000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461871.902230151, 35.732000000]: Replan: cluster covered=====================================[0m
+start pos:  7.0045 8.62977 1.69465, vel:  -0.242802   0.341391 -0.0390301, acc:    -0.26282   -0.123497 0.000340786
+Before remove: 16
+After remove: 14
+max idx: 1
+mean: 3.62217 7.85116, first pc: 0.0467888 -0.998905
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+new num: 3, new dormant: 0
+to visit: 17, dormant: 0
+[33m[WARN] [1791461871.926754074, 35.756000000]: Frontier: 17, t: 0.004000, viewpoint: 17, t: 0.004000[0m
+cost mat size before remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), 
+cost mat add: 
+(0,14), (0,15), (0,16), (1,14), (1,15), (1,16), (2,14), (2,15), (2,16), (3,14), (3,15), (3,16), (4,14), (4,15), (4,16), (5,14), (5,15), (5,16), (6,14), (6,15), (6,16), (7,14), (7,15), (7,16), (8,14), (8,15), (8,16), (9,14), (9,15), (9,16), (10,14), (10,15), (10,16), (11,14), (11,15), (11,16), (12,14), (12,15), (12,16), (13,14), (13,15), (13,16), (14,14), (14,15), (14,16), (15,15), (15,16), (16,16), 
+cost mat size final: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), 
+
+[33m[WARN] [1791461871.934657629, 35.764000000]: Cost mat: 0.004000, TSP: 0.004000[0m
+Local tour graph: 5, 2, 5, 2, 15, 4, 1, 
+Node: 35, edge: 129
+[33m[WARN] [1791461871.935222568, 35.764000000]: Local refine time: 0.000000[0m
+Next view: 6.06726 9.52613 1.76365, -2.80458
+duration: 2.59741, seg_num: 8, dt: 0.324677
+Iter num: 123, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.123552, start yaw:   -3.1752 -0.416612 -0.259131, end: -2.80458
+[33m[WARN] [1791461871.936140462, 35.764000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461871.936152704, 35.764000000]: Total time: 0.016000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461872.339955728, 36.164000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461872.626891434, 36.454000000]: Replan: cluster covered=====================================[0m
+start pos: 6.64273 8.83306 1.67242, vel: -0.744551  0.296676 0.0153439, acc: -0.498362  0.200905  0.210729
+Before remove: 17
+After remove: 15
+max idx: 1
+mean: 3.49509  7.8898, first pc:  0.151122 -0.988515
+[33m[WARN] [1791461872.639166070, 36.466000000]: Frontier t: 0.002000[0m
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+new num: 2, new dormant: 0
+to visit: 17, dormant: 0
+[33m[WARN] [1791461872.641469601, 36.468000000]: Frontier: 17, t: 0.002000, viewpoint: 17, t: 0.002000[0m
+cost mat size before remove: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (0,0), (0,0), 
+cost mat size remove: 
+(15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), 
+cost mat add: 
+(0,15), (0,16), (1,15), (1,16), (2,15), (2,16), (3,15), (3,16), (4,15), (4,16), (5,15), (5,16), (6,15), (6,16), (7,15), (7,16), (8,15), (8,16), (9,15), (9,16), (10,15), (10,16), (11,15), (11,16), (12,15), (12,16), (13,15), (13,16), (14,15), (14,16), (15,15), (15,16), (16,16), 
+cost mat size final: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), 
+
+[33m[WARN] [1791461872.649929226, 36.478000000]: Cost mat: 0.008000, TSP: 0.002000[0m
+Local tour graph: 3, 1, 4, 8, 15, 4, 1, 
+Node: 37, edge: 226
+[33m[WARN] [1791461872.650930487, 36.478000000]: Local refine time: 0.000000[0m
+Next view: 5.52679 9.39145 1.70787, -2.66266
+duration: 2.49672, seg_num: 8, dt: 0.31209
+Iter num: 259, time: 0.002, point num: 11, comb time: 0.002
+dt_yaw: 0.0582839, start yaw:  3.01894 0.320502  1.03209, end: -2.66266
+[33m[WARN] [1791461872.653009651, 36.480000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461872.653019816, 36.480000000]: Total time: 0.016000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461873.035772492, 36.864000000]: Replan: traj fully executed=================================[0m
+start pos: 6.27565 8.97756 1.71162, vel: -1.09438 0.466246 0.145238, acc: -0.502175  0.847408 -0.497503
+Before remove: 17
+After remove: 15
+max idx: 1
+mean: 3.39452 7.88652, first pc:   0.30577 -0.952105
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+new num: 2, new dormant: 0
+to visit: 17, dormant: 0
+[33m[WARN] [1791461873.053302552, 36.880000000]: Frontier: 17, t: 0.002000, viewpoint: 17, t: 0.004000[0m
+cost mat size before remove: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (0,0), (0,0), 
+cost mat size remove: 
+(15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), 
+cost mat add: 
+(0,15), (0,16), (1,15), (1,16), (2,15), (2,16), (3,15), (3,16), (4,15), (4,16), (5,15), (5,16), (6,15), (6,16), (7,15), (7,16), (8,15), (8,16), (9,15), (9,16), (10,15), (10,16), (11,15), (11,16), (12,15), (12,16), (13,15), (13,16), (14,15), (14,16), (15,15), (15,16), (16,16), 
+cost mat size final: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), 
+
+[33m[WARN] [1791461873.060637273, 36.886000000]: Cost mat: 0.004000, TSP: 0.002000[0m
+Local tour graph: 4, 2, 3, 8, 15, 4, 1, 
+Node: 38, edge: 226
+[33m[WARN] [1791461873.061450354, 36.888000000]: Local refine time: 0.002000[0m
+Next view: 5.61202 9.44086 1.68054, -2.68328
+duration: 1.61989, seg_num: 8, dt: 0.202487
+Iter num: 244, time: 0.002, point num: 11, comb time: 0
+dt_yaw: 0.0524413, start yaw:   3.34422   1.09272 -0.876329, end: -2.68328
+[33m[WARN] [1791461873.063844634, 36.890000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461873.063858637, 36.890000000]: Total time: 0.016000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461873.343109116, 37.164000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461873.380734071, 37.204000000]: Replan: traj fully executed=================================[0m
+start pos: 5.92277 9.15597 1.72404, vel:  -0.969646    0.46247 -0.0998975, acc: 0.0513702  -1.02012 -0.621782
+Before remove: 17
+After remove: 16
+max idx: 0
+mean: 2.79609 8.75744, first pc:   0.98514 -0.171754
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+new num: 2, new dormant: 0
+to visit: 18, dormant: 0
+[33m[WARN] [1791461873.393839432, 37.218000000]: Frontier: 18, t: 0.002000, viewpoint: 18, t: 0.002000[0m
+cost mat size before remove: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (1,16), (1,17), (2,16), (2,17), (3,16), (3,17), (4,16), (4,17), (5,16), (5,17), (6,16), (6,17), (7,16), (7,17), (8,16), (8,17), (9,16), (9,17), (10,16), (10,17), (11,16), (11,17), (12,16), (12,17), (13,16), (13,17), (14,16), (14,17), (15,16), (15,17), (16,16), (16,17), (17,17), 
+cost mat size final: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), 
+
+[33m[WARN] [1791461873.413168824, 37.238000000]: Cost mat: 0.016000, TSP: 0.004000[0m
+Local tour graph: 3, 2, 3, 15, 2, 3, 1, 
+Node: 30, edge: 99
+[33m[WARN] [1791461873.413827203, 37.238000000]: Local refine time: 0.000000[0m
+Next view: 4.38372 9.53826 1.61106, -2.89436
+Mid goal
+[Kino replan]: start: 5.92277 9.15597 1.72404,  -0.969646    0.46247 -0.0998975, 0.0513702  -1.02012 -0.621782, goal:4.38372 9.53826 1.61106, 0 0 0
+reach end
+Iter num: 144, time: 0.002, point num: 11, comb time: 0
+State error: (0.00666136, 0.00750469, 0.002721)
+[33m[WARN] [1791461873.414720531, 37.240000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.122579, start yaw: -2.68529  0.33947 -2.11029, end: -2.89436
+[33m[WARN] [1791461873.414848527, 37.240000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461873.414856631, 37.240000000]: Total time: 0.026000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461874.095135372, 37.920000000]: Replan: cluster covered=====================================[0m
+start pos: 5.19203 9.28387   1.554, vel:  -1.12023 0.0134837  -0.26133, acc: -0.202157  -0.23259  0.268225
+Before remove: 18
+After remove: 16
+max idx: 0
+mean: 2.45318 8.37761, first pc: 0.993102 0.117254
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+new num: 2, new dormant: 0
+to visit: 18, dormant: 0
+[33m[WARN] [1791461874.107359591, 37.932000000]: Frontier: 18, t: 0.002000, viewpoint: 18, t: 0.000000[0m
+cost mat size before remove: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (1,16), (1,17), (2,16), (2,17), (3,16), (3,17), (4,16), (4,17), (5,16), (5,17), (6,16), (6,17), (7,16), (7,17), (8,16), (8,17), (9,16), (9,17), (10,16), (10,17), (11,16), (11,17), (12,16), (12,17), (13,16), (13,17), (14,16), (14,17), (15,16), (15,17), (16,16), (16,17), (17,17), 
+cost mat size final: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), 
+
+[33m[WARN] [1791461874.131459521, 37.958000000]: Cost mat: 0.022000, TSP: 0.004000[0m
+Local tour graph: 3, 1, 8, 15, 3, 3, 1, 
+Node: 35, edge: 191
+[33m[WARN] [1791461874.132413004, 37.958000000]: Local refine time: 0.000000[0m
+Next view: 3.75616 9.51027  1.6137, -2.64268
+duration: 2.90968, seg_num: 8, dt: 0.363709
+Iter num: 83, time: 0.002, point num: 11, comb time: 0
+dt_yaw: 0.132553, start yaw:  -2.78119 -0.330037  0.065778, end: -2.64268
+[33m[WARN] [1791461874.133171818, 37.960000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461874.133185857, 37.960000000]: Total time: 0.030000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461874.349953218, 38.170000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461874.809606449, 38.640000000]: Replan: cluster covered=====================================[0m
+start pos: 4.39139 9.31813 1.50715, vel:   -1.0185 0.0859345     0.101, acc:   0.519684 0.00778516   0.341989
+Before remove: 18
+After remove: 16
+max idx: 0
+mean: 1.79297 7.93955, first pc: 0.970021 0.243019
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+new num: 2, new dormant: 0
+to visit: 18, dormant: 0
+[33m[WARN] [1791461874.822254780, 38.652000000]: Frontier: 18, t: 0.000000, viewpoint: 18, t: 0.002000[0m
+cost mat size before remove: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (1,16), (1,17), (2,16), (2,17), (3,16), (3,17), (4,16), (4,17), (5,16), (5,17), (6,16), (6,17), (7,16), (7,17), (8,16), (8,17), (9,16), (9,17), (10,16), (10,17), (11,16), (11,17), (12,16), (12,17), (13,16), (13,17), (14,16), (14,17), (15,16), (15,17), (16,16), (16,17), (17,17), 
+cost mat size final: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), 
+
+[33m[WARN] [1791461874.866389076, 38.698000000]: Cost mat: 0.042000, TSP: 0.004000[0m
+Local tour graph: 7, 3, 8, 15, 3, 3, 1, 
+Node: 41, edge: 229
+[33m[WARN] [1791461874.867991479, 38.698000000]: Local refine time: 0.000000[0m
+Next view: 3.40415 9.64187 1.70822, -1.4751
+duration: 2.11649, seg_num: 8, dt: 0.264561
+Iter num: 121, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.114244, start yaw:  -2.91324 0.0429514  0.630591, end: -1.4751
+[33m[WARN] [1791461874.868980177, 38.700000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461874.868991344, 38.700000000]: Total time: 0.050000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461875.344454991, 39.170000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461875.537386678, 39.360000000]: Replan: cluster covered=====================================[0m
+start pos: 3.77223 9.35499 1.62493, vel:  -0.690443 -0.0154537   0.173265, acc:   0.462931  -0.045587 -0.0974183
+Before remove: 18
+After remove: 15
+max idx: 0
+mean: 3.19124 7.16183, first pc:  0.71365 0.700502
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+new num: 3, new dormant: 0
+to visit: 18, dormant: 0
+[33m[WARN] [1791461875.552945803, 39.376000000]: Frontier: 18, t: 0.002000, viewpoint: 18, t: 0.004000[0m
+cost mat size before remove: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), 
+cost mat add: 
+(0,15), (0,16), (0,17), (1,15), (1,16), (1,17), (2,15), (2,16), (2,17), (3,15), (3,16), (3,17), (4,15), (4,16), (4,17), (5,15), (5,16), (5,17), (6,15), (6,16), (6,17), (7,15), (7,16), (7,17), (8,15), (8,16), (8,17), (9,15), (9,16), (9,17), (10,15), (10,16), (10,17), (11,15), (11,16), (11,17), (12,15), (12,16), (12,17), (13,15), (13,16), (13,17), (14,15), (14,16), (14,17), (15,15), (15,16), (15,17), (16,16), (16,17), (17,17), 
+cost mat size final: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), 
+
+[33m[WARN] [1791461875.580147413, 39.404000000]: Cost mat: 0.026000, TSP: 0.002000[0m
+Local tour graph: 4, 6, 8, 3, 15, 1, 
+Node: 38, edge: 160
+[33m[WARN] [1791461875.581657893, 39.406000000]: Local refine time: 0.002000[0m
+Next view: 2.78481 8.17918 1.60022, -3.03656
+Mid goal
+[Kino replan]: start: 3.77223 9.35499 1.62493,  -0.690443 -0.0154537   0.173265,   0.462931  -0.045587 -0.0974183, goal:2.78481 8.17918 1.60022, 0 0 0
+reach end
+Iter num: 88, time: 0, point num: 11, comb time: 0
+State error: (0.00713824, 0.038022, 0.0290064)
+[33m[WARN] [1791461875.582227130, 39.406000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.252916, start yaw: -2.47784  1.13034 0.524386, end: -3.03656
+[33m[WARN] [1791461875.582333595, 39.406000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461875.582339506, 39.406000000]: Total time: 0.036000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461876.251021061, 40.080000000]: Replan: cluster covered=====================================[0m
+start pos: 3.35184 9.27827 1.71453, vel: -0.480879 -0.169561 0.0786402, acc:  0.233646 -0.220626 -0.140907
+Before remove: 18
+After remove: 15
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+new num: 2, new dormant: 0
+to visit: 17, dormant: 0
+[33m[WARN] [1791461876.261624628, 40.088000000]: Frontier: 17, t: 0.002000, viewpoint: 17, t: 0.000000[0m
+cost mat size before remove: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (0,0), (0,0), 
+cost mat size remove: 
+(15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), (15,15), 
+cost mat add: 
+(0,15), (0,16), (1,15), (1,16), (2,15), (2,16), (3,15), (3,16), (4,15), (4,16), (5,15), (5,16), (6,15), (6,16), (7,15), (7,16), (8,15), (8,16), (9,15), (9,16), (10,15), (10,16), (11,15), (11,16), (12,15), (12,16), (13,15), (13,16), (14,15), (14,16), (15,15), (15,16), (16,16), 
+cost mat size final: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), 
+
+[33m[WARN] [1791461876.307277250, 40.136000000]: Cost mat: 0.046000, TSP: 0.002000[0m
+Local tour graph: 11, 5, 3, 8, 15, 1, 
+Node: 44, edge: 240
+[33m[WARN] [1791461876.308689368, 40.136000000]: Local refine time: 0.000000[0m
+Next view: 2.55538 7.97941 1.61283, -2.89665
+Mid goal
+[Kino replan]: start: 3.35184 9.27827 1.71453, -0.480879 -0.169561 0.0786402,  0.233646 -0.220626 -0.140907, goal:2.55538 7.97941 1.61283, 0 0 0
+reach end
+Iter num: 91, time: 0.002, point num: 11, comb time: 0
+State error: (0.00901768, 0.0250647, 0.00830215)
+[33m[WARN] [1791461876.309300186, 40.138000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.202685, start yaw: -1.76703 0.653493 -1.31138, end: -2.89665
+[33m[WARN] [1791461876.309450107, 40.138000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461876.309457881, 40.138000000]: Total time: 0.052000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461876.349822488, 40.178000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461876.960883386, 40.788000000]: Replan: cluster covered=====================================[0m
+start pos: 3.02891 9.09047 1.73388, vel:   -0.396165   -0.367936 -0.00407177, acc:   0.122642  -0.290728 -0.0808323
+Before remove: 17
+After remove: 14
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+new num: 3, new dormant: 0
+to visit: 17, dormant: 0
+[33m[WARN] [1791461876.981580400, 40.806000000]: Frontier: 17, t: 0.002000, viewpoint: 17, t: 0.006000[0m
+cost mat size before remove: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), 
+cost mat add: 
+(0,14), (0,15), (0,16), (1,14), (1,15), (1,16), (2,14), (2,15), (2,16), (3,14), (3,15), (3,16), (4,14), (4,15), (4,16), (5,14), (5,15), (5,16), (6,14), (6,15), (6,16), (7,14), (7,15), (7,16), (8,14), (8,15), (8,16), (9,14), (9,15), (9,16), (10,14), (10,15), (10,16), (11,14), (11,15), (11,16), (12,14), (12,15), (12,16), (13,14), (13,15), (13,16), (14,14), (14,15), (14,16), (15,15), (15,16), (16,16), 
+cost mat size final: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), 
+
+[33m[WARN] [1791461877.031438396, 40.856000000]: Cost mat: 0.048000, TSP: 0.002000[0m
+Local tour graph: 8, 2, 4, 8, 15, 1, 
+Node: 39, edge: 199
+[33m[WARN] [1791461877.032539625, 40.858000000]: Local refine time: 0.002000[0m
+Next view: 1.95692 8.24473 1.60723, -2.66585
+duration: 2.74262, seg_num: 8, dt: 0.342828
+Iter num: 118, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.118704, start yaw: -1.64314 -0.26664 -1.04621, end: -2.66585
+[33m[WARN] [1791461877.033456647, 40.858000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461877.033467192, 40.858000000]: Total time: 0.060000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461877.348842731, 41.178000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461877.672485070, 41.502000000]: Replan: cluster covered=====================================[0m
+start pos: 2.73852 8.70541 1.69748, vel:  -0.443556  -0.740883 -0.0972512, acc: -0.138706 -0.559026 -0.127973
+Before remove: 17
+After remove: 14
+max idx: 1
+mean: 0.0518868   6.90747, first pc: 0.0639167 -0.997955
+[33m[WARN] [1791461877.682670750, 41.512000000]: Frontier t: 0.004000[0m
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+new num: 4, new dormant: 0
+to visit: 18, dormant: 0
+[33m[WARN] [1791461877.686812460, 41.516000000]: Frontier: 18, t: 0.004000, viewpoint: 18, t: 0.004000[0m
+cost mat size before remove: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), (14,14), 
+cost mat add: 
+(0,14), (0,15), (0,16), (0,17), (1,14), (1,15), (1,16), (1,17), (2,14), (2,15), (2,16), (2,17), (3,14), (3,15), (3,16), (3,17), (4,14), (4,15), (4,16), (4,17), (5,14), (5,15), (5,16), (5,17), (6,14), (6,15), (6,16), (6,17), (7,14), (7,15), (7,16), (7,17), (8,14), (8,15), (8,16), (8,17), (9,14), (9,15), (9,16), (9,17), (10,14), (10,15), (10,16), (10,17), (11,14), (11,15), (11,16), (11,17), (12,14), (12,15), (12,16), (12,17), (13,14), (13,15), (13,16), (13,17), (14,14), (14,15), (14,16), (14,17), (15,15), (15,16), (15,17), (16,16), (16,17), (17,17), 
+cost mat size final: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), 
+
+[33m[WARN] [1791461877.750665116, 41.570000000]: Cost mat: 0.052000, TSP: 0.002000[0m
+Local tour graph: 5, 5, 9, 8, 4, 15, 1, 
+Node: 48, edge: 254
+[33m[WARN] [1791461877.754813224, 41.574000000]: Local refine time: 0.004000[0m
+Next view:  1.4459 7.96609 1.52145, 0.261307
+duration: 2.99897, seg_num: 8, dt: 0.374871
+Iter num: 103, time: 0, point num: 11, comb time: 0
+[31m[ERROR] [1791461877.755465003, 41.574000000]: Lower bound not satified![0m
+dt_yaw: 0.178477, start yaw:  -2.09021  -0.84593 0.0335077, end: 0.261307
+[33m[WARN] [1791461877.755595902, 41.574000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461877.755603401, 41.574000000]: Total time: 0.066000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461878.357056374, 42.184000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461878.396970334, 42.220000000]: Replan: cluster covered=====================================[0m
+start pos: 2.38542 8.12078 1.60846, vel:  -0.54289  -0.82312 -0.133032, acc: -0.131059  0.198312 0.0240741
+Before remove: 18
+After remove: 16
+max idx: 0
+mean: -0.747466   7.61543, first pc:  0.85932 0.511438
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 
+new num: 3, new dormant: 0
+to visit: 19, dormant: 0
+[33m[WARN] [1791461878.407118300, 42.230000000]: Frontier: 19, t: 0.004000, viewpoint: 19, t: 0.002000[0m
+cost mat size before remove: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (0,18), (1,16), (1,17), (1,18), (2,16), (2,17), (2,18), (3,16), (3,17), (3,18), (4,16), (4,17), (4,18), (5,16), (5,17), (5,18), (6,16), (6,17), (6,18), (7,16), (7,17), (7,18), (8,16), (8,17), (8,18), (9,16), (9,17), (9,18), (10,16), (10,17), (10,18), (11,16), (11,17), (11,18), (12,16), (12,17), (12,18), (13,16), (13,17), (13,18), (14,16), (14,17), (14,18), (15,16), (15,17), (15,18), (16,16), (16,17), (16,18), (17,17), (17,18), (18,18), 
+cost mat size final: 
+(19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), 
+
+[33m[WARN] [1791461878.481322827, 42.306000000]: Cost mat: 0.072000, TSP: 0.004000[0m
+Local tour graph: 7, 7, 5, 8, 4, 8, 1, 
+Node: 41, edge: 203
+[33m[WARN] [1791461878.483871232, 42.308000000]: Local refine time: 0.002000[0m
+Next view: 1.00981 7.18825 1.56037, 3.01521
+Mid goal
+[Kino replan]: start: 2.38542 8.12078 1.60846,  -0.54289  -0.82312 -0.133032, -0.131059  0.198312 0.0240741, goal:1.00981 7.18825 1.56037, 0 0 0
+reach end
+Iter num: 115, time: 0, point num: 11, comb time: 0
+State error: (0.00125607, 0.0102392, 0.00371709)
+[33m[WARN] [1791461878.484550525, 42.308000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.130017, start yaw:   -2.45637 0.00629647    1.70551, end: 3.01521
+[33m[WARN] [1791461878.484661638, 42.308000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461878.484668764, 42.308000000]: Total time: 0.084000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461879.101043793, 42.928000000]: Replan: cluster covered=====================================[0m
+start pos: 1.88677  7.6368 1.54445, vel: -0.878264 -0.479314 -0.041078, acc: -0.469433   0.67116  0.119263
+Before remove: 19
+After remove: 16
+max idx: 0
+mean: -1.18478  7.61143, first pc: 0.849349 0.527832
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 
+new num: 3, new dormant: 0
+to visit: 19, dormant: 0
+[33m[WARN] [1791461879.116661710, 42.944000000]: Frontier: 19, t: 0.002000, viewpoint: 19, t: 0.004000[0m
+cost mat size before remove: 
+(19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (0,18), (1,16), (1,17), (1,18), (2,16), (2,17), (2,18), (3,16), (3,17), (3,18), (4,16), (4,17), (4,18), (5,16), (5,17), (5,18), (6,16), (6,17), (6,18), (7,16), (7,17), (7,18), (8,16), (8,17), (8,18), (9,16), (9,17), (9,18), (10,16), (10,17), (10,18), (11,16), (11,17), (11,18), (12,16), (12,17), (12,18), (13,16), (13,17), (13,18), (14,16), (14,17), (14,18), (15,16), (15,17), (15,18), (16,16), (16,17), (16,18), (17,17), (17,18), (18,18), 
+cost mat size final: 
+(19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), 
+
+[33m[WARN] [1791461879.205257435, 43.034000000]: Cost mat: 0.088000, TSP: 0.002000[0m
+Local tour graph: 7, 6, 4, 2, 8, 4, 1, 
+Node: 33, edge: 133
+[33m[WARN] [1791461879.206313682, 43.036000000]: Local refine time: 0.002000[0m
+Next view: 0.46149 7.14962 1.59558, 3.07803
+Mid goal
+[Kino replan]: start: 1.88677  7.6368 1.54445, -0.878264 -0.479314 -0.041078, -0.469433   0.67116  0.119263, goal:0.46149 7.14962 1.59558, 0 0 0
+reach end
+Iter num: 94, time: 0, point num: 11, comb time: 0
+State error: (0.00210083, 0.0230044, 0.0057706)
+[33m[WARN] [1791461879.206722806, 43.036000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.140629, start yaw:  -2.53741 -0.513658  -1.03464, end: 3.07803
+[33m[WARN] [1791461879.206826588, 43.036000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461879.206833119, 43.036000000]: Total time: 0.098000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461879.357752901, 43.188000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461879.827375445, 43.648000000]: Replan: cluster covered=====================================[0m
+start pos: 1.19163 7.38269  1.5357, vel: -0.992058 -0.263571 0.0285461, acc:  0.127992  0.180394 0.0857038
+Before remove: 19
+After remove: 16
+max idx: 0
+mean: -1.69391  7.50996, first pc: 0.879318 0.476234
+max idx: 1
+mean: 0.00908319    4.48718, first pc: -0.619878 -0.784698
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+new num: 4, new dormant: 0
+to visit: 20, dormant: 0
+[33m[WARN] [1791461879.844043807, 43.666000000]: Frontier: 20, t: 0.004000, viewpoint: 20, t: 0.004000[0m
+cost mat size before remove: 
+(19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (0,18), (0,19), (1,16), (1,17), (1,18), (1,19), (2,16), (2,17), (2,18), (2,19), (3,16), (3,17), (3,18), (3,19), (4,16), (4,17), (4,18), (4,19), (5,16), (5,17), (5,18), (5,19), (6,16), (6,17), (6,18), (6,19), (7,16), (7,17), (7,18), (7,19), (8,16), (8,17), (8,18), (8,19), (9,16), (9,17), (9,18), (9,19), (10,16), (10,17), (10,18), (10,19), (11,16), (11,17), (11,18), (11,19), (12,16), (12,17), (12,18), (12,19), (13,16), (13,17), (13,18), (13,19), (14,16), (14,17), (14,18), (14,19), (15,16), (15,17), (15,18), (15,19), (16,16), (16,17), (16,18), (16,19), (17,17), (17,18), (17,19), (18,18), (18,19), (19,19), 
+cost mat size final: 
+(20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), 
+
+[33m[WARN] [1791461879.951866808, 43.772000000]: Cost mat: 0.104000, TSP: 0.002000[0m
+Local tour graph: 7, 8, 5, 5, 2, 1, 
+Node: 29, edge: 140
+[33m[WARN] [1791461879.952760547, 43.772000000]: Local refine time: 0.000000[0m
+Next view: 0.168634  7.10175  1.54369, -0.951866
+duration: 2.1218, seg_num: 8, dt: 0.265225
+Iter num: 113, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.15568, start yaw: -2.99866 -0.57886 0.526281, end: -0.951866
+[33m[WARN] [1791461879.953602479, 43.774000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461879.953611621, 43.774000000]: Total time: 0.116000[0m
+[31m[ERROR] [1791461879.953616616, 43.774000000]: Total time too long!!![0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461880.367534312, 44.190000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461880.537046353, 44.360000000]: Replan: cluster covered=====================================[0m
+start pos: 0.568428  7.24274  1.56368, vel: -0.716229 -0.155679 0.0332707, acc:   0.572954  0.0999289 -0.0531955
+Before remove: 20
+After remove: 16
+max idx: 1
+mean: -0.10228  4.40991, first pc: -0.647381 -0.762166
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+new num: 4, new dormant: 0
+to visit: 20, dormant: 0
+[33m[WARN] [1791461880.552481931, 44.376000000]: Frontier: 20, t: 0.002000, viewpoint: 20, t: 0.004000[0m
+cost mat size before remove: 
+(20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), (16,16), 
+cost mat add: 
+(0,16), (0,17), (0,18), (0,19), (1,16), (1,17), (1,18), (1,19), (2,16), (2,17), (2,18), (2,19), (3,16), (3,17), (3,18), (3,19), (4,16), (4,17), (4,18), (4,19), (5,16), (5,17), (5,18), (5,19), (6,16), (6,17), (6,18), (6,19), (7,16), (7,17), (7,18), (7,19), (8,16), (8,17), (8,18), (8,19), (9,16), (9,17), (9,18), (9,19), (10,16), (10,17), (10,18), (10,19), (11,16), (11,17), (11,18), (11,19), (12,16), (12,17), (12,18), (12,19), (13,16), (13,17), (13,18), (13,19), (14,16), (14,17), (14,18), (14,19), (15,16), (15,17), (15,18), (15,19), (16,16), (16,17), (16,18), (16,19), (17,17), (17,18), (17,19), (18,18), (18,19), (19,19), 
+cost mat size final: 
+(20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), 
+
+[33m[WARN] [1791461880.652518815, 44.478000000]: Cost mat: 0.096000, TSP: 0.006000[0m
+Local tour graph: 3, 6, 5, 9, 5, 1, 
+Node: 30, edge: 146
+[33m[WARN] [1791461880.654280643, 44.480000000]: Local refine time: 0.002000[0m
+Next view: -0.293392   6.86869   1.54274, -0.721174
+duration: 1.87945, seg_num: 8, dt: 0.234932
+Iter num: 77, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.179291, start yaw: -2.98585  0.76224  1.92961, end: -0.721174
+[33m[WARN] [1791461880.654804112, 44.480000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461880.654813047, 44.480000000]: Total time: 0.110000[0m
+[31m[ERROR] [1791461880.654818155, 44.480000000]: Total time too long!!![0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461881.258550411, 45.080000000]: Replan: cluster covered=====================================[0m
+start pos: 0.151687  7.13944  1.57706, vel:  -0.444252  -0.138395 0.00297465, acc:    0.30559 -0.0175917 -0.0390542
+Before remove: 20
+After remove: 19
+max idx: 1
+mean: -3.97279  7.52497, first pc:  -0.15732 -0.987548
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 
+new num: 4, new dormant: 0
+to visit: 23, dormant: 0
+[33m[WARN] [1791461881.275280215, 45.098000000]: Frontier: 23, t: 0.002000, viewpoint: 23, t: 0.004000[0m
+cost mat size before remove: 
+(20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), (19,19), 
+cost mat add: 
+(0,19), (0,20), (0,21), (0,22), (1,19), (1,20), (1,21), (1,22), (2,19), (2,20), (2,21), (2,22), (3,19), (3,20), (3,21), (3,22), (4,19), (4,20), (4,21), (4,22), (5,19), (5,20), (5,21), (5,22), (6,19), (6,20), (6,21), (6,22), (7,19), (7,20), (7,21), (7,22), (8,19), (8,20), (8,21), (8,22), (9,19), (9,20), (9,21), (9,22), (10,19), (10,20), (10,21), (10,22), (11,19), (11,20), (11,21), (11,22), (12,19), (12,20), (12,21), (12,22), (13,19), (13,20), (13,21), (13,22), (14,19), (14,20), (14,21), (14,22), (15,19), (15,20), (15,21), (15,22), (16,19), (16,20), (16,21), (16,22), (17,19), (17,20), (17,21), (17,22), (18,19), (18,20), (18,21), (18,22), (19,19), (19,20), (19,21), (19,22), (20,20), (20,21), (20,22), (21,21), (21,22), (22,22), 
+cost mat size final: 
+(23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), 
+
+[33m[WARN] [1791461881.384048272, 45.200000000]: Cost mat: 0.102000, TSP: 0.000000[0m
+Local tour graph: 12, 10, 9, 15, 2, 6, 1, 
+Node: 56, edge: 405
+[33m[WARN] [1791461881.384872161, 45.200000000]: Local refine time: 0.000000[0m
+Next view: -1.58654   7.0332  1.58888, 2.15208
+Mid goal
+[Kino replan]: start: 0.151687  7.13944  1.57706,  -0.444252  -0.138395 0.00297465,    0.30559 -0.0175917 -0.0390542, goal:-1.58654   7.0332  1.58888, 0 0 0
+reach end
+Iter num: 145, time: 0, point num: 11, comb time: 0
+State error: (0.00569954, 0.0309049, 0.0131206)
+[33m[WARN] [1791461881.385655526, 45.200000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.163707, start yaw:   -2.15533      1.312 -0.0322133, end: 2.15208
+[33m[WARN] [1791461881.385762920, 45.200000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461881.385771576, 45.200000000]: Total time: 0.108000[0m
+[31m[ERROR] [1791461881.385776849, 45.200000000]: Total time too long!!![0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[0m[INFO] [1791461881.399988918, 45.210000000]: [FSM]: state: PUB_TRAJ[0m
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461881.981439193, 45.800000000]: Replan: cluster covered=====================================[0m
+start pos: -0.228608   7.11911   1.56203, vel:  -0.670082   0.118678 -0.0168505, acc: -0.536579  0.451986 0.0317993
+Before remove: 23
+After remove: 17
+max idx: 1
+mean: -4.07286  7.52274, first pc:  -0.21763 -0.976031
+max idx: 0
+mean: 0.385726  3.90515, first pc: 0.720646 0.693303
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 
+new num: 5, new dormant: 0
+to visit: 22, dormant: 0
+[33m[WARN] [1791461882.007749821, 45.828000000]: Frontier: 22, t: 0.006000, viewpoint: 22, t: 0.008000[0m
+cost mat size before remove: 
+(23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (23,23), (0,0), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), (17,17), 
+cost mat add: 
+(0,17), (0,18), (0,19), (0,20), (0,21), (1,17), (1,18), (1,19), (1,20), (1,21), (2,17), (2,18), (2,19), (2,20), (2,21), (3,17), (3,18), (3,19), (3,20), (3,21), (4,17), (4,18), (4,19), (4,20), (4,21), (5,17), (5,18), (5,19), (5,20), (5,21), (6,17), (6,18), (6,19), (6,20), (6,21), (7,17), (7,18), (7,19), (7,20), (7,21), (8,17), (8,18), (8,19), (8,20), (8,21), (9,17), (9,18), (9,19), (9,20), (9,21), (10,17), (10,18), (10,19), (10,20), (10,21), (11,17), (11,18), (11,19), (11,20), (11,21), (12,17), (12,18), (12,19), (12,20), (12,21), (13,17), (13,18), (13,19), (13,20), (13,21), (14,17), (14,18), (14,19), (14,20), (14,21), (15,17), (15,18), (15,19), (15,20), (15,21), (16,17), (16,18), (16,19), (16,20), (16,21), (17,17), (17,18), (17,19), (17,20), (17,21), (18,18), (18,19), (18,20), (18,21), (19,19), (19,20), (19,21), (20,20), (20,21), (21,21), 
+cost mat size final: 
+(22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), 
+
+[33m[WARN] [1791461882.047513241, 45.868000000]: Cost mat: 0.032000, TSP: 0.008000[0m
+Local tour graph: 8, 7, 15, 12, 8, 5, 1, 
+Node: 57, edge: 490
+[33m[WARN] [1791461882.051021881, 45.872000000]: Local refine time: 0.004000[0m
+Next view: -1.62827  7.51972  1.76417, 2.40259
+duration: 2.93966, seg_num: 8, dt: 0.367458
+Iter num: 117, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.142324, start yaw: -1.98861  -1.1283 -3.12005, end: 2.40259
+[33m[WARN] [1791461882.051932805, 45.872000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461882.051945096, 45.872000000]: Total time: 0.058000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461882.399482895, 46.212000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461882.704672780, 46.522000000]: Replan: cluster covered=====================================[0m
+start pos: -0.784973   7.29896   1.57618, vel: -0.851451  0.315422 0.0757529, acc: -0.110997 0.0268476  0.206329
+Before remove: 22
+After remove: 18
+max idx: 0
+mean: -0.507848   3.02866, first pc:  0.951539 -0.307528
+[33m[WARN] [1791461882.716642388, 46.534000000]: Frontier t: 0.002000[0m
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 
+new num: 6, new dormant: 0
+to visit: 24, dormant: 0
+[33m[WARN] [1791461882.722303398, 46.540000000]: Frontier: 24, t: 0.002000, viewpoint: 24, t: 0.006000[0m
+cost mat size before remove: 
+(22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (0,0), (0,0), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), (18,18), 
+cost mat add: 
+(0,18), (0,19), (0,20), (0,21), (0,22), (0,23), (1,18), (1,19), (1,20), (1,21), (1,22), (1,23), (2,18), (2,19), (2,20), (2,21), (2,22), (2,23), (3,18), (3,19), (3,20), (3,21), (3,22), (3,23), (4,18), (4,19), (4,20), (4,21), (4,22), (4,23), (5,18), (5,19), (5,20), (5,21), (5,22), (5,23), (6,18), (6,19), (6,20), (6,21), (6,22), (6,23), (7,18), (7,19), (7,20), (7,21), (7,22), (7,23), (8,18), (8,19), (8,20), (8,21), (8,22), (8,23), (9,18), (9,19), (9,20), (9,21), (9,22), (9,23), (10,18), (10,19), (10,20), (10,21), (10,22), (10,23), (11,18), (11,19), (11,20), (11,21), (11,22), (11,23), (12,18), (12,19), (12,20), (12,21), (12,22), (12,23), (13,18), (13,19), (13,20), (13,21), (13,22), (13,23), (14,18), (14,19), (14,20), (14,21), (14,22), (14,23), (15,18), (15,19), (15,20), (15,21), (15,22), (15,23), (16,18), (16,19), (16,20), (16,21), (16,22), (16,23), (17,18), (17,19), (17,20), (17,21), (17,22), (17,23), (18,18), (18,19), (18,20), (18,21), (18,22), (18,23), (19,19), (19,20), (19,21), (19,22), (19,23), (20,20), (20,21), (20,22), (20,23), (21,21), (21,22), (21,23), (22,22), (22,23), (23,23), 
+cost mat size final: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), 
+
+[33m[WARN] [1791461882.771020148, 46.592000000]: Cost mat: 0.046000, TSP: 0.006000[0m
+Local tour graph: 8, 12, 7, 15, 10, 5, 1, 
+Node: 59, edge: 498
+[33m[WARN] [1791461882.774819331, 46.592000000]: Local refine time: 0.000000[0m
+Next view: -1.62827  7.51972  1.76417, 2.40259
+duration: 1.78351, seg_num: 8, dt: 0.222938
+Iter num: 50, time: 0, point num: 11, comb time: 0
+dt_yaw: 0.0971759, start yaw: -3.20243 -1.69903  1.21068, end: 2.40259
+[33m[WARN] [1791461882.775336427, 46.592000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461882.775348179, 46.592000000]: Total time: 0.060000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461883.399394770, 47.216000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461883.423712126, 47.242000000]: Replan: cluster covered=====================================[0m
+start pos: -1.37814  7.46202  1.70288, vel: -0.685896  0.135532   0.19768, acc:  0.612597 -0.176666 -0.175171
+Before remove: 24
+After remove: 20
+max idx: 1
+mean: -5.11548  7.79081, first pc: -0.226948 -0.973907
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 
+new num: 4, new dormant: 0
+to visit: 24, dormant: 0
+[33m[WARN] [1791461883.439145211, 47.258000000]: Frontier: 24, t: 0.002000, viewpoint: 24, t: 0.004000[0m
+cost mat size before remove: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (0,0), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), (20,20), 
+cost mat add: 
+(0,20), (0,21), (0,22), (0,23), (1,20), (1,21), (1,22), (1,23), (2,20), (2,21), (2,22), (2,23), (3,20), (3,21), (3,22), (3,23), (4,20), (4,21), (4,22), (4,23), (5,20), (5,21), (5,22), (5,23), (6,20), (6,21), (6,22), (6,23), (7,20), (7,21), (7,22), (7,23), (8,20), (8,21), (8,22), (8,23), (9,20), (9,21), (9,22), (9,23), (10,20), (10,21), (10,22), (10,23), (11,20), (11,21), (11,22), (11,23), (12,20), (12,21), (12,22), (12,23), (13,20), (13,21), (13,22), (13,23), (14,20), (14,21), (14,22), (14,23), (15,20), (15,21), (15,22), (15,23), (16,20), (16,21), (16,22), (16,23), (17,20), (17,21), (17,22), (17,23), (18,20), (18,21), (18,22), (18,23), (19,20), (19,21), (19,22), (19,23), (20,20), (20,21), (20,22), (20,23), (21,21), (21,22), (21,23), (22,22), (22,23), (23,23), 
+cost mat size final: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), 
+
+[33m[WARN] [1791461883.484979478, 47.304000000]: Cost mat: 0.040000, TSP: 0.006000[0m
+Local tour graph: 3, 13, 9, 11, 9, 5, 1, 
+Node: 52, edge: 407
+[33m[WARN] [1791461883.488538516, 47.308000000]: Local refine time: 0.004000[0m
+Next view: -2.63822  9.35344  1.77784, -3.03586
+Mid goal
+[Kino replan]: start: -1.37814  7.46202  1.70288, -0.685896  0.135532   0.19768,  0.612597 -0.176666 -0.175171, goal:-2.63822  9.35344  1.77784, 0 0 0
+reach end
+Iter num: 229, time: 0, point num: 12, comb time: 0
+State error: (0.00320968, 0.0297862, 0.0154783)
+[33m[WARN] [1791461883.489605293, 47.308000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.222561, start yaw:   2.35603 -0.315462   1.41223, end: -3.03586
+[33m[WARN] [1791461883.489760283, 47.308000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461883.489768791, 47.308000000]: Total time: 0.056000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461884.135292994, 47.960000000]: Replan: cluster covered=====================================[0m
+start pos: -1.79494   7.5879  1.81068, vel: -0.509088  0.261726  0.104837, acc:  0.088092  0.342737 -0.116502
+Before remove: 24
+After remove: 21
+max idx: 1
+mean: -5.27232  7.83616, first pc: -0.188007 -0.982168
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 
+new num: 3, new dormant: 0
+to visit: 24, dormant: 0
+[33m[WARN] [1791461884.148938768, 47.974000000]: Frontier: 24, t: 0.002000, viewpoint: 24, t: 0.002000[0m
+cost mat size before remove: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (0,0), (0,0), (0,0), 
+cost mat size remove: 
+(21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), (21,21), 
+cost mat add: 
+(0,21), (0,22), (0,23), (1,21), (1,22), (1,23), (2,21), (2,22), (2,23), (3,21), (3,22), (3,23), (4,21), (4,22), (4,23), (5,21), (5,22), (5,23), (6,21), (6,22), (6,23), (7,21), (7,22), (7,23), (8,21), (8,22), (8,23), (9,21), (9,22), (9,23), (10,21), (10,22), (10,23), (11,21), (11,22), (11,23), (12,21), (12,22), (12,23), (13,21), (13,22), (13,23), (14,21), (14,22), (14,23), (15,21), (15,22), (15,23), (16,21), (16,22), (16,23), (17,21), (17,22), (17,23), (18,21), (18,22), (18,23), (19,21), (19,22), (19,23), (20,21), (20,22), (20,23), (21,21), (21,22), (21,23), (22,22), (22,23), (23,23), 
+cost mat size final: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), 
+
+[33m[WARN] [1791461884.185401928, 48.004000000]: Cost mat: 0.030000, TSP: 0.000000[0m
+Local tour graph: 2, 6, 11, 9, 10, 5, 1, 
+Node: 45, edge: 324
+[33m[WARN] [1791461884.191101028, 48.008000000]: Local refine time: 0.004000[0m
+Next view: -2.8043 9.43385 1.94165, -2.94792
+Mid goal
+[Kino replan]: start: -1.79494   7.5879  1.81068, -0.509088  0.261726  0.104837,  0.088092  0.342737 -0.116502, goal:-2.8043 9.43385 1.94165, 0 0 0
+reach end
+Iter num: 123, time: 0.002, point num: 11, comb time: 0.002
+State error: (0.00766535, 0.0196692, 0.0122317)
+[33m[WARN] [1791461884.192150605, 48.010000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.153234, start yaw:  2.37537 0.250613   0.3837, end: -2.94792
+[33m[WARN] [1791461884.192288058, 48.010000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461884.192297276, 48.010000000]: Total time: 0.040000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[0m[INFO] [1791461884.405110799, 48.222000000]: [FSM]: state: EXEC_TRAJ[0m
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461885.400119106, 49.220000000]: Replan: cluster covered=====================================[0m
+[0m[INFO] [1791461885.409007779, 49.230000000]: [FSM]: state: PLAN_TRAJ[0m
+start pos: -2.54665  8.22751  1.88774, vel:  -0.606736   0.677535 -0.0400174, acc:   0.243869  0.0543155 -0.0381138
+Before remove: 24
+After remove: 22
+max idx: 1
+mean: -5.56201  7.82968, first pc: -0.326633 -0.945151
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 
+new num: 2, new dormant: 0
+to visit: 24, dormant: 0
+[33m[WARN] [1791461885.414242635, 49.232000000]: Frontier: 24, t: 0.000000, viewpoint: 24, t: 0.002000[0m
+cost mat size before remove: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (0,0), (0,0), 
+cost mat size remove: 
+(22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), 
+cost mat add: 
+(0,22), (0,23), (1,22), (1,23), (2,22), (2,23), (3,22), (3,23), (4,22), (4,23), (5,22), (5,23), (6,22), (6,23), (7,22), (7,23), (8,22), (8,23), (9,22), (9,23), (10,22), (10,23), (11,22), (11,23), (12,22), (12,23), (13,22), (13,23), (14,22), (14,23), (15,22), (15,23), (16,22), (16,23), (17,22), (17,23), (18,22), (18,23), (19,22), (19,23), (20,22), (20,23), (21,22), (21,23), (22,22), (22,23), (23,23), 
+cost mat size final: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), 
+
+[33m[WARN] [1791461885.444855459, 49.264000000]: Cost mat: 0.026000, TSP: 0.006000[0m
+Local tour graph: 6, 8, 9, 10, 10, 5, 1, 
+Node: 50, edge: 371
+[33m[WARN] [1791461885.452591853, 49.272000000]: Local refine time: 0.008000[0m
+Next view: -3.51809  7.04572  1.58823, 3.0132
+Mid goal
+[Kino replan]: start: -2.54665  8.22751  1.88774,  -0.606736   0.677535 -0.0400174,   0.243869  0.0543155 -0.0381138, goal:-3.51809  7.04572  1.58823, 0 0 0
+reach end
+Iter num: 250, time: 0.002, point num: 11, comb time: 0
+State error: (0.00126503, 0.00841041, 0.000283851)
+[33m[WARN] [1791461885.454944582, 49.274000000]: Kino t: 0.000000, opt: 0.002000[0m
+dt_yaw: 0.0604319, start yaw:   2.94826  0.532399 -0.353951, end: 3.0132
+[33m[WARN] [1791461885.455057289, 49.274000000]: Traj: 0.002000, yaw: 0.000000[0m
+[33m[WARN] [1791461885.455066398, 49.274000000]: Total time: 0.044000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+[FSM]: from EXEC_TRAJ to PLAN_TRAJ
+[33m[WARN] [1791461885.843004654, 49.664000000]: Replan: traj fully executed=================================[0m
+start pos: -2.77411  8.43824  1.78412, vel: -0.391883  0.269883 -0.453861, acc: 0.673029 -1.00859 -1.01063
+Before remove: 24
+After remove: 22
+max idx: 1
+mean: -5.66086  7.75106, first pc: -0.312963 -0.949765
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 
+new num: 2, new dormant: 0
+to visit: 24, dormant: 0
+[33m[WARN] [1791461885.856384491, 49.678000000]: Frontier: 24, t: 0.002000, viewpoint: 24, t: 0.002000[0m
+cost mat size before remove: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (0,0), (0,0), 
+cost mat size remove: 
+(22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), (22,22), 
+cost mat add: 
+(0,22), (0,23), (1,22), (1,23), (2,22), (2,23), (3,22), (3,23), (4,22), (4,23), (5,22), (5,23), (6,22), (6,23), (7,22), (7,23), (8,22), (8,23), (9,22), (9,23), (10,22), (10,23), (11,22), (11,23), (12,22), (12,23), (13,22), (13,23), (14,22), (14,23), (15,22), (15,23), (16,22), (16,23), (17,22), (17,23), (18,22), (18,23), (19,22), (19,23), (20,22), (20,23), (21,22), (21,23), (22,22), (22,23), (23,23), 
+cost mat size final: 
+(24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), (24,24), 
+
+[33m[WARN] [1791461885.879998353, 49.702000000]: Cost mat: 0.020000, TSP: 0.004000[0m
+Local tour graph: 6, 8, 9, 10, 10, 5, 1, 
+Node: 50, edge: 371
+[33m[WARN] [1791461885.885306334, 49.708000000]: Local refine time: 0.006000[0m
+Next view: -3.65505  6.81006  1.56659, 2.99563
+Mid goal
+[Kino replan]: start: -2.77411  8.43824  1.78412, -0.391883  0.269883 -0.453861, 0.673029 -1.00859 -1.01063, goal:-3.65505  6.81006  1.56659, 0 0 0
+reach end
+Iter num: 108, time: 0, point num: 11, comb time: 0
+State error: (0.00526106, 0.0573256, 0.0209488)
+[33m[WARN] [1791461885.886234682, 49.708000000]: Kino t: 0.000000, opt: 0.000000[0m
+dt_yaw: 0.184169, start yaw:    3.06278 -0.0234985  -0.694693, end: 2.99563
+[33m[WARN] [1791461885.886349152, 49.708000000]: Traj: 0.000000, yaw: 0.000000[0m
+[33m[WARN] [1791461885.886355466, 49.708000000]: Total time: 0.034000[0m
+[FSM]: from PLAN_TRAJ to PUB_TRAJ
+[FSM]: from PUB_TRAJ to EXEC_TRAJ
+des manager
+[0m[INFO] [1791461833.935161243]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1791461833.936187979]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1791461834.934890856]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1791461834.941301510]: Physics dynamic reconfigure ready.[0m
+[0m[INFO] [1791461836.113919597]: Camera Plugin: Using the 'robotNamespace' param: '/gazebo_fuel'[0m
+[0m[INFO] [1791461836.115547880]: Camera Plugin (ns = /gazebo_fuel)  <tf_prefix_>, set to ""[0m
+[0m[INFO] [1791461836.140718621]: FUEL Gazebo controller loaded for fuel_drone[0m
+[31m[gazebo_gui-2] escalating to SIGTERM[0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/workspace/fuel_ws/src/fuel_gazebo/launch/fuel_gazebo.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [16328][0m
+[1mprocess[gazebo_gui-2]: started with pid [16331][0m
+[1mprocess[fuel_gazebo_camera_pose-3]: started with pid [16336][0m
+[1mprocess[exploration_node-4]: started with pid [16339][0m
+[1mprocess[traj_server-5]: started with pid [16340][0m
+[1mprocess[waypoint_generator-6]: started with pid [16341][0m
+[1mprocess[gazebo_depth_rviz-7]: started with pid [16342][0m
+[gazebo_depth_rviz-7] killing on exit
+[waypoint_generator-6] killing on exit
+[exploration_node-4] killing on exit
+[fuel_gazebo_camera_pose-3] killing on exit
+[gazebo_gui-2] killing on exit
+[traj_server-5] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

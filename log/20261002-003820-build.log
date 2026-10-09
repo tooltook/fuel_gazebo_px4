@@ -1,0 +1,2193 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /workspace/fuel_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /workspace/fuel_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 24 packages in topological order:
+-- ~~  - quadrotor_msgs
+-- ~~  - cmake_utils
+-- ~~  - lkh_tsp_solver
+-- ~~  - map_generator
+-- ~~  - plan_env
+-- ~~  - bspline
+-- ~~  - path_searching
+-- ~~  - active_perception
+-- ~~  - bspline_opt
+-- ~~  - poly_traj
+-- ~~  - poscmd_2_odom
+-- ~~  - pose_utils
+-- ~~  - so3_disturbance_generator
+-- ~~  - odom_visualization
+-- ~~  - local_sensing_node
+-- ~~  - so3_control
+-- ~~  - multi_map_server
+-- ~~  - traj_utils
+-- ~~  - plan_manage
+-- ~~  - exploration_manager
+-- ~~  - uav_utils
+-- ~~  - so3_quadrotor_simulator
+-- ~~  - rviz_plugins
+-- ~~  - waypoint_generator
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'quadrotor_msgs'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/quadrotor_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- quadrotor_msgs: 13 messages, 0 services
+-- Found Eigen3: /usr/include/eigen3 (Required is at least version "2.91.0") 
+-- +++ processing catkin package: 'cmake_utils'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/cmake_utils)
+-- +++ processing catkin package: 'lkh_tsp_solver'
+-- ==> add_subdirectory(FUEL/fuel_planner/utils/lkh_tsp_solver)
+-- +++ processing catkin package: 'map_generator'
+-- ==> add_subdirectory(FUEL/uav_simulator/map_generator)
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.3.7
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.23
+-- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+-- Found OpenNI: /usr/lib/libOpenNI.so  
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- Found OpenNI2: /usr/lib/libOpenNI2.so  
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- Found libusb-1.0: /usr/include  
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- looking for PCL_KDTREE
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- looking for PCL_SEARCH
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- looking for PCL_2D
+-- Found PCL_2D: /usr/include/pcl-1.10  
+-- looking for PCL_GEOMETRY
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+-- looking for PCL_IO
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- looking for PCL_FEATURES
+-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+-- looking for PCL_ML
+-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+-- looking for PCL_SEGMENTATION
+-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+-- looking for PCL_VISUALIZATION
+-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+-- looking for PCL_SURFACE
+-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+-- looking for PCL_REGISTRATION
+-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+-- looking for PCL_KEYPOINTS
+-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+-- looking for PCL_TRACKING
+-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+-- looking for PCL_RECOGNITION
+-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+-- looking for PCL_STEREO
+-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+-- looking for PCL_APPS
+-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+-- looking for PCL_IN_HAND_SCANNER
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+-- looking for PCL_OUTOFCORE
+-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+-- looking for PCL_PEOPLE
+-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  
+-- +++ processing catkin package: 'plan_env'
+-- ==> add_subdirectory(FUEL/fuel_planner/plan_env)
+-- Found OpenCV: /usr (found version "4.2.0") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN (Required is at least version "1.7") 
+-- +++ processing catkin package: 'bspline'
+-- ==> add_subdirectory(FUEL/fuel_planner/bspline)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- bspline: 1 messages, 0 services
+-- +++ processing catkin package: 'path_searching'
+-- ==> add_subdirectory(FUEL/fuel_planner/path_searching)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- +++ processing catkin package: 'active_perception'
+-- ==> add_subdirectory(FUEL/fuel_planner/active_perception)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  FUEL/fuel_planner/active_perception/CMakeLists.txt:23 (catkin_package)
+
+
+-- +++ processing catkin package: 'bspline_opt'
+-- ==> add_subdirectory(FUEL/fuel_planner/bspline_opt)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- +++ processing catkin package: 'poly_traj'
+-- ==> add_subdirectory(FUEL/fuel_planner/poly_traj)
+-- +++ processing catkin package: 'poscmd_2_odom'
+-- ==> add_subdirectory(FUEL/uav_simulator/poscmd_2_odom)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'pose_utils'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/pose_utils)
+-- Found Armadillo: /usr/lib/libarmadillo.so (found version "9.800.4") 
+-- +++ processing catkin package: 'so3_disturbance_generator'
+-- ==> add_subdirectory(FUEL/uav_simulator/so3_disturbance_generator)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'odom_visualization'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/odom_visualization)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'local_sensing_node'
+-- ==> add_subdirectory(FUEL/uav_simulator/local_sensing)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'Eigen' but neither 'Eigen_INCLUDE_DIRS' nor
+  'Eigen_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  FUEL/uav_simulator/local_sensing/CMakeLists.txt:73 (catkin_package)
+
+
+-- +++ processing catkin package: 'so3_control'
+-- ==> add_subdirectory(FUEL/uav_simulator/so3_control)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'multi_map_server'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/multi_map_server)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- multi_map_server: 4 messages, 0 services
+-- +++ processing catkin package: 'traj_utils'
+-- ==> add_subdirectory(FUEL/fuel_planner/traj_utils)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- +++ processing catkin package: 'plan_manage'
+-- ==> add_subdirectory(FUEL/fuel_planner/plan_manage)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- +++ processing catkin package: 'exploration_manager'
+-- ==> add_subdirectory(FUEL/fuel_planner/exploration_manager)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- +++ processing catkin package: 'uav_utils'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/uav_utils)
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX0X
+-- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+-- Found Eigen: /usr/include/eigen3 (found version "3.3.7") 
+-- +++ processing catkin package: 'so3_quadrotor_simulator'
+-- ==> add_subdirectory(FUEL/uav_simulator/so3_quadrotor_simulator)
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'Eigen3' but neither 'Eigen3_INCLUDE_DIRS' nor
+  'Eigen3_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  FUEL/uav_simulator/so3_quadrotor_simulator/CMakeLists.txt:25 (catkin_package)
+
+
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  FUEL/uav_simulator/so3_quadrotor_simulator/CMakeLists.txt:25 (catkin_package)
+
+
+-- +++ processing catkin package: 'rviz_plugins'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/rviz_plugins)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  FUEL/uav_simulator/Utils/rviz_plugins/CMakeLists.txt:12 (catkin_package)
+
+
+-- Using Qt5 based on the rviz_QT_VERSION: 5.12.8
+-- +++ processing catkin package: 'waypoint_generator'
+-- ==> add_subdirectory(FUEL/uav_simulator/Utils/waypoint_generator)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+CMake Warning (dev) at FUEL/uav_simulator/so3_disturbance_generator/CMakeLists.txt:70 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "so3_disturbance_generator_gencfg" of target
+  "so3_disturbance_generator" does not exist.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at FUEL/uav_simulator/Utils/multi_map_server/CMakeLists.txt:63 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "multi_map_server_messages_cpp" of target
+  "multi_map_visualization" does not exist.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: /workspace/fuel_ws/build
+Scanning dependencies of target geometry_msgs_generate_messages_py
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_StatusData
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_Odometry
+Scanning dependencies of target nav_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_StatusData
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_Odometry
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_Corrections
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_Gains
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_PositionCommand
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_OutputData
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_Corrections
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_Gains
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_Serial
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_PPROutputData
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_OutputData
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_PositionCommand
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_SO3Command
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_PPROutputData
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_Serial
+Scanning dependencies of target nav_msgs_generate_messages_nodejs
+Scanning dependencies of target _quadrotor_msgs_generate_messages_check_deps_TRPYCommand
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_SO3Command
+[  0%] Built target nav_msgs_generate_messages_nodejs
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+Scanning dependencies of target nav_msgs_generate_messages_cpp
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+Scanning dependencies of target nav_msgs_generate_messages_eus
+Scanning dependencies of target nav_msgs_generate_messages_lisp
+[  0%] Built target _quadrotor_msgs_generate_messages_check_deps_TRPYCommand
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target lkh_tsp
+Scanning dependencies of target lkh_tsp_solver
+[  0%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Activate.c.o
+[  1%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Activate.c.o
+[  1%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/AddCandidate.c.o
+[  1%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/AddCandidate.c.o
+[  2%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/AddExtraCandidates.c.o
+[  2%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/AddExtraCandidates.c.o
+Scanning dependencies of target random_forest
+Scanning dependencies of target click_map
+[  3%] Building CXX object FUEL/uav_simulator/map_generator/CMakeFiles/click_map.dir/src/click_map.cpp.o
+[  3%] Building CXX object FUEL/uav_simulator/map_generator/CMakeFiles/random_forest.dir/src/random_forest_sensing.cpp.o
+[  3%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/AddTourCandidates.c.o
+[  3%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/AddTourCandidates.c.o
+[  4%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/AdjustCandidateSet.c.o
+[  4%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/AdjustCandidateSet.c.o
+[  4%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/AdjustClusters.c.o
+[  4%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/AdjustClusters.c.o
+[  5%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/AllocateStructures.c.o
+[  5%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/AllocateStructures.c.o
+[  5%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Ascent.c.o
+[  5%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Ascent.c.o
+[  5%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Best2OptMove.c.o
+[  6%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Best2OptMove.c.o
+[  6%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Best3OptMove.c.o
+[  6%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Best3OptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Best4OptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Best4OptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Best5OptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Best5OptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/BestKOptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/BestKOptMove.c.o
+[  7%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Between.c.o
+[  8%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Between.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Between_SL.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Between_SL.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Between_SSL.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Between_SSL.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/BridgeGain.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/BridgeGain.c.o
+[  9%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/BuildKDTree.c.o
+[ 10%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/BuildKDTree.c.o
+[ 10%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/C.c.o
+[ 10%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/C.c.o
+[ 11%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/CandidateReport.c.o
+[ 11%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/CandidateReport.c.o
+[ 11%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ChooseInitialTour.c.o
+[ 11%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ChooseInitialTour.c.o
+[ 12%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Connect.c.o
+[ 12%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Connect.c.o
+[ 12%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/CreateCandidateSet.c.o
+[ 12%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/CreateCandidateSet.c.o
+[ 13%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/CreateDelaunayCandidateSet.c.o
+[ 13%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/CreateDelaunayCandidateSet.c.o
+[ 13%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/CreateNNCandidateSet.c.o
+[ 13%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/CreateNNCandidateSet.c.o
+[ 14%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/CreateQuadrantCandidateSet.c.o
+[ 14%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/CreateQuadrantCandidateSet.c.o
+[ 14%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Create_POPMUSIC_CandidateSet.c.o
+[ 14%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Create_POPMUSIC_CandidateSet.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Delaunay.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Delaunay.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Distance.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Distance.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Distance_SPECIAL.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Distance_SPECIAL.c.o
+[ 15%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ERXT.c.o
+[ 16%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ERXT.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Excludable.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Excludable.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Exclude.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Exclude.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/FindTour.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/FindTour.c.o
+[ 17%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/FixedOrCommonCandidates.c.o
+[ 18%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/FixedOrCommonCandidates.c.o
+[ 19%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Flip.c.o
+[ 19%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Flip.c.o
+[ 19%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Flip_SL.c.o
+[ 19%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Flip_SL.c.o
+[ 19%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Flip_SSL.c.o
+[ 19%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Flip_SSL.c.o
+[ 20%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Forbidden.c.o
+[ 20%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Forbidden.c.o
+[ 20%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/FreeStructures.c.o
+[ 20%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/FreeStructures.c.o
+[ 21%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Gain23.c.o
+[ 21%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Gain23.c.o
+[ 21%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/GenerateCandidates.c.o
+[ 21%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/GenerateCandidates.c.o
+[ 22%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Genetic.c.o
+[ 22%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Genetic.c.o
+[ 22%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/GeoConversion.c.o
+[ 22%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/GeoConversion.c.o
+[ 23%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/GetTime.c.o
+[ 23%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/GetTime.c.o
+[ 23%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/GreedyTour.c.o
+[ 23%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/GreedyTour.c.o
+/workspace/fuel_ws/src/FUEL/uav_simulator/map_generator/src/random_forest_sensing.cpp: In function ‘int main(int, char**)’:
+/workspace/fuel_ws/src/FUEL/uav_simulator/map_generator/src/random_forest_sensing.cpp:345:7: warning: unused variable ‘loop_num’ [-Wunused-variable]
+  345 |   int loop_num = 0;
+      |       ^~~~~~~~
+[ 24%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Hashing.c.o
+[ 24%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Hashing.c.o
+[ 24%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Heap.c.o
+[ 24%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Heap.c.o
+[ 24%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/IsBackboneCandidate.c.o
+[ 25%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/IsBackboneCandidate.c.o
+[ 25%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/IsCandidate.c.o
+[ 25%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/IsCandidate.c.o
+[ 25%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/IsCommonEdge.c.o
+[ 25%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/IsCommonEdge.c.o
+[ 26%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/IsPossibleCandidate.c.o
+[ 26%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/IsPossibleCandidate.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/KSwapKick.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/KSwapKick.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/LKHmain.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/LKHmain.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/LinKernighan.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/LinKernighan.c.o
+[ 27%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Make2OptMove.c.o
+[ 28%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Make2OptMove.c.o
+[ 28%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Make3OptMove.c.o
+[ 28%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Make3OptMove.c.o
+[ 29%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Make4OptMove.c.o
+[ 29%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Make4OptMove.c.o
+[ 29%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Make5OptMove.c.o
+[ 29%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Make5OptMove.c.o
+[ 30%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/MakeKOptMove.c.o
+[ 30%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/MakeKOptMove.c.o
+[ 30%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/MergeTourWithBestTour.c.o
+[ 30%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/MergeTourWithBestTour.c.o
+[ 31%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/MergeWithTourGPX2.c.o
+[ 31%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/MergeWithTourGPX2.c.o
+[ 31%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/MergeWithTourIPT.c.o
+[ 31%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/MergeWithTourIPT.c.o
+[ 32%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Minimum1TreeCost.c.o
+[ 32%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Minimum1TreeCost.c.o
+[ 32%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/MinimumSpanningTree.c.o
+[ 32%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/MinimumSpanningTree.c.o
+[ 34%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/NormalizeNodeList.c.o
+[ 34%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/NormalizeNodeList.c.o
+[ 34%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/NormalizeSegmentList.c.o
+[ 34%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/NormalizeSegmentList.c.o
+[ 35%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/OrderCandidateSet.c.o
+[ 35%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/OrderCandidateSet.c.o
+[ 35%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/PatchCycles.c.o
+[ 35%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/PatchCycles.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/PrintParameters.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/PrintParameters.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Random.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Random.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ReadCandidates.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ReadCandidates.c.o
+[ 36%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ReadEdges.c.o
+[ 37%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ReadEdges.c.o
+/workspace/FUEL/fuel_planner/utils/lkh_tsp_solver/include/LKH.h: In function ‘ReadEdges’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/ReadEdges.c:31:9: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+   31 |         fscanf(EdgeFile, "%d %d\n", &i, &Edges);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/ReadEdges.c:36:13: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+   36 |             fgets(line, 80, EdgeFile);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/FUEL/fuel_planner/utils/lkh_tsp_solver/include/LKH.h: In function ‘ReadEdges’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/ReadEdges.c:31:9: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+   31 |         fscanf(EdgeFile, "%d %d\n", &i, &Edges);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/ReadEdges.c:36:13: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+   36 |             fgets(line, 80, EdgeFile);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ReadLine.c.o
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ReadLine.c.o
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ReadParameters.c.o
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ReadParameters.c.o
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ReadPenalties.c.o
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ReadPenalties.c.o
+[ 38%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ReadProblem.c.o
+[ 39%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ReadProblem.c.o
+[ 39%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/RecordBestTour.c.o
+[ 39%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/RecordBestTour.c.o
+[ 40%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/RecordBetterTour.c.o
+[ 40%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/RecordBetterTour.c.o
+[ 40%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/RemoveFirstActive.c.o
+[ 40%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/RemoveFirstActive.c.o
+[ 40%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/ResetCandidateSet.c.o
+[ 41%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/ResetCandidateSet.c.o
+[ 41%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/RestoreTour.c.o
+[ 41%] Linking CXX executable /workspace/fuel_ws/devel/lib/map_generator/click_map
+[ 41%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/RestoreTour.c.o
+[ 42%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SFCTour.c.o
+[ 42%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SFCTour.c.o
+[ 42%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SegmentSize.c.o
+[ 42%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SegmentSize.c.o
+[ 42%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Sequence.c.o
+[ 43%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Sequence.c.o
+[ 43%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveCompressedSubproblem.c.o
+[ 44%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveDelaunaySubproblems.c.o
+[ 44%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveCompressedSubproblem.c.o
+[ 44%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveDelaunaySubproblems.c.o
+[ 44%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveKCenterSubproblems.c.o
+[ 44%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveKCenterSubproblems.c.o
+[ 44%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveKMeansSubproblems.c.o
+[ 45%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveKMeansSubproblems.c.o
+[ 45%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveKarpSubproblems.c.o
+[ 45%] Built target click_map
+[ 45%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveKarpSubproblems.c.o
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveRoheSubproblems.c.o
+Scanning dependencies of target map_recorder
+[ 46%] Building CXX object FUEL/uav_simulator/map_generator/CMakeFiles/map_recorder.dir/src/map_recorder.cpp.o
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveRoheSubproblems.c.o
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveSFCSubproblems.c.o
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveSFCSubproblems.c.o
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveSubproblem.c.o
+[ 46%] Linking CXX executable /workspace/fuel_ws/devel/lib/map_generator/random_forest
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveSubproblem.c.o
+[ 46%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveSubproblemBorderProblems.c.o
+[ 47%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveSubproblemBorderProblems.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SolveTourSegmentSubproblems.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/Statistics.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SolveTourSegmentSubproblems.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/StoreTour.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/Statistics.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/SymmetrizeCandidateSet.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/StoreTour.c.o
+[ 48%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/TrimCandidateSet.c.o
+[ 49%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/SymmetrizeCandidateSet.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/WriteCandidates.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/TrimCandidateSet.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/WritePenalties.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/WriteCandidates.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/WriteTour.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/WritePenalties.c.o
+[ 50%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/eprintf.c.o
+[ 51%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/WriteTour.c.o
+[ 52%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/fscanint.c.o
+[ 52%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/gpx.c.o
+[ 52%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/eprintf.c.o
+[ 52%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/fscanint.c.o
+[ 52%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/gpx.c.o
+[ 52%] Built target random_forest
+Scanning dependencies of target map_pub
+[ 53%] Building CXX object FUEL/uav_simulator/map_generator/CMakeFiles/map_pub.dir/src/map_publisher.cpp.o
+[ 54%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp.dir/src/printff.c.o
+[ 54%] Building C object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/printff.c.o
+[ 54%] Building CXX object FUEL/fuel_planner/utils/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver.dir/src/lkh_interface.cpp.o
+[ 54%] Linking C executable /workspace/fuel_ws/devel/lib/lkh_tsp_solver/lkh_tsp
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/lkh_interface.cpp: In function ‘int solveTSPLKH(const char*)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/lkh_interface.cpp:61:19: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   61 |           printff("  Merged with %d: Cost = " GainFormat, i + 1, Cost);
+      |                   ^
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/lkh_interface.cpp:63:21: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   63 |             printff(", Gap = %0.4f%%", 100.0 * (Cost - Optimum) / Optimum);
+      |                     ^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/lkh_interface.cpp:64:19: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   64 |           printff("\n");
+      |                   ^~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/src/lkh_interface.cpp:94:15: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   94 |       printff("*** New optimum = " GainFormat " ***\n\n", Optimum);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 54%] Built target lkh_tsp
+[ 54%] Linking CXX shared library /workspace/fuel_ws/devel/lib/liblkh_tsp_solver.so
+[ 54%] Built target lkh_tsp_solver
+Scanning dependencies of target obj_generator
+Scanning dependencies of target plan_env
+[ 54%] Building CXX object FUEL/fuel_planner/plan_env/CMakeFiles/obj_generator.dir/src/obj_generator.cpp.o
+[ 54%] Building CXX object FUEL/fuel_planner/plan_env/CMakeFiles/plan_env.dir/src/sdf_map.cpp.o
+[ 54%] Linking CXX executable /workspace/fuel_ws/devel/lib/map_generator/map_recorder
+[ 54%] Linking CXX executable /workspace/fuel_ws/devel/lib/map_generator/map_pub
+[ 55%] Linking CXX executable /workspace/fuel_ws/devel/lib/plan_env/obj_generator
+[ 55%] Built target obj_generator
+Scanning dependencies of target _bspline_generate_messages_check_deps_Bspline
+[ 55%] Built target _bspline_generate_messages_check_deps_Bspline
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+[ 55%] Built target std_msgs_generate_messages_nodejs
+Scanning dependencies of target std_msgs_generate_messages_cpp
+[ 55%] Built target std_msgs_generate_messages_cpp
+Scanning dependencies of target std_msgs_generate_messages_py
+[ 55%] Built target std_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_eus
+[ 55%] Built target std_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_lisp
+[ 55%] Built target std_msgs_generate_messages_lisp
+Scanning dependencies of target poly_traj
+[ 55%] Building CXX object FUEL/fuel_planner/poly_traj/CMakeFiles/poly_traj.dir/src/polynomial_traj.cpp.o
+[ 55%] Built target map_pub
+[ 55%] Built target map_recorder
+Scanning dependencies of target pose_utils
+[ 55%] Building CXX object FUEL/uav_simulator/Utils/pose_utils/CMakeFiles/pose_utils.dir/src/pose_utils.cpp.o
+Scanning dependencies of target SO3Control
+[ 55%] Building CXX object FUEL/uav_simulator/so3_control/CMakeFiles/SO3Control.dir/src/SO3Control.cpp.o
+[ 55%] Building CXX object FUEL/fuel_planner/plan_env/CMakeFiles/plan_env.dir/src/obj_predictor.cpp.o
+In file included from /workspace/fuel_ws/src/FUEL/fuel_planner/poly_traj/src/polynomial_traj.cpp:2:
+/workspace/fuel_ws/src/FUEL/fuel_planner/poly_traj/include/poly_traj/polynomial_traj.h: In member function ‘double fast_planner::PolynomialTraj::getLength()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/poly_traj/include/poly_traj/polynomial_traj.h:118:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  118 |     for (int i = 1; i < sample_points_.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_env/src/obj_predictor.cpp: In member function ‘void fast_planner::ObjHistory::poseCallback(const PoseStampedConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_env/src/obj_predictor.cpp:28:23: warning: comparison of integer expressions of different signedness: ‘std::__cxx11::list<Eigen::Matrix<double, 4, 1> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   28 |   if (history_.size() > queue_size_) history_.pop_front();
+      |       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+[ 55%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libSO3Control.so
+[ 55%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libpose_utils.so
+[ 55%] Built target SO3Control
+Scanning dependencies of target _multi_map_server_generate_messages_check_deps_VerticalOccupancyGridList
+[ 55%] Built target pose_utils
+Scanning dependencies of target _multi_map_server_generate_messages_check_deps_MultiOccupancyGrid
+[ 55%] Built target _multi_map_server_generate_messages_check_deps_VerticalOccupancyGridList
+Scanning dependencies of target _multi_map_server_generate_messages_check_deps_SparseMap3D
+[ 55%] Built target _multi_map_server_generate_messages_check_deps_MultiOccupancyGrid
+Scanning dependencies of target _multi_map_server_generate_messages_check_deps_MultiSparseMap3D
+[ 55%] Built target _multi_map_server_generate_messages_check_deps_SparseMap3D
+[ 55%] Built target _multi_map_server_generate_messages_check_deps_MultiSparseMap3D
+Scanning dependencies of target waypoint_generator
+Scanning dependencies of target quadrotor_dynamics
+[ 55%] Building CXX object FUEL/uav_simulator/Utils/waypoint_generator/CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o
+[ 55%] Building CXX object FUEL/uav_simulator/so3_quadrotor_simulator/CMakeFiles/quadrotor_dynamics.dir/src/dynamics/Quadrotor.cpp.o
+[ 55%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libpoly_traj.so
+[ 55%] Built target poly_traj
+[ 55%] Building CXX object FUEL/fuel_planner/plan_env/CMakeFiles/plan_env.dir/src/edt_environment.cpp.o
+[ 55%] Building CXX object FUEL/fuel_planner/plan_env/CMakeFiles/plan_env.dir/src/raycast.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_env/src/edt_environment.cpp: In member function ‘double fast_planner::EDTEnvironment::minDistToAllBox(const Vector3d&, const double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_env/src/edt_environment.cpp:42:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<fast_planner::PolynomialPrediction>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   42 |   for (int i = 0; i < obj_prediction_->size(); i++) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[ 55%] Linking CXX executable /workspace/fuel_ws/devel/lib/waypoint_generator/waypoint_generator
+/usr/bin/c++   -std=c++11 -Wall -O3 -march=native  -rdynamic CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o  -o /workspace/fuel_ws/devel/lib/waypoint_generator/waypoint_generator  -Wl,-rpath,/opt/ros/noetic/lib /opt/ros/noetic/lib/libtf.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so -lpthread /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so -llog4cxx /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 
+[ 55%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libquadrotor_dynamics.so
+[ 55%] Built target waypoint_generator
+Scanning dependencies of target quadrotor_msgs_generate_messages_py
+[ 55%] Generating Python from MSG quadrotor_msgs/AuxCommand
+[ 55%] Built target quadrotor_dynamics
+Scanning dependencies of target quadrotor_msgs_generate_messages_nodejs
+[ 56%] Generating Javascript code from quadrotor_msgs/AuxCommand.msg
+[ 56%] Generating Javascript code from quadrotor_msgs/Corrections.msg
+[ 56%] Generating Javascript code from quadrotor_msgs/Gains.msg
+[ 56%] Generating Javascript code from quadrotor_msgs/OutputData.msg
+[ 56%] Generating Python from MSG quadrotor_msgs/Corrections
+[ 57%] Generating Javascript code from quadrotor_msgs/PositionCommand.msg
+[ 58%] Building CXX object FUEL/fuel_planner/plan_env/CMakeFiles/plan_env.dir/src/map_ros.cpp.o
+[ 58%] Generating Javascript code from quadrotor_msgs/PPROutputData.msg
+[ 58%] Generating Javascript code from quadrotor_msgs/Serial.msg
+[ 58%] Generating Python from MSG quadrotor_msgs/Gains
+[ 58%] Generating Javascript code from quadrotor_msgs/SO3Command.msg
+[ 59%] Generating Javascript code from quadrotor_msgs/StatusData.msg
+[ 59%] Generating Javascript code from quadrotor_msgs/TRPYCommand.msg
+[ 60%] Generating Python from MSG quadrotor_msgs/OutputData
+[ 60%] Generating Python from MSG quadrotor_msgs/PositionCommand
+[ 60%] Generating Javascript code from quadrotor_msgs/Odometry.msg
+[ 60%] Generating Javascript code from quadrotor_msgs/PolynomialTrajectory.msg
+[ 61%] Generating Javascript code from quadrotor_msgs/LQRTrajectory.msg
+[ 61%] Generating Python from MSG quadrotor_msgs/PPROutputData
+[ 61%] Generating Python from MSG quadrotor_msgs/Serial
+[ 61%] Built target quadrotor_msgs_generate_messages_nodejs
+Scanning dependencies of target quadrotor_msgs_generate_messages_cpp
+[ 61%] Generating C++ code from quadrotor_msgs/AuxCommand.msg
+[ 61%] Generating Python from MSG quadrotor_msgs/SO3Command
+[ 61%] Generating C++ code from quadrotor_msgs/Corrections.msg
+[ 62%] Generating C++ code from quadrotor_msgs/Gains.msg
+[ 62%] Generating C++ code from quadrotor_msgs/OutputData.msg
+[ 62%] Generating C++ code from quadrotor_msgs/PositionCommand.msg
+[ 63%] Generating Python from MSG quadrotor_msgs/StatusData
+[ 63%] Generating C++ code from quadrotor_msgs/PPROutputData.msg
+[ 64%] Generating C++ code from quadrotor_msgs/Serial.msg
+[ 64%] Generating Python from MSG quadrotor_msgs/TRPYCommand
+[ 64%] Generating C++ code from quadrotor_msgs/SO3Command.msg
+[ 64%] Generating C++ code from quadrotor_msgs/StatusData.msg
+[ 64%] Generating C++ code from quadrotor_msgs/TRPYCommand.msg
+[ 65%] Generating C++ code from quadrotor_msgs/Odometry.msg
+[ 65%] Generating Python from MSG quadrotor_msgs/Odometry
+[ 65%] Generating Python from MSG quadrotor_msgs/PolynomialTrajectory
+[ 65%] Generating C++ code from quadrotor_msgs/PolynomialTrajectory.msg
+[ 65%] Generating C++ code from quadrotor_msgs/LQRTrajectory.msg
+[ 67%] Generating Python from MSG quadrotor_msgs/LQRTrajectory
+Scanning dependencies of target quadrotor_msgs_generate_messages_eus
+[ 67%] Generating EusLisp code from quadrotor_msgs/AuxCommand.msg
+[ 67%] Built target quadrotor_msgs_generate_messages_cpp
+Scanning dependencies of target quadrotor_msgs_generate_messages_lisp
+[ 68%] Generating Lisp code from quadrotor_msgs/AuxCommand.msg
+[ 69%] Generating EusLisp code from quadrotor_msgs/Corrections.msg
+[ 69%] Generating Python msg __init__.py for quadrotor_msgs
+[ 69%] Generating Lisp code from quadrotor_msgs/Corrections.msg
+[ 69%] Generating Lisp code from quadrotor_msgs/Gains.msg
+[ 69%] Generating EusLisp code from quadrotor_msgs/Gains.msg
+[ 69%] Generating Lisp code from quadrotor_msgs/OutputData.msg
+[ 69%] Generating EusLisp code from quadrotor_msgs/OutputData.msg
+[ 69%] Built target quadrotor_msgs_generate_messages_py
+Scanning dependencies of target encode_msgs
+[ 70%] Generating Lisp code from quadrotor_msgs/PositionCommand.msg
+[ 70%] Building CXX object FUEL/uav_simulator/Utils/quadrotor_msgs/CMakeFiles/encode_msgs.dir/src/encode_msgs.cpp.o
+[ 70%] Generating Lisp code from quadrotor_msgs/PPROutputData.msg
+[ 70%] Generating EusLisp code from quadrotor_msgs/PositionCommand.msg
+[ 70%] Generating Lisp code from quadrotor_msgs/Serial.msg
+[ 70%] Generating EusLisp code from quadrotor_msgs/PPROutputData.msg
+[ 70%] Generating Lisp code from quadrotor_msgs/SO3Command.msg
+[ 71%] Generating Lisp code from quadrotor_msgs/StatusData.msg
+[ 72%] Generating EusLisp code from quadrotor_msgs/Serial.msg
+[ 72%] Generating Lisp code from quadrotor_msgs/TRPYCommand.msg
+[ 72%] Generating EusLisp code from quadrotor_msgs/SO3Command.msg
+[ 72%] Generating Lisp code from quadrotor_msgs/Odometry.msg
+[ 72%] Generating Lisp code from quadrotor_msgs/PolynomialTrajectory.msg
+[ 72%] Generating EusLisp code from quadrotor_msgs/StatusData.msg
+[ 72%] Generating Lisp code from quadrotor_msgs/LQRTrajectory.msg
+[ 72%] Generating EusLisp code from quadrotor_msgs/TRPYCommand.msg
+[ 72%] Built target quadrotor_msgs_generate_messages_lisp
+Scanning dependencies of target decode_msgs
+[ 73%] Building CXX object FUEL/uav_simulator/Utils/quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o
+[ 74%] Generating EusLisp code from quadrotor_msgs/Odometry.msg
+[ 74%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libencode_msgs.so
+[ 74%] Generating EusLisp code from quadrotor_msgs/PolynomialTrajectory.msg
+[ 74%] Built target encode_msgs
+Scanning dependencies of target bspline_generate_messages_nodejs
+[ 74%] Generating Javascript code from bspline/Bspline.msg
+[ 74%] Generating EusLisp code from quadrotor_msgs/LQRTrajectory.msg
+[ 74%] Built target bspline_generate_messages_nodejs
+Scanning dependencies of target bspline_generate_messages_cpp
+[ 74%] Generating C++ code from bspline/Bspline.msg
+[ 74%] Generating EusLisp manifest code for quadrotor_msgs
+[ 74%] Built target bspline_generate_messages_cpp
+Scanning dependencies of target bspline_generate_messages_py
+[ 74%] Generating Python from MSG bspline/Bspline
+[ 75%] Generating Python msg __init__.py for bspline
+[ 75%] Built target quadrotor_msgs_generate_messages_eus
+Scanning dependencies of target bspline_generate_messages_eus
+[ 75%] Generating EusLisp code from bspline/Bspline.msg
+[ 75%] Built target bspline_generate_messages_py
+Scanning dependencies of target bspline_generate_messages_lisp
+[ 76%] Generating EusLisp manifest code for bspline
+[ 76%] Generating Lisp code from bspline/Bspline.msg
+[ 76%] Built target bspline_generate_messages_lisp
+Scanning dependencies of target so3_disturbance_generator
+[ 76%] Building CXX object FUEL/uav_simulator/so3_disturbance_generator/CMakeFiles/so3_disturbance_generator.dir/src/so3_disturbance_generator.cpp.o
+[ 76%] Built target bspline_generate_messages_eus
+[ 76%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libdecode_msgs.so
+Scanning dependencies of target multi_map_server_generate_messages_lisp
+[ 76%] Generating Lisp code from multi_map_server/MultiOccupancyGrid.msg
+[ 76%] Generating Lisp code from multi_map_server/MultiSparseMap3D.msg
+[ 76%] Built target decode_msgs
+Scanning dependencies of target multi_map_server_generate_messages_nodejs
+[ 76%] Generating Javascript code from multi_map_server/MultiOccupancyGrid.msg
+[ 76%] Generating Lisp code from multi_map_server/SparseMap3D.msg
+[ 76%] Generating Javascript code from multi_map_server/MultiSparseMap3D.msg
+[ 77%] Generating Lisp code from multi_map_server/VerticalOccupancyGridList.msg
+[ 77%] Generating Javascript code from multi_map_server/SparseMap3D.msg
+[ 77%] Built target multi_map_server_generate_messages_lisp
+Scanning dependencies of target multi_map_server_generate_messages_eus
+[ 78%] Generating EusLisp code from multi_map_server/MultiOccupancyGrid.msg
+[ 78%] Generating Javascript code from multi_map_server/VerticalOccupancyGridList.msg
+[ 78%] Built target multi_map_server_generate_messages_nodejs
+[ 78%] Generating EusLisp code from multi_map_server/MultiSparseMap3D.msg
+Scanning dependencies of target multi_map_server_generate_messages_cpp
+[ 79%] Generating C++ code from multi_map_server/MultiOccupancyGrid.msg
+[ 79%] Generating EusLisp code from multi_map_server/SparseMap3D.msg
+[ 79%] Generating C++ code from multi_map_server/MultiSparseMap3D.msg
+[ 79%] Generating EusLisp code from multi_map_server/VerticalOccupancyGridList.msg
+[ 79%] Generating C++ code from multi_map_server/SparseMap3D.msg
+[ 80%] Generating EusLisp manifest code for multi_map_server
+[ 80%] Generating C++ code from multi_map_server/VerticalOccupancyGridList.msg
+[ 80%] Built target multi_map_server_generate_messages_cpp
+Scanning dependencies of target multi_map_server_generate_messages_py
+[ 81%] Generating Python from MSG multi_map_server/MultiOccupancyGrid
+[ 81%] Built target multi_map_server_generate_messages_eus
+[ 81%] Generating Python from MSG multi_map_server/MultiSparseMap3D
+Scanning dependencies of target quadrotor_simulator_so3
+[ 81%] Building CXX object FUEL/uav_simulator/so3_quadrotor_simulator/CMakeFiles/quadrotor_simulator_so3.dir/src/quadrotor_simulator_so3.cpp.o
+[ 81%] Generating Python from MSG multi_map_server/SparseMap3D
+[ 81%] Generating Python from MSG multi_map_server/VerticalOccupancyGridList
+[ 82%] Generating Python msg __init__.py for multi_map_server
+[ 82%] Built target multi_map_server_generate_messages_py
+[ 82%] Generating src/moc_multi_probmap_display.cpp
+[ 82%] Generating src/moc_goal_tool.cpp
+[ 82%] Generating src/moc_probmap_display.cpp
+[ 83%] Generating src/moc_aerialmap_display.cpp
+Scanning dependencies of target rviz_plugins
+[ 83%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/pose_tool.cpp.o
+[ 83%] Linking CXX executable /workspace/fuel_ws/devel/lib/so3_quadrotor_simulator/quadrotor_simulator_so3
+[ 83%] Built target quadrotor_simulator_so3
+Scanning dependencies of target quadrotor_msgs_generate_messages
+[ 83%] Built target quadrotor_msgs_generate_messages
+Scanning dependencies of target bspline_generate_messages
+[ 83%] Built target bspline_generate_messages
+Scanning dependencies of target poscmd_2_odom
+[ 83%] Building CXX object FUEL/uav_simulator/poscmd_2_odom/CMakeFiles/poscmd_2_odom.dir/src/poscmd_2_odom.cpp.o
+[ 83%] Linking CXX executable /workspace/fuel_ws/devel/lib/so3_disturbance_generator/so3_disturbance_generator
+[ 83%] Built target so3_disturbance_generator
+Scanning dependencies of target odom_visualization
+[ 83%] Building CXX object FUEL/uav_simulator/Utils/odom_visualization/CMakeFiles/odom_visualization.dir/src/odom_visualization.cpp.o
+[ 83%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o
+[ 84%] Linking CXX executable /workspace/fuel_ws/devel/lib/poscmd_2_odom/poscmd_2_odom
+[ 84%] Built target poscmd_2_odom
+Scanning dependencies of target pcl_render_node
+[ 84%] Building CXX object FUEL/uav_simulator/local_sensing/CMakeFiles/pcl_render_node.dir/src/depth_render_node.cpp.o
+[ 85%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/probmap_display.cpp.o
+[ 85%] Linking CXX executable /workspace/fuel_ws/devel/lib/odom_visualization/odom_visualization
+[ 85%] Built target odom_visualization
+Scanning dependencies of target so3_control_nodelet
+[ 85%] Building CXX object FUEL/uav_simulator/so3_control/CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o
+[ 85%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libplan_env.so
+[ 85%] Built target plan_env
+Scanning dependencies of target multi_map_visualization
+[ 85%] Building CXX object FUEL/uav_simulator/Utils/multi_map_server/CMakeFiles/multi_map_visualization.dir/src/multi_map_visualization.cc.o
+/workspace/fuel_ws/src/FUEL/uav_simulator/local_sensing/src/depth_render_node.cpp: In function ‘void pointCloudCallBack(const PointCloud2&)’:
+/workspace/fuel_ws/src/FUEL/uav_simulator/local_sensing/src/depth_render_node.cpp:108:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  108 |   printf("global map has points: %d.\n", cloudIn.points.size());
+      |                                  ~^      ~~~~~~~~~~~~~~~~~~~~~
+      |                                   |                         |
+      |                                   int                       std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type {aka long unsigned int}
+      |                                  %ld
+[ 86%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libso3_control_nodelet.so
+[ 86%] Built target so3_control_nodelet
+Scanning dependencies of target multi_map_server_generate_messages
+[ 86%] Built target multi_map_server_generate_messages
+[ 86%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/aerialmap_display.cpp.o
+[ 86%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/multi_probmap_display.cpp.o
+[ 87%] Linking CXX executable /workspace/fuel_ws/devel/lib/local_sensing_node/pcl_render_node
+[ 87%] Built target pcl_render_node
+Scanning dependencies of target bspline
+[ 87%] Linking CXX executable /workspace/fuel_ws/devel/lib/multi_map_server/multi_map_visualization
+[ 88%] Building CXX object FUEL/fuel_planner/bspline/CMakeFiles/bspline.dir/src/non_uniform_bspline.cpp.o
+[ 88%] Built target multi_map_visualization
+Scanning dependencies of target path_searching
+[ 88%] Building CXX object FUEL/fuel_planner/path_searching/CMakeFiles/path_searching.dir/src/kinodynamic_astar.cpp.o
+[ 88%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/moc_goal_tool.cpp.o
+[ 88%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/moc_probmap_display.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline/src/non_uniform_bspline.cpp: In member function ‘bool fast_planner::NonUniformBspline::checkFeasibility(bool)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline/src/non_uniform_bspline.cpp:484:10: warning: unused variable ‘ratio’ [-Wunused-variable]
+  484 |   double ratio = max(max_vel / limit_vel_, sqrt(fabs(max_acc) / limit_acc_));
+      |          ^~~~~
+[ 89%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/moc_aerialmap_display.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/kinodynamic_astar.cpp: In member function ‘int fast_planner::KinodynamicAstar::search(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, bool, bool, double)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/kinodynamic_astar.cpp:125:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |     for (int i = 0; i < inputs.size(); ++i)
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/kinodynamic_astar.cpp:126:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  126 |       for (int j = 0; j < durations.size(); ++j) {
+      |                       ~~^~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/kinodynamic_astar.cpp:193:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<fast_planner::PathNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  193 |         for (int j = 0; j < tmp_expand_nodes.size(); ++j) {
+      |                         ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/kinodynamic_astar.cpp:49:15: warning: unused variable ‘neighbor’ [-Wunused-variable]
+   49 |   PathNodePtr neighbor = NULL;
+      |               ^~~~~~~~
+[ 89%] Building CXX object FUEL/uav_simulator/Utils/rviz_plugins/CMakeFiles/rviz_plugins.dir/src/moc_multi_probmap_display.cpp.o
+[ 90%] Building CXX object FUEL/fuel_planner/path_searching/CMakeFiles/path_searching.dir/src/astar2.cpp.o
+[ 90%] Linking CXX shared library /workspace/fuel_ws/devel/lib/librviz_plugins.so
+[ 90%] Built target rviz_plugins
+[ 90%] Building CXX object FUEL/fuel_planner/path_searching/CMakeFiles/path_searching.dir/src/topo_prm.cpp.o
+[ 90%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libbspline.so
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/astar2.cpp: In static member function ‘static double fast_planner::Astar::pathLength(const std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/astar2.cpp:172:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  172 |   for (int i = 0; i < path.size() - 1; ++i)
+      |                   ~~^~~~~~~~~~~~~~~~~
+[ 90%] Built target bspline
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/astar2.cpp: In member function ‘double fast_planner::Astar::getDiagHeu(const Vector3d&, const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/astar2.cpp:211:25: warning: ‘h’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  211 |   return tie_breaker_ * h;
+      |                         ^
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘bool fast_planner::TopologyPRM::needConnection(fast_planner::GraphNode::Ptr, fast_planner::GraphNode::Ptr, Eigen::Vector3d)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:221:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  221 |   for (int i = 0; i < g1->neighbors_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:222:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  222 |     for (int j = 0; j < g2->neighbors_.size(); ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:220:8: warning: unused variable ‘has_connect’ [-Wunused-variable]
+  220 |   bool has_connect = false;
+      |        ^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > > fast_planner::TopologyPRM::pruneEquivalent(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:310:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  310 |   for (int i = 1; i < paths.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:314:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  314 |     for (int j = 0; j < exist_paths_id.size(); ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:330:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  330 |   for (int i = 0; i < exist_paths_id.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > > fast_planner::TopologyPRM::selectShortPaths(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:365:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  365 |   for (int i = 0; i < short_paths.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:369:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  369 |   for (int i = 0; i < short_paths.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘int fast_planner::TopologyPRM::shortestPath(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:407:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  407 |   for (int i = 0; i < paths.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘double fast_planner::TopologyPRM::pathLength(const std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:421:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  421 |   for (int i = 0; i < path.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘std::vector<Eigen::Matrix<double, 3, 1> > fast_planner::TopologyPRM::discretizePath(const std::vector<Eigen::Matrix<double, 3, 1> >&, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:431:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  431 |   for (int i = 0; i < path.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:447:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  447 |     for (int j = 0; j < len_list.size() - 1; ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘void fast_planner::TopologyPRM::shortcutPath(std::vector<Eigen::Matrix<double, 3, 1> >, int, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:487:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  487 |     for (int i = 1; i < dis_path.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘void fast_planner::TopologyPRM::shortcutPaths()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:521:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  521 |     for (int i = 0; i < raw_paths_.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:524:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  524 |     for (int i = 0; i < raw_paths_.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:528:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  528 |     for (int i = 0; i < raw_paths_.size(); ++i)
+      |                     ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘std::vector<Eigen::Matrix<double, 3, 1> > fast_planner::TopologyPRM::discretizePath(std::vector<Eigen::Matrix<double, 3, 1> >)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:557:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  557 |   for (int i = 0; i < path.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:563:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  563 |     if (i != path.size() - 2) dis_path.pop_back();
+      |         ~~^~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > > fast_planner::TopologyPRM::discretizePaths(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:572:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  572 |   for (int i = 0; i < path.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘Eigen::Vector3d fast_planner::TopologyPRM::getOrthoPoint(const std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:592:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  592 |   for (int i = 1; i < path.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > > fast_planner::TopologyPRM::searchPaths()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:617:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  617 |   for (int i = 0; i < raw_paths_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:627:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  627 |     for (int j = 0; j < path_list[i].size(); ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:629:35: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  629 |       if (filter_raw_paths.size() >= max_raw_path2_) {
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘void fast_planner::TopologyPRM::depthFirstSearch(std::vector<std::shared_ptr<fast_planner::GraphNode> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:646:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  646 |   for (int i = 0; i < cur->neighbors_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:651:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  651 |       for (int j = 0; j < vis.size(); ++j) {
+      |                       ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:657:29: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  657 |       if (raw_paths_.size() >= max_raw_path_) return;
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:663:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  663 |   for (int i = 0; i < cur->neighbors_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:669:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  669 |     for (int j = 0; j < vis.size(); ++j) {
+      |                     ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:680:27: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  680 |     if (raw_paths_.size() >= max_raw_path_) return;
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp: In member function ‘bool fast_planner::TopologyPRM::triangleVisib(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/path_searching/src/topo_prm.cpp:705:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  705 |   for (int i = 0; i < pts.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~
+[ 90%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libpath_searching.so
+[ 90%] Built target path_searching
+Scanning dependencies of target active_perception
+[ 90%] Building CXX object FUEL/fuel_planner/active_perception/CMakeFiles/active_perception.dir/src/traj_visibility.cpp.o
+[ 91%] Building CXX object FUEL/fuel_planner/active_perception/CMakeFiles/active_perception.dir/src/frontier_finder.cpp.o
+[ 90%] Building CXX object FUEL/fuel_planner/active_perception/CMakeFiles/active_perception.dir/src/heading_planner.cpp.o
+[ 91%] Building CXX object FUEL/fuel_planner/active_perception/CMakeFiles/active_perception.dir/src/graph_node.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/graph_node.cpp: In static member function ‘static double fast_planner::ViewNode::searchPath(const Vector3d&, const Vector3d&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/graph_node.cpp:50:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   50 |   for (int k = 0; k < res.size(); ++k) {
+      |                   ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/traj_visibility.cpp: In member function ‘void fast_planner::VisibilityUtil::findVisibPairs(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<fast_planner::VisiblePair>&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/traj_visibility.cpp:127:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  127 |   for (int i = 0; i < pts.size() - visible_num_; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/traj_visibility.cpp:132:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  132 |     for (int j = i + visible_num_; j < pts.size(); ++j) {
+      |                                    ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/traj_visibility.cpp:124:7: warning: unused variable ‘know_num’ [-Wunused-variable]
+  124 |   int know_num = 0;
+      |       ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::expandFrontier(const Vector3i&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:157:23: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  157 |   if (expanded.size() > cluster_min_) {
+      |       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:126:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  126 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::updateFrontierCostMatrix()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:273:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  273 |       for (int i = 0; i < removed_ids_.size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::getViewpointsInfo(const Vector3d&, const std::vector<int>&, const int&, const double&, std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, std::vector<std::vector<double> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:466:26: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘const int’ [-Wsign-compare]
+  466 |           if (pts.size() >= view_num || view.visib_num_ <= visib_thresh) break;
+      |               ~~~~~~~~~~~^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:474:28: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘const int’ [-Wsign-compare]
+  474 |             if (pts.size() >= view_num || view.visib_num_ <= visib_thresh) break;
+      |                 ~~~~~~~~~~~^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::getPathForTour(const Vector3d&, const std::vector<int>&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:521:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  521 |   for (int i = 0; i < frontier_ids.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::findViewpoints(const Vector3d&, const Vector3d&, std::vector<fast_planner::Viewpoint>&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:600:10: warning: unused variable ‘left_angle_’ [-Wunused-variable]
+  600 |   double left_angle_, right_angle_, vertical_angle_, ray_length_;
+      |          ^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/traj_visibility.cpp: In member function ‘bool fast_planner::VisibilityUtil::findDirAndIdx(fast_planner::NonUniformBspline&, const double&, const double&, Eigen::Vector3d&, int&, Eigen::Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/traj_visibility.cpp:232:33: warning: control reaches end of non-void function [-Wreturn-type]
+  232 |   auto vel = traj.getDerivative();
+      |                                 ^
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::sampleViewpoints(fast_planner::Frontier&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:678:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  678 |       for (int i = 1; i < cells.size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘Eigen::Vector3i fast_planner::FrontierFinder::searchClearVoxel(const Vector3i&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:800:11: warning: unused variable ‘adr’ [-Wunused-variable]
+  800 |       int adr = toadr(nbr);
+      |           ^~~
+[ 91%] Building CXX object FUEL/fuel_planner/active_perception/CMakeFiles/active_perception.dir/src/perception_utils.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp: In member function ‘void fast_planner::HeadingPlanner::searchPathOfYaw(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const double&, const MatrixXd&, std::vector<double>&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:179:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  179 |   for (int i = 0; i < yaws.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:182:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  182 |     bool start_end = (i == 0 || i == yaws.size() - 1);
+      |                                 ~~^~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:181:10: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  181 |     auto t1 = ros::Time::now();
+      |          ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:177:19: warning: variable ‘cur_pos’ set but not used [-Wunused-but-set-variable]
+  177 |   Eigen::Vector3d cur_pos = pts[0];
+      |                   ^~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:224:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  224 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp: In member function ‘double fast_planner::HeadingPlanner::calcInformationGain(const Vector3d&, const double&, const MatrixXd&, const int&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:239:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  239 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp: In member function ‘double fast_planner::HeadingPlanner::calcInfoGain(const Vector3d&, const double&, const int&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:326:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  326 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp: In member function ‘void fast_planner::HeadingPlanner::calcVisibFrontier(const Vector3d&, const double&, std::unordered_map<int, int>&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:518:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  518 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp: In member function ‘bool fast_planner::HeadingPlanner::insideFoV(const Vector4d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:624:9: warning: ‘*((void*)& pc +16)’ is used uninitialized in this function [-Wuninitialized]
+  624 |   if (pc(2) < near_ || pc(2) > far_) {
+      |       ~~^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:628:18: warning: ‘pc’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  628 |   double txz = pc(0) / pc(2);
+      |                ~~^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/heading_planner.cpp:633:18: warning: ‘*((void*)& pc +8)’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  633 |   double tyz = pc(1) / pc(2);
+      |                ~~^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/perception_utils.cpp: In member function ‘void fast_planner::PerceptionUtils::getFOV(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/perception_utils.cpp:76:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   76 |   for (int i = 0; i < cam_vertices1_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp: In member function ‘void fast_planner::FrontierFinder::findViewpoints(const Vector3d&, const Vector3d&, std::vector<fast_planner::Viewpoint>&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:611:17: warning: ‘vertical_angle_’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  611 |     for (double phi_v = -vertical_angle_; phi_v <= vertical_angle_; phi_v += vertical_angle_ / 3) {
+      |                 ^~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:614:40: warning: ‘ray_length_’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  614 |       end[0] = sample[0] + ray_length_ * cos(phi_v) * cos(hc + phi_h);
+      |                            ~~~~~~~~~~~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/active_perception/src/frontier_finder.cpp:636:47: warning: ‘right_angle_’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  636 |     double yaw = hc - M_PI_2 + M_PI / 9.0 * i + right_angle_;
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[ 91%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libactive_perception.so
+[ 91%] Built target active_perception
+Scanning dependencies of target bspline_opt
+[ 91%] Building CXX object FUEL/fuel_planner/bspline_opt/CMakeFiles/bspline_opt.dir/src/bspline_optimizer.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::optimize()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:226:19: warning: unused variable ‘result’ [-Wunused-variable]
+  226 |     nlopt::result result = opt.optimize(q, final_cost);
+      |                   ^~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::calcSmoothnessCost(const std::vector<Eigen::Matrix<double, 3, 1> >&, const double&, double&, std::vector<Eigen::Matrix<double, 3, 1> >&, double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:263:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  263 |   for (int i = 0; i < q.size() - 3; i++) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::calcDistanceCost(const std::vector<Eigen::Matrix<double, 3, 1> >&, double&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:292:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  292 |   for (int i = 0; i < q.size(); i++) {
+      |                   ~~^~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::calcFeasibilityCost(const std::vector<Eigen::Matrix<double, 3, 1> >&, const double&, double&, std::vector<Eigen::Matrix<double, 3, 1> >&, double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:320:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  320 |   for (int i = 0; i < q.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:338:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  338 |   for (int i = 0; i < q.size() - 2; ++i) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::calcEndCost(const std::vector<Eigen::Matrix<double, 3, 1> >&, const double&, double&, std::vector<Eigen::Matrix<double, 3, 1> >&, double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:398:32: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  398 |   for (int i = q.size() - 3; i < q.size(); ++i)
+      |                              ~~^~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::calcWaypointsCost(const std::vector<Eigen::Matrix<double, 3, 1> >&, double&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:442:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  442 |   for (int i = 0; i < waypoints_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp: In member function ‘void fast_planner::BsplineOptimizer::calcViewCost(const std::vector<Eigen::Matrix<double, 3, 1> >&, double&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/bspline_opt/src/bspline_optimizer.cpp:492:10: warning: unused variable ‘norm_dn’ [-Wunused-variable]
+  492 |   double norm_dn = dn.norm();
+      |          ^~~~~~~
+[ 91%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libbspline_opt.so
+[ 91%] Built target bspline_opt
+Scanning dependencies of target process_msg
+Scanning dependencies of target traj_utils
+[ 91%] Building CXX object FUEL/fuel_planner/traj_utils/CMakeFiles/process_msg.dir/src/process_msg.cpp.o
+[ 91%] Building CXX object FUEL/fuel_planner/traj_utils/CMakeFiles/traj_utils.dir/src/planning_visualization.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawLines(const std::vector<Eigen::Matrix<double, 3, 1> >&, const double&, const Vector4d&, const string&, const int&, const int&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:180:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  180 |   for (int i = 0; i < list.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawBsplinesPhase1(std::vector<fast_planner::NonUniformBspline>&, double)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:314:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<fast_planner::NonUniformBspline>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  314 |   for (int i = 0; i < bsplines.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawBsplinesPhase2(std::vector<fast_planner::NonUniformBspline>&, double)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:331:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<fast_planner::NonUniformBspline>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  331 |   for (int i = 0; i < bsplines.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawTopoGraph(std::__cxx11::list<std::shared_ptr<fast_planner::GraphNode> >&, double, double, const Vector4d&, const Vector4d&, const Vector4d&, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:391:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  391 |     for (int k = 0; k < (*iter)->neighbors_.size(); ++k) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawTopoPathsPhase2(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, double)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:412:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  412 |   for (int i = 0; i < paths.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:415:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  415 |     for (int j = 0; j < paths[i].size() - 1; ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawTopoPathsPhase1(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, double)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:436:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  436 |   for (int i = 0; i < paths.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:439:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  439 |     for (int j = 0; j < paths[i].size() - 1; ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawPrediction(fast_planner::ObjPrediction, double, const Vector4d&, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:474:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<fast_planner::PolynomialPrediction>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  474 |   for (int i = 0; i < pred->size(); i++) {
+      |                   ~~^~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawFrontier(const std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:570:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  570 |   for (int i = 0; i < frontiers.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘void fast_planner::PlanningVisualization::drawYawPath(fast_planner::NonUniformBspline&, const std::vector<double>&, const double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:605:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  605 |   for (int i = 0; i < yaw.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp: In member function ‘Eigen::Vector4d fast_planner::PlanningVisualization::getColor(const double&, double)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/planning_visualization.cpp:623:10: warning: ‘lambda’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  623 |   double lambda;
+      |          ^~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/process_msg.cpp: In function ‘void cloudCallback(const PointCloud2ConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/traj_utils/src/process_msg.cpp:39:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   39 |   for (int i = 0; i < pts.points.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~
+[ 91%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libtraj_utils.so
+[ 91%] Built target traj_utils
+Scanning dependencies of target traj_server
+Scanning dependencies of target proc_msg
+Scanning dependencies of target proc_msg2
+[ 91%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/traj_server.dir/src/traj_server.cpp.o
+[ 91%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/proc_msg2.dir/test/process_msg2.cpp.o
+[ 91%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/proc_msg.dir/test/process_msg.cpp.o
+[ 92%] Linking CXX executable /workspace/fuel_ws/devel/lib/traj_utils/process_msg
+[ 92%] Built target process_msg
+Scanning dependencies of target plan_manage
+[ 92%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/plan_manage.dir/src/planner_manager.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp: In function ‘double calcPathLength(const std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp:52:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   52 |   for (int i = 0; i < path.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp: In function ‘void bsplineCallback(const BsplineConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp:221:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  221 |   for (int i = 0; i < msg->knots.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp:224:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<geometry_msgs::Point_<std::allocator<void> >, std::allocator<geometry_msgs::Point_<std::allocator<void> > > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  224 |   for (int i = 0; i < msg->pos_pts.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp:233:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  233 |   for (int i = 0; i < msg->yaw_pts.size(); ++i)
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp: In function ‘void test()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp:355:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  355 |   for (int i = 0; i < samples.size(); ++i)
+      |                   ~~^~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp: In function ‘void fovCallback(const MarkerConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp:143:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  143 |   for (int i = 0; i < cam1.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp: In function ‘void planTrajCallback(const MarkerConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp:280:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  280 |   for (int i = 0; i < cam1.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp: In function ‘void nbvpCallback(const MarkerConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp:311:7: warning: unused variable ‘size’ [-Wunused-variable]
+  311 |   int size = mk.points.size();
+      |       ^~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg2.cpp:323:9: warning: unused variable ‘pts’ [-Wunused-variable]
+  323 |   auto& pts = mk.points;
+      |         ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg.cpp: In function ‘void cmdCallback(const PositionCommandConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg.cpp:139:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  139 |     for (int i = 0; i < cam1.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg.cpp:116:8: warning: variable ‘cur_time’ set but not used [-Wunused-but-set-variable]
+  116 |   auto cur_time = ros::Time::now();
+      |        ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg.cpp: In function ‘void cloudCallback(const PointCloud2ConstPtr&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/process_msg.cpp:192:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  192 |   for (int i = 0; i < pts2.points.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp: In function ‘void cmdCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/traj_server.cpp:314:15: warning: ‘yawdot’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  314 |   cmd.yaw_dot = yawdot;
+      |   ~~~~~~~~~~~~^~~~~~~~
+[ 93%] Linking CXX executable /workspace/fuel_ws/devel/lib/plan_manage/traj_server
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘bool fast_planner::FastPlannerManager::kinodynamicReplan(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:136:19: warning: variable ‘init_pos’ set but not used [-Wunused-but-set-variable]
+  136 |   Eigen::Vector3d init_pos = start_pt;
+      |                   ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:137:19: warning: variable ‘init_vel’ set but not used [-Wunused-but-set-variable]
+  137 |   Eigen::Vector3d init_vel = start_vel;
+      |                   ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:138:19: warning: variable ‘init_acc’ set but not used [-Wunused-but-set-variable]
+  138 |   Eigen::Vector3d init_acc = start_acc;
+      |                   ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘bool fast_planner::FastPlannerManager::planGlobalTraj(const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:335:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  335 |   for (int i = 0; i < points.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘bool fast_planner::FastPlannerManager::topoReplan(bool)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:447:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  447 |       for (int i = 0; i < select_paths.size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:453:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  453 |       for (int i = 0; i < select_paths.size(); ++i) optimize_threads[i].join();
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::refineTraj(fast_planner::NonUniformBspline&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:485:13: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  485 |   ros::Time t1 = ros::Time::now();
+      |             ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::reparamBspline(fast_planner::NonUniformBspline&, double, Eigen::MatrixXd&, double&, double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:530:7: warning: unused variable ‘prev_num’ [-Wunused-variable]
+  530 |   int prev_num = bspline.getControlPoint().rows();
+      |       ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:570:26: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  570 |     if (guide_pts.size() != int(ctrl_pts.rows()) - 6) ROS_WARN("Incorrect guide for 3 degree");
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:573:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  573 |     for (int i = 0; i < tmp_pts.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:574:37: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  574 |       if (i % 2 == 1 && i >= 5 && i <= tmp_pts.size() - 6) guide_pts.push_back(tmp_pts[i]);
+      |                                   ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:576:26: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  576 |     if (guide_pts.size() != int(ctrl_pts.rows()) - 8) ROS_WARN("Incorrect guide for 4 degree");
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:581:10: warning: unused variable ‘tm1’ [-Wunused-variable]
+  581 |   double tm1 = (ros::Time::now() - t1).toSec();
+      |          ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:590:10: warning: unused variable ‘tm2’ [-Wunused-variable]
+  590 |   double tm2 = (ros::Time::now() - t1).toSec();
+      |          ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:601:10: warning: unused variable ‘tm3’ [-Wunused-variable]
+  601 |   double tm3 = (ros::Time::now() - t1).toSec();
+      |          ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::planYaw(const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:766:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  766 |   for (int i = 0; i < waypts.size(); ++i) path_yaw.push_back(waypts[i][0]);
+      |                   ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::planYawExplore(const Vector3d&, const double&, bool, const double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:843:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  843 |   auto t1 = ros::Time::now();
+      |        ^~
+[ 93%] Linking CXX executable /workspace/fuel_ws/devel/lib/plan_manage/proc_msg2
+[ 93%] Built target traj_server
+Scanning dependencies of target fast_planner_node
+[ 94%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/fast_planner_node.dir/src/fast_planner_node.cpp.o
+[ 94%] Built target proc_msg2
+[ 94%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/fast_planner_node.dir/src/kino_replan_fsm.cpp.o
+[ 95%] Linking CXX executable /workspace/fuel_ws/devel/lib/plan_manage/proc_msg
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:675:19: warning: ‘t_e’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  675 |   sn = ceil((t_mp - t_e) / dt);
+      |             ~~~~~~^~~~~~
+[ 95%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/plan_manage.dir/src/planner_manager_dev.cpp.o
+[ 95%] Built target proc_msg
+[ 95%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/fast_planner_node.dir/src/topo_replan_fsm.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp: In member function ‘void fast_planner::KinoReplanFSM::execFSMCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp:108:10: warning: enumeration value ‘REPLAN_NEW’ not handled in switch [-Wswitch]
+  108 |   switch (exec_state_) {
+      |          ^
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp: In member function ‘void fast_planner::KinoReplanFSM::checkCollisionCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp:214:12: warning: unused variable ‘new_goal’ [-Wunused-variable]
+  214 |       bool new_goal = false;
+      |            ^~~~~~~~
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /workspace/FUEL/fuel_planner/plan_manage/include/plan_manage/kino_replan_fsm.h:8,
+                 from /workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp:2:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp: In member function ‘bool fast_planner::KinoReplanFSM::callKinodynamicReplan()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp:293:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  293 |     ROS_WARN("Replan number: %d, mean traj: %lf", replan_time_.size(), mean1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~
+      |                                                                    |
+      |                                                                    std::vector<double>::size_type {aka long unsigned int}
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/kino_replan_fsm.cpp:293:31: note: format string is defined here
+  293 |     ROS_WARN("Replan number: %d, mean traj: %lf", replan_time_.size(), mean1);
+      |                              ~^
+      |                               |
+      |                               int
+      |                              %ld
+[ 95%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/fast_planner_node.dir/test/local_explore_fsm.cpp.o
+[ 96%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp: In member function ‘void fast_planner::FastPlannerManager::planYawActMap(const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:65:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   65 |   for (int i = 0; i < path.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:12:10: warning: unused variable ‘t_traj’ [-Wunused-variable]
+   12 |   double t_traj = local_data_.duration_;
+      |          ^~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:31:8: warning: unused variable ‘unmapped’ [-Wunused-variable]
+   31 |   bool unmapped = false;
+      |        ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp: In member function ‘void fast_planner::FastPlannerManager::test()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:121:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  121 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:125:7: warning: unused variable ‘vid’ [-Wunused-variable]
+  125 |   int vid = 0;
+      |       ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp: In member function ‘bool fast_planner::FastPlannerManager::localExplore(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:170:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  170 |     for (int i = 0; i < points.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:207:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  207 |     for (int i = 0; i < points.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:227:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  227 |     for (int i = 0; i < points.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:298:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  298 |   for (int i = 0; i < pts.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:260:7: warning: unused variable ‘ctrl_pt_num’ [-Wunused-variable]
+  260 |   int ctrl_pt_num = seg_num + 3;
+      |       ^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/topo_replan_fsm.cpp: In member function ‘void fast_planner::TopoReplanFSM::checkCollisionCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/topo_replan_fsm.cpp:256:12: warning: unused variable ‘new_goal’ [-Wunused-variable]
+  256 |       bool new_goal = false;
+      |            ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/topo_replan_fsm.cpp: In member function ‘bool fast_planner::TopoReplanFSM::callSearchAndOptimization()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/topo_replan_fsm.cpp:336:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  336 | }
+      | ^
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/local_explore_fsm.cpp: In member function ‘void fast_planner::LocalExploreFSM::execFSMCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/local_explore_fsm.cpp:108:10: warning: enumeration value ‘REPLAN_NEW’ not handled in switch [-Wswitch]
+  108 |   switch (exec_state_) {
+      |          ^
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/local_explore_fsm.cpp: In member function ‘void fast_planner::LocalExploreFSM::checkCollisionCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/test/local_explore_fsm.cpp:210:12: warning: unused variable ‘new_goal’ [-Wunused-variable]
+  210 |       bool new_goal = false;
+      |            ^~~~~~~~
+[ 97%] Linking CXX shared library /workspace/fuel_ws/devel/lib/libplan_manage.so
+[ 97%] Building CXX object FUEL/fuel_planner/plan_manage/CMakeFiles/fast_planner_node.dir/src/planner_manager_dev.cpp.o
+[ 97%] Built target plan_manage
+Scanning dependencies of target write_tsp
+[ 97%] Building CXX object FUEL/fuel_planner/exploration_manager/CMakeFiles/write_tsp.dir/test/write_tsp.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘bool fast_planner::FastPlannerManager::kinodynamicReplan(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:136:19: warning: variable ‘init_pos’ set but not used [-Wunused-but-set-variable]
+  136 |   Eigen::Vector3d init_pos = start_pt;
+      |                   ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:137:19: warning: variable ‘init_vel’ set but not used [-Wunused-but-set-variable]
+  137 |   Eigen::Vector3d init_vel = start_vel;
+      |                   ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:138:19: warning: variable ‘init_acc’ set but not used [-Wunused-but-set-variable]
+  138 |   Eigen::Vector3d init_acc = start_acc;
+      |                   ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘bool fast_planner::FastPlannerManager::planGlobalTraj(const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:335:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  335 |   for (int i = 0; i < points.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘bool fast_planner::FastPlannerManager::topoReplan(bool)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:447:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  447 |       for (int i = 0; i < select_paths.size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:453:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  453 |       for (int i = 0; i < select_paths.size(); ++i) optimize_threads[i].join();
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::refineTraj(fast_planner::NonUniformBspline&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:485:13: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  485 |   ros::Time t1 = ros::Time::now();
+      |             ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::reparamBspline(fast_planner::NonUniformBspline&, double, Eigen::MatrixXd&, double&, double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:530:7: warning: unused variable ‘prev_num’ [-Wunused-variable]
+  530 |   int prev_num = bspline.getControlPoint().rows();
+      |       ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:570:26: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  570 |     if (guide_pts.size() != int(ctrl_pts.rows()) - 6) ROS_WARN("Incorrect guide for 3 degree");
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:573:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  573 |     for (int i = 0; i < tmp_pts.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:574:37: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  574 |       if (i % 2 == 1 && i >= 5 && i <= tmp_pts.size() - 6) guide_pts.push_back(tmp_pts[i]);
+      |                                   ~~^~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:576:26: warning: comparison of integer expressions of different signedness: ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  576 |     if (guide_pts.size() != int(ctrl_pts.rows()) - 8) ROS_WARN("Incorrect guide for 4 degree");
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:581:10: warning: unused variable ‘tm1’ [-Wunused-variable]
+  581 |   double tm1 = (ros::Time::now() - t1).toSec();
+      |          ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:590:10: warning: unused variable ‘tm2’ [-Wunused-variable]
+  590 |   double tm2 = (ros::Time::now() - t1).toSec();
+      |          ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:601:10: warning: unused variable ‘tm3’ [-Wunused-variable]
+  601 |   double tm3 = (ros::Time::now() - t1).toSec();
+      |          ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::planYaw(const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:766:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  766 |   for (int i = 0; i < waypts.size(); ++i) path_yaw.push_back(waypts[i][0]);
+      |                   ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::planYawExplore(const Vector3d&, const double&, bool, const double&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:843:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  843 |   auto t1 = ros::Time::now();
+      |        ^~
+Scanning dependencies of target load_obj
+[ 97%] Building CXX object FUEL/fuel_planner/exploration_manager/CMakeFiles/load_obj.dir/test/load_obj.cpp.o
+[ 98%] Linking CXX executable /workspace/fuel_ws/devel/lib/exploration_manager/write_tsp
+[ 98%] Built target write_tsp
+Scanning dependencies of target exploration_node
+[100%] Building CXX object FUEL/fuel_planner/exploration_manager/CMakeFiles/exploration_node.dir/src/exploration_node.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp: In member function ‘void fast_planner::FastPlannerManager::findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager.cpp:675:19: warning: ‘t_e’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  675 |   sn = ceil((t_mp - t_e) / dt);
+      |             ~~~~~~^~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp: In member function ‘void fast_planner::FastPlannerManager::planYawActMap(const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:65:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   65 |   for (int i = 0; i < path.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:12:10: warning: unused variable ‘t_traj’ [-Wunused-variable]
+   12 |   double t_traj = local_data_.duration_;
+      |          ^~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:31:8: warning: unused variable ‘unmapped’ [-Wunused-variable]
+   31 |   bool unmapped = false;
+      |        ^~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp: In member function ‘void fast_planner::FastPlannerManager::test()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:121:8: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+  121 |   auto t1 = ros::Time::now();
+      |        ^~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:125:7: warning: unused variable ‘vid’ [-Wunused-variable]
+  125 |   int vid = 0;
+      |       ^~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp: In member function ‘bool fast_planner::FastPlannerManager::localExplore(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:170:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  170 |     for (int i = 0; i < points.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:207:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  207 |     for (int i = 0; i < points.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:227:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  227 |     for (int i = 0; i < points.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:298:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  298 |   for (int i = 0; i < pts.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/plan_manage/src/planner_manager_dev.cpp:260:7: warning: unused variable ‘ctrl_pt_num’ [-Wunused-variable]
+  260 |   int ctrl_pt_num = seg_num + 3;
+      |       ^~~~~~~~~~~
+[100%] Building CXX object FUEL/fuel_planner/exploration_manager/CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/test/load_obj.cpp: In function ‘int main(int, char**)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/test/load_obj.cpp:25:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   25 |   for (int i = 0; i < cloud.points.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~
+[100%] Building CXX object FUEL/fuel_planner/exploration_manager/CMakeFiles/exploration_node.dir/src/fast_exploration_manager.cpp.o
+[100%] Linking CXX executable /workspace/fuel_ws/devel/lib/exploration_manager/load_obj
+[100%] Linking CXX executable /workspace/fuel_ws/devel/lib/plan_manage/fast_planner_node
+[100%] Built target load_obj
+[100%] Built target fast_planner_node
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_fsm.cpp: In member function ‘void fast_planner::FastExplorationFSM::visualize()’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_fsm.cpp:212:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  212 |   for (int i = 0; i < ed_ptr->frontiers_.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_fsm.cpp:201:8: warning: unused variable ‘plan_data’ [-Wunused-variable]
+  201 |   auto plan_data = &planner_manager_->plan_data_;
+      |        ^~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_fsm.cpp: In member function ‘void fast_planner::FastExplorationFSM::frontierCallback(const ros::TimerEvent&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_fsm.cpp:291:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  291 |     for (int i = 0; i < ed->frontiers_.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp: In member function ‘int fast_planner::FastExplorationManager::planExploreMotion(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:115:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  115 |   for (int i = 0; i < ed_->points_.size(); ++i)
+      |                   ~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /workspace/FUEL/fuel_planner/exploration_manager/include/exploration_manager/fast_exploration_manager.h:4,
+                 from /workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:2:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:121:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  121 |       "Frontier: %d, t: %lf, viewpoint: %d, t: %lf", ed_->frontiers_.size(), frontier_time,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                          |
+      |                                                                          std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type {aka long unsigned int}
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:121:19: note: format string is defined here
+  121 |       "Frontier: %d, t: %lf, viewpoint: %d, t: %lf", ed_->frontiers_.size(), frontier_time,
+      |                  ~^
+      |                   |
+      |                   int
+      |                  %ld
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /workspace/FUEL/fuel_planner/exploration_manager/include/exploration_manager/fast_exploration_manager.h:4,
+                 from /workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:2:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:121:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 10 has type ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  121 |       "Frontier: %d, t: %lf, viewpoint: %d, t: %lf", ed_->frontiers_.size(), frontier_time,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  122 |       ed_->points_.size(), view_time);
+      |       ~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        std::vector<Eigen::Matrix<double, 3, 1> >::size_type {aka long unsigned int}
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:121:42: note: format string is defined here
+  121 |       "Frontier: %d, t: %lf, viewpoint: %d, t: %lf", ed_->frontiers_.size(), frontier_time,
+      |                                         ~^
+      |                                          |
+      |                                          int
+      |                                         %ld
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:163:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  163 |       for (int i = 0; i < ed_->refined_points_.size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:170:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  170 |       for (int i = 0; i < ed_->refined_points_.size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:205:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  205 |       for (int i = 0; i < ed_->n_points_[0].size(); ++i) {
+      |                       ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:257:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  257 |     for (int i = 1; i < ed_->path_next_goal_.size() && len2 < radius_far; ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp: In member function ‘void fast_planner::FastExplorationManager::shortenPath(std::vector<Eigen::Matrix<double, 3, 1> >&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:303:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  303 |   for (int i = 1; i < path.size() - 1; ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp: In member function ‘void fast_planner::FastExplorationManager::refineLocalTour(const Vector3d&, const Vector3d&, const Vector3d&, const std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, const std::vector<std::vector<double> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>&)’:
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:449:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  449 |   for (int i = 0; i < n_points.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:451:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  451 |     for (int j = 0; j < n_points[i].size(); ++j) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:460:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  460 |       if (i == n_points.size() - 1) {
+      |           ~~^~~~~~~~~~~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:482:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::shared_ptr<fast_planner::ViewNode> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  482 |   for (int i = 1; i < path.size(); ++i) {
+      |                   ~~^~~~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:433:10: warning: variable ‘create_time’ set but not used [-Wunused-but-set-variable]
+  433 |   double create_time, search_time, parse_time;
+      |          ^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:433:23: warning: variable ‘search_time’ set but not used [-Wunused-but-set-variable]
+  433 |   double create_time, search_time, parse_time;
+      |                       ^~~~~~~~~~~
+/workspace/fuel_ws/src/FUEL/fuel_planner/exploration_manager/src/fast_exploration_manager.cpp:433:36: warning: variable ‘parse_time’ set but not used [-Wunused-but-set-variable]
+  433 |   double create_time, search_time, parse_time;
+      |                                    ^~~~~~~~~~
+[100%] Linking CXX executable /workspace/fuel_ws/devel/lib/exploration_manager/exploration_node
+[100%] Built target exploration_node
+Base path: /workspace/fuel_ws
+Source space: /workspace/fuel_ws/src
+Build space: /workspace/fuel_ws/build
+Devel space: /workspace/fuel_ws/devel
+Install space: /workspace/fuel_ws/install
+Creating symlink "/workspace/fuel_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /workspace/fuel_ws/src -DCATKIN_DEVEL_PREFIX=/workspace/fuel_ws/devel -DCMAKE_INSTALL_PREFIX=/workspace/fuel_ws/install -G Unix Makefiles" in "/workspace/fuel_ws/build"
+####
+####
+#### Running command: "make -j4" in "/workspace/fuel_ws/build"
+####

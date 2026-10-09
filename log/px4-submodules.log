@@ -1,0 +1,34 @@
+Submodule 'Tools/simulation/gazebo-classic/sitl_gazebo-classic' (https://github.com/PX4/PX4-SITL_gazebo-classic.git) registered for path 'Tools/simulation/gazebo-classic/sitl_gazebo-classic'
+Submodule 'src/drivers/gps/devices' (https://github.com/PX4/PX4-GPSDrivers.git) registered for path 'src/drivers/gps/devices'
+Submodule 'src/lib/events/libevents' (https://github.com/mavlink/libevents.git) registered for path 'src/lib/events/libevents'
+Submodule 'src/modules/mavlink/mavlink' (https://github.com/mavlink/mavlink.git) registered for path 'src/modules/mavlink/mavlink'
+Submodule 'src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client' (https://github.com/PX4/Micro-XRCE-DDS-Client.git) registered for path 'src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client'
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic'...
+error: RPC failed; curl 56 GnuTLS recv error (-9): Error decoding the received TLS packet.
+error: 1183 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+fatal: clone of 'https://github.com/PX4/PX4-SITL_gazebo-classic.git' into submodule path '/home/toolpride/drone_cv/fuel/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic' failed
+Failed to clone 'Tools/simulation/gazebo-classic/sitl_gazebo-classic'. Retry scheduled
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/src/drivers/gps/devices'...
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/src/lib/events/libevents'...
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/src/modules/mavlink/mavlink'...
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client'...
+BUG: submodule considered for cloning, doesn't need cloning any more?
+Submodule path 'Tools/simulation/gazebo-classic/sitl_gazebo-classic': checked out '2e3ed9bfb04d8865e59380afa575dd37b0d6c8e0'
+From https://github.com/PX4/PX4-GPSDrivers
+ * branch            b3ffec3f173a4dcb4d9e604222a30215023e9880 -> FETCH_HEAD
+Submodule path 'src/drivers/gps/devices': checked out 'b3ffec3f173a4dcb4d9e604222a30215023e9880'
+From https://github.com/mavlink/libevents
+ * branch            a9a3fc07abb8bd8eb6fbca64c35b479cab91ff35 -> FETCH_HEAD
+Submodule path 'src/lib/events/libevents': checked out 'a9a3fc07abb8bd8eb6fbca64c35b479cab91ff35'
+Submodule 'libs/cpp/parse/nlohmann_json' (https://github.com/nlohmann/json.git) registered for path 'src/lib/events/libevents/libs/cpp/parse/nlohmann_json'
+Cloning into '/home/toolpride/drone_cv/fuel/PX4-Autopilot/src/lib/events/libevents/libs/cpp/parse/nlohmann_json'...
+error: RPC failed; curl 56 GnuTLS recv error (-9): Error decoding the received TLS packet.
+error: 16679 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+fatal: Fetched in submodule path 'src/lib/events/libevents/libs/cpp/parse/nlohmann_json', but it did not contain bc889afb4c5bf1c0d8ee29ef35eaaf4c8bef8a5d. Direct fetching of that commit failed.
+fatal: Failed to recurse into submodule path 'src/lib/events/libevents'

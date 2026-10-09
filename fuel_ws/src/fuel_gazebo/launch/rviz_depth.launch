@@ -1,0 +1,6 @@
+<launch>
+  <arg name="sensor_mode" default="depth"/>
+  <arg name="rviz_config" default="$(eval 'gazebo_lidar.rviz' if arg('sensor_mode') == 'lidar' else 'gazebo_depth.rviz')"/>
+  <node name="gazebo_depth_rviz" pkg="rviz" type="rviz" output="screen"
+        args="-d $(find fuel_gazebo)/config/$(arg rviz_config)"/>
+</launch>

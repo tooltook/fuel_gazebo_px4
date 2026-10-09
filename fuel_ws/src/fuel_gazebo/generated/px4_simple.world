@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <world name="px4_simple">
+    <gravity>0 0 -9.81</gravity>
+    <physics type="ode">
+      <max_step_size>0.002</max_step_size>
+      <real_time_update_rate>500</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.6 0.6 0.6 1</ambient>
+      <background>0.8 0.85 0.9 1</background>
+    </scene>
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <direction>-0.2 -0.4 -1</direction>
+    </light>
+    <model name="ground">
+      <static>true</static>
+      <link name="ground">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.75 0.75 0.75 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="north_wall">
+      <static>true</static>
+      <pose>0 6 1.25 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>12 0.2 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>12 0.2 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.55 0.65 0.8 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="south_wall">
+      <static>true</static>
+      <pose>0 -6 1.25 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>12 0.2 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>12 0.2 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.55 0.65 0.8 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="east_wall">
+      <static>true</static>
+      <pose>6 0 1.25 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>0.2 12 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>0.2 12 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.55 0.65 0.8 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="west_wall">
+      <static>true</static>
+      <pose>-6 0 1.25 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>0.2 12 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>0.2 12 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.55 0.65 0.8 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="partition_a">
+      <static>true</static>
+      <pose>2.5 2.5 1.25 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>0.25 5 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>0.25 5 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.75 0.6 0.45 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="partition_b">
+      <static>true</static>
+      <pose>-2.5 -2.5 1.25 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>0.25 5 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>0.25 5 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.75 0.6 0.45 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="block_a">
+      <static>true</static>
+      <pose>3.8 -3.0 0.8 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>1.2 1.2 1.6</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>1.2 1.2 1.6</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.45 0.65 0.55 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="block_b">
+      <static>true</static>
+      <pose>-3.8 3.0 0.8 0 0 0</pose>
+      <link name="body">
+        <collision name="c">
+          <geometry>
+            <box>
+              <size>1.2 1.2 1.6</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box>
+              <size>1.2 1.2 1.6</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.45 0.65 0.55 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    </world>
+</sdf>

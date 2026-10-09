@@ -1,0 +1,529 @@
+[0/908] git submodule src/drivers/gps/devices
+[4/908] Generating XRCE-DDS topic bridge
+[5/908] git submodule src/modules/mavlink/mavlink
+[6/908] Generating px4 event header file
+[7/908] git submodule Tools/simulation/gazebo-classic/sitl_gazebo-classic
+[8/908] git submodule src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client
+[10/908] Building C object boards/px4/sitl/src/CMakeFiles/drivers_board.dir/sitl_led.c.o
+[11/908] Building CXX object boards/px4/sitl/src/CMakeFiles/drivers_board.dir/board_shutdown.cpp.o
+[12/908] Generating git version header
+[13/908] Creating directories for 'sitl_gazebo-classic'
+[14/908] Linking CXX static library boards/px4/sitl/src/libdrivers_board.a
+[15/908] No download step for 'sitl_gazebo-classic'
+[16/908] No update step for 'sitl_gazebo-classic'
+[17/908] No patch step for 'sitl_gazebo-classic'
+[17/908] Performing configure step for 'sitl_gazebo-classic'
+-- install-prefix: /usr/local
+-- cmake build type: RelWithDebInfo
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_SUPPORTS_CXX17
+-- Performing Test COMPILER_SUPPORTS_CXX17 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX0X
+-- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+-- Using C++17 standard
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.58") found components: system thread filesystem 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Checking for module 'bullet>=2.82'
+--   Found bullet, version 2.88
+-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+-- Found assimp: /usr/include (found version "5.0.0") 
+-- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Searching for dependencies of ignition-math6
+-- Looking for OGRE...
+-- OGRE_PREFIX_WATCH changed.
+-- Checking for module 'OGRE'
+--   Found OGRE, version 1.9.0
+-- Found Ogre Ghadamon (1.9.0)
+-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+-- Looking for OGRE_Paging...
+-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+-- Looking for OGRE_Terrain...
+-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+-- Looking for OGRE_Property...
+-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+-- Looking for OGRE_RTShaderSystem...
+-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+-- Looking for OGRE_Volume...
+-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+-- Looking for OGRE_Overlay...
+-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-transport8 -- found version 8.5.0
+-- Searching for dependencies of ignition-transport8
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.2
+-- Found ZeroMQ: TRUE (Required is at least version "4") 
+-- Checking for module 'uuid'
+--   Found uuid, version 2.34.0
+-- Found UUID: TRUE  
+-- Looking for ignition-msgs5 -- found version 5.11.0
+-- Searching for dependencies of ignition-msgs5
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 6.2.0
+-- Looking for ignition-msgs5 -- found version 5.11.0
+-- Looking for ignition-common3 -- found version 3.17.0
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Found DL: TRUE  
+-- Searching for <ignition-common3> component [graphics]
+-- Looking for ignition-common3-graphics -- found version 3.17.0
+-- Searching for dependencies of ignition-common3-graphics
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-fuel_tools4 -- found version 4.9.1
+-- Searching for dependencies of ignition-fuel_tools4
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.7.4
+-- Found JSONCPP: TRUE  
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.2
+-- Found YAML: TRUE  
+-- Checking for module 'libzip'
+--   Found libzip, version 1.5.1
+-- Found ZIP: TRUE  
+-- Looking for ignition-common3 -- found version 3.17.0
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-msgs5 -- found version 5.11.0
+-- Checking for one of the modules 'glib-2.0'
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Found OpenCV: /usr (found version "4.2.0") 
+-- Found TinyXML: /usr/lib/x86_64-linux-gnu/libtinyxml.so  
+-- Checking for module 'gstreamer-1.0 >= 1.0'
+--   Found gstreamer-1.0 , version 1.16.3
+-- Checking for module 'gstreamer-base-1.0 >= 1.0'
+--   Found gstreamer-base-1.0 , version 1.16.3
+-- Checking for module 'gstreamer-app-1.0 >= 1.0'
+--   Found gstreamer-app-1.0 , version 1.16.3
+-- Found GStreamer: GSTREAMER_INCLUDE_DIRS;GSTREAMER_LIBRARIES;GSTREAMER_VERSION;GSTREAMER_BASE_INCLUDE_DIRS;GSTREAMER_BASE_LIBRARIES (Required is at least version "1.0") 
+-- Checking for module 'OGRE'
+--   Found OGRE, version 1.9.0
+-- Building klt_feature_tracker without catkin
+-- Building OpticalFlow with OpenCV
+-- Found MAVLink: /workspace/PX4-Autopilot/build/px4_sitl_default/mavlink (found version "2.0") 
+-- catkin DISABLED
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+-- Checking for module 'protobuf'
+--   Found protobuf, version 3.6.1
+-- Gazebo version: 11.15
+-- Found GStreamer: adding gst_camera_plugin
+-- Found GStreamer: adding gst_video_stream_widget
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/PX4-Autopilot/build/px4_sitl_default/build_gazebo-classic
+[20/908] Generating Mavlink uAvionix: src/modules/mavlink/mavlink/message_definitions/v1.0/uAvionix.xml
+WARNING: Failed to import lxml module etree. Are lxml, libxml2 and libxslt installed? XML validation will not be performed
+[21/908] Generating Mavlink development: src/modules/mavlink/mavlink/message_definitions/v1.0/development.xml
+WARNING: Failed to import lxml module etree. Are lxml, libxml2 and libxslt installed? XML validation will not be performed
+[67/908] Performing configure step for 'libmicroxrceddsclient_project'
+-- libmicroxrceddsclient_project configure command succeeded.  See also /workspace/PX4-Autopilot/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-configure-*.log
+[394/908] Building CXX object src/modules/commander/CMakeFiles/modules__commander.dir/level_calibration.cpp.o
+[396/908] Building CXX object src/drivers/gps/CMakeFiles/drivers__gps.dir/devices/src/ashtech.cpp.o
+[397/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/gyroCheck.cpp.o
+[398/908] Building CXX object src/modules/commander/CMakeFiles/modules__commander.dir/lm_fit.cpp.o
+[399/908] Building CXX object src/drivers/gps/CMakeFiles/drivers__gps.dir/gps.cpp.o
+[400/908] Building CXX object src/modules/airspeed_selector/CMakeFiles/modules__airspeed_selector.dir/airspeed_selector_main.cpp.o
+[401/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/distanceSensorChecks.cpp.o
+[402/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/accelerometerCheck.cpp.o
+[403/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/escCheck.cpp.o
+[404/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/rcCalibrationCheck.cpp.o
+[405/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/systemCheck.cpp.o
+[406/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/imuConsistencyCheck.cpp.o
+[407/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/failureDetectorCheck.cpp.o
+[408/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/baroCheck.cpp.o
+[409/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/airspeedCheck.cpp.o
+[410/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/magnetometerCheck.cpp.o
+[411/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/cpuResourceCheck.cpp.o
+[412/908] Building CXX object src/modules/commander/CMakeFiles/modules__commander.dir/accelerometer_calibration.cpp.o
+[413/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/flightTimeCheck.cpp.o
+[414/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/Common.cpp.o
+[415/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/windCheck.cpp.o
+[416/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/missionCheck.cpp.o
+[417/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/modeCheck.cpp.o
+[418/908] Building CXX object src/modules/commander/Arming/ArmAuthorization/CMakeFiles/ArmAuthorization.dir/ArmAuthorization.cpp.o
+[419/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/geofenceCheck.cpp.o
+[420/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/rcAndDataLinkCheck.cpp.o
+[421/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/sdcardCheck.cpp.o
+[422/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/powerCheck.cpp.o
+[423/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/vtolCheck.cpp.o
+[424/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/homePositionCheck.cpp.o
+[425/908] Building CXX object src/modules/commander/failure_detector/CMakeFiles/failure_detector.dir/FailureDetector.cpp.o
+[426/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/parachuteCheck.cpp.o
+[427/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/batteryCheck.cpp.o
+[428/908] Building CXX object src/modules/commander/CMakeFiles/modules__commander.dir/mag_calibration.cpp.o
+[429/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/offboardCheck.cpp.o
+[430/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectiveness.cpp.o
+[431/908] Building CXX object src/modules/attitude_estimator_q/CMakeFiles/modules__attitude_estimator_q.dir/attitude_estimator_q_main.cpp.o
+[432/908] Building CXX object src/modules/commander/Arming/ArmStateMachine/CMakeFiles/ArmStateMachine.dir/ArmStateMachine.cpp.o
+[433/908] Generating uORB topic ucdr headers
+[434/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/manualControlCheck.cpp.o
+[435/908] Building CXX object src/modules/commander/failsafe/CMakeFiles/failsafe.dir/framework.cpp.o
+[436/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessUUV.cpp.o
+[437/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessFixedWing.cpp.o
+[438/908] Building CXX object src/drivers/gps/CMakeFiles/drivers__gps.dir/devices/src/ubx.cpp.o
+[439/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessTilts.cpp.o
+[440/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessRoverDifferential.cpp.o
+[441/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessCustom.cpp.o
+[442/908] Building CXX object src/modules/control_allocator/ControlAllocation/CMakeFiles/ControlAllocation.dir/ControlAllocationSequentialDesaturation.cpp.o
+[443/908] Building CXX object src/modules/commander/failsafe/CMakeFiles/failsafe.dir/failsafe.cpp.o
+[444/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessRoverAckermann.cpp.o
+[445/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/bias_estimator.cpp.o
+[446/908] Building CXX object src/modules/control_allocator/ControlAllocation/CMakeFiles/ControlAllocation.dir/ControlAllocation.cpp.o
+[447/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessMultirotor.cpp.o
+[448/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/checks/estimatorCheck.cpp.o
+[449/908] Building CXX object src/modules/control_allocator/ControlAllocation/CMakeFiles/ControlAllocation.dir/ControlAllocationPseudoInverse.cpp.o
+[450/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessMCTilt.cpp.o
+[451/908] Building CXX object src/modules/commander/CMakeFiles/modules__commander.dir/Commander.cpp.o
+[452/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessTiltrotorVTOL.cpp.o
+[453/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessControlSurfaces.cpp.o
+[454/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/control.cpp.o
+[455/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/baro_height_control.cpp.o
+[456/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessRotors.cpp.o
+[457/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/fake_height_control.cpp.o
+[458/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/fake_pos_control.cpp.o
+[459/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/gnss_height_control.cpp.o
+[460/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessStandardVTOL.cpp.o
+[461/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/imu_down_sampler.cpp.o
+[462/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/zero_velocity_update.cpp.o
+[463/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessHelicopter.cpp.o
+[464/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/auxvel_fusion.cpp.o
+[465/908] Building CXX object src/modules/control_allocator/ActuatorEffectiveness/CMakeFiles/ActuatorEffectiveness.dir/ActuatorEffectivenessTailsitterVTOL.cpp.o
+[466/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/gps_checks.cpp.o
+[467/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/zero_innovation_heading_update.cpp.o
+[468/908] Building CXX object src/modules/commander/HealthAndArmingChecks/CMakeFiles/health_and_arming_checks.dir/HealthAndArmingChecks.cpp.o
+[469/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ev_control.cpp.o
+[470/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/gps_control.cpp.o
+[471/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/vel_pos_fusion.cpp.o
+[472/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/height_control.cpp.o
+[473/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/gravity_fusion.cpp.o
+[474/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/range_finder_consistency_check.cpp.o
+[475/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/sensor_range_finder.cpp.o
+[476/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/airspeed_fusion.cpp.o
+[477/908] Building CXX object src/modules/dataman/CMakeFiles/modules__dataman.dir/dataman.cpp.o
+[478/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/estimator_interface.cpp.o
+[479/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/output_predictor.cpp.o
+[480/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ev_yaw_control.cpp.o
+[481/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/drag_fusion.cpp.o
+[482/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/range_height_control.cpp.o
+[483/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/terrain_estimator.cpp.o
+[484/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/mag_fusion.cpp.o
+[485/908] Building CXX object src/modules/events/CMakeFiles/modules__events.dir/rc_loss_alarm.cpp.o
+[486/908] Building CXX object src/modules/events/CMakeFiles/modules__events.dir/set_leds.cpp.o
+[487/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/EKFGSF_yaw.cpp.o
+[488/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ev_height_control.cpp.o
+[489/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/optical_flow_control.cpp.o
+[490/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ekf.cpp.o
+[491/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/optflow_fusion.cpp.o
+[492/908] Building CXX object src/modules/events/CMakeFiles/modules__events.dir/status_display.cpp.o
+[493/908] Building CXX object src/modules/events/CMakeFiles/modules__events.dir/send_event.cpp.o
+[494/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/sideslip_fusion.cpp.o
+[495/908] Building CXX object src/modules/ekf2/Utility/CMakeFiles/EKF2Utility.dir/PreFlightChecker.cpp.o
+[496/908] Building CXX object src/modules/flight_mode_manager/tasks/Utility/CMakeFiles/FlightTaskUtility.dir/Sticks.cpp.o
+[497/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ev_pos_control.cpp.o
+[498/908] Building CXX object src/modules/flight_mode_manager/tasks/FlightTask/CMakeFiles/FlightTask.dir/FlightTask.cpp.o
+[499/908] Building CXX object src/modules/flight_mode_manager/tasks/Descend/CMakeFiles/FlightTaskDescend.dir/FlightTaskDescend.cpp.o
+[500/908] Building CXX object src/modules/flight_mode_manager/tasks/Utility/CMakeFiles/FlightTaskUtility.dir/StickAccelerationXY.cpp.o
+[501/908] Building CXX object src/modules/flight_mode_manager/tasks/Failsafe/CMakeFiles/FlightTaskFailsafe.dir/FlightTaskFailsafe.cpp.o
+[502/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ev_vel_control.cpp.o
+[503/908] Building CXX object src/modules/flight_mode_manager/CMakeFiles/modules__flight_mode_manager.dir/FlightModeManager.cpp.o
+[504/908] Building CXX object src/modules/flight_mode_manager/tasks/ManualAltitudeSmoothVel/CMakeFiles/FlightTaskManualAltitudeSmoothVel.dir/FlightTaskManualAltitudeSmoothVel.cpp.o
+[505/908] Building CXX object src/modules/flight_mode_manager/tasks/Utility/CMakeFiles/FlightTaskUtility.dir/StickYaw.cpp.o
+[506/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/mag_control.cpp.o
+[507/908] Building CXX object src/modules/control_allocator/CMakeFiles/modules__control_allocator.dir/ControlAllocator.cpp.o
+[508/908] Building CXX object src/modules/fw_att_control/CMakeFiles/modules__fw_att_control.dir/ecl_pitch_controller.cpp.o
+[509/908] Building CXX object src/modules/flight_mode_manager/tasks/ManualPosition/CMakeFiles/FlightTaskManualPosition.dir/FlightTaskManualPosition.cpp.o
+[510/908] Building CXX object src/modules/flight_mode_manager/tasks/ManualAltitude/CMakeFiles/FlightTaskManualAltitude.dir/FlightTaskManualAltitude.cpp.o
+[511/908] Building CXX object src/modules/fw_att_control/CMakeFiles/modules__fw_att_control.dir/ecl_roll_controller.cpp.o
+[512/908] Building CXX object src/modules/flight_mode_manager/tasks/Utility/CMakeFiles/FlightTaskUtility.dir/StickTiltXY.cpp.o
+[513/908] Building CXX object src/modules/fw_att_control/CMakeFiles/modules__fw_att_control.dir/ecl_wheel_controller.cpp.o
+[514/908] Building CXX object src/modules/fw_att_control/CMakeFiles/modules__fw_att_control.dir/ecl_controller.cpp.o
+[515/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/ekf_helper.cpp.o
+[516/908] Building CXX object src/modules/fw_att_control/CMakeFiles/modules__fw_att_control.dir/ecl_yaw_controller.cpp.o
+[517/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/input.cpp.o
+[518/908] Building CXX object src/modules/fw_pos_control/launchdetection/CMakeFiles/launchdetection.dir/LaunchDetector.cpp.o
+[519/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/gps_yaw_fusion.cpp.o
+[520/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF2Selector.cpp.o
+[521/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/input_rc.cpp.o
+[522/908] Building CXX object src/modules/flight_mode_manager/tasks/Transition/CMakeFiles/FlightTaskTransition.dir/FlightTaskTransition.cpp.o
+[523/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/input_test.cpp.o
+[524/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q15.c.o
+[525/908] Building CXX object src/modules/flight_mode_manager/tasks/ManualAcceleration/CMakeFiles/FlightTaskManualAcceleration.dir/FlightTaskManualAcceleration.cpp.o
+[526/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/output_rc.cpp.o
+[527/908] Building CXX object src/modules/flight_mode_manager/CMakeFiles/modules__flight_mode_manager.dir/FlightTasks_generated.cpp.o
+[528/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c.o
+[529/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/SupportFunctions/arm_float_to_q15.c.o
+[530/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.c.o
+[531/908] Building CXX object src/modules/fw_pos_control/runway_takeoff/CMakeFiles/runway_takeoff.dir/RunwayTakeoff.cpp.o
+[532/908] Building CXX object src/modules/flight_mode_manager/tasks/Auto/CMakeFiles/FlightTaskAuto.dir/FlightTaskAuto.cpp.o
+[533/908] Building CXX object src/modules/flight_mode_manager/tasks/ManualPositionSmoothVel/CMakeFiles/FlightTaskManualPositionSmoothVel.dir/FlightTaskManualPositionSmoothVel.cpp.o
+[534/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/arm_cfft_q15.c.o
+[535/908] Building CXX object src/modules/flight_mode_manager/tasks/AutoFollowTarget/CMakeFiles/FlightTaskAutoFollowTarget.dir/FlightTaskAutoFollowTarget.cpp.o
+[536/908] Building CXX object src/modules/flight_mode_manager/tasks/AutoFollowTarget/follow_target_estimator/CMakeFiles/follow_target_estimator.dir/TargetEstimator.cpp.o
+[537/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_q15.c.o
+[538/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/output.cpp.o
+[539/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/arm_rfft_q15.c.o
+[540/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/output_mavlink.cpp.o
+[541/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/AirshipLandDetector.cpp.o
+[542/908] Building CXX object src/modules/landing_target_estimator/CMakeFiles/modules__landing_target_estimator.dir/landing_target_estimator_main.cpp.o
+[543/908] Building CXX object src/modules/flight_mode_manager/tasks/Orbit/CMakeFiles/FlightTaskOrbit.dir/FlightTaskOrbit.cpp.o
+[544/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_q15.c.o
+[545/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/input_mavlink.cpp.o
+[546/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/LandDetector.cpp.o
+[547/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/RoverLandDetector.cpp.o
+[548/908] Building CXX object src/modules/landing_target_estimator/CMakeFiles/modules__landing_target_estimator.dir/LandingTargetEstimator.cpp.o
+[549/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/land_detector_main.cpp.o
+[550/908] Building CXX object src/modules/load_mon/CMakeFiles/modules__load_mon.dir/LoadMon.cpp.o
+[551/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/MulticopterLandDetector.cpp.o
+[552/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/FixedwingLandDetector.cpp.o
+[553/908] Building CXX object src/modules/gyro_calibration/CMakeFiles/modules__gyro_calibration.dir/GyroCalibration.cpp.o
+[554/908] Building C object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c.o
+[555/908] Building CXX object src/modules/manual_control/CMakeFiles/module__manual_control.dir/ManualControlSelector.cpp.o
+[556/908] Building CXX object src/modules/landing_target_estimator/CMakeFiles/modules__landing_target_estimator.dir/KalmanFilter.cpp.o
+[557/908] Building CXX object src/modules/ekf2/CMakeFiles/modules__ekf2.dir/EKF/covariance.cpp.o
+[558/908] Building CXX object src/modules/gimbal/CMakeFiles/drivers__gimbal.dir/gimbal.cpp.o
+[559/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/sonar.cpp.o
+[560/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/gps.cpp.o
+[561/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/land.cpp.o
+[562/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/baro.cpp.o
+[563/908] Building CXX object src/modules/mavlink/mavlink_tests/CMakeFiles/modules__mavlink__mavlink_tests.dir/mavlink_tests.cpp.o
+[564/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/lidar.cpp.o
+[565/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/flow.cpp.o
+[566/908] Building CXX object src/modules/gyro_fft/CMakeFiles/modules__gyro_fft.dir/GyroFFT.cpp.o
+[567/908] Building CXX object src/modules/mag_bias_estimator/CMakeFiles/modules__mag_bias_estimator.dir/MagBiasEstimator.cpp.o
+[568/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/landing_target.cpp.o
+[569/908] Building CXX object src/modules/mc_hover_thrust_estimator/CMakeFiles/zero_order_hover_thrust_ekf.dir/zero_order_hover_thrust_ekf.cpp.o
+[570/908] Building CXX object src/modules/mc_pos_control/Takeoff/CMakeFiles/Takeoff.dir/Takeoff.cpp.o
+[571/908] Building CXX object src/modules/fw_att_control/CMakeFiles/modules__fw_att_control.dir/FixedwingAttitudeControl.cpp.o
+[572/908] Building CXX object src/modules/land_detector/CMakeFiles/modules__land_detector.dir/VtolLandDetector.cpp.o
+[573/908] Building CXX object src/modules/mavlink/mavlink_tests/CMakeFiles/modules__mavlink__mavlink_tests.dir/__/mavlink_stream.cpp.o
+[574/908] Building CXX object src/modules/fw_rate_control/CMakeFiles/modules__fw_rate_control.dir/FixedwingRateControl.cpp.o
+[575/908] Building CXX object src/modules/fw_autotune_attitude_control/CMakeFiles/fw_autotune_attitude_control.dir/fw_autotune_attitude_control.cpp.o
+[576/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/mocap.cpp.o
+[577/908] Building CXX object src/modules/mavlink/mavlink_tests/CMakeFiles/modules__mavlink__mavlink_tests.dir/__/mavlink_ftp.cpp.o
+[578/908] Building CXX object src/modules/mc_att_control/AttitudeControl/CMakeFiles/AttitudeControl.dir/AttitudeControl.cpp.o
+[579/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/sensors/vision.cpp.o
+[580/908] Building CXX object src/modules/mc_pos_control/PositionControl/CMakeFiles/PositionControl.dir/PositionControl.cpp.o
+[581/908] Building CXX object src/modules/mavlink/mavlink_tests/CMakeFiles/modules__mavlink__mavlink_tests.dir/mavlink_ftp_test.cpp.o
+[582/908] Building CXX object src/modules/manual_control/CMakeFiles/module__manual_control.dir/ManualControl.cpp.o
+[583/908] Building CXX object src/modules/payload_deliverer/CMakeFiles/modules__payload_deliverer.dir/gripper.cpp.o
+[584/908] Building CXX object src/modules/mc_hover_thrust_estimator/CMakeFiles/modules__mc_hover_thrust_estimator.dir/MulticopterHoverThrustEstimator.cpp.o
+[585/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/mission_feasibility_checker.cpp.o
+[586/908] Building CXX object src/modules/mc_pos_control/PositionControl/CMakeFiles/PositionControl.dir/ControlMath.cpp.o
+[587/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/loiter.cpp.o
+[588/908] Building CXX object src/modules/navigator/GeofenceBreachAvoidance/CMakeFiles/geofence_breach_avoidance.dir/geofence_breach_avoidance.cpp.o
+[589/908] Building CXX object src/modules/mc_att_control/CMakeFiles/modules__mc_att_control.dir/mc_att_control_main.cpp.o
+[590/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/rtl.cpp.o
+[591/908] Performing build step for 'libmicroxrceddsclient_project'
+-- libmicroxrceddsclient_project build command succeeded.  See also /workspace/PX4-Autopilot/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-build-*.log
+[592/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/mission_block.cpp.o
+[593/908] Building CXX object src/modules/mc_rate_control/CMakeFiles/modules__mc_rate_control.dir/MulticopterRateControl.cpp.o
+[594/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/takeoff.cpp.o
+[595/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/navigator_mode.cpp.o
+[596/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/vtol_takeoff.cpp.o
+[597/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/land.cpp.o
+[598/908] Building CXX object src/modules/sensors/data_validator/CMakeFiles/data_validator.dir/DataValidator.cpp.o
+[599/908] Building CXX object src/modules/replay/CMakeFiles/modules__replay.dir/replay_main.cpp.o
+[600/908] Building CXX object src/modules/navigator/MissionFeasibility/CMakeFiles/mission_feasibility_checker.dir/FeasibilityChecker.cpp.o
+[601/908] Building CXX object src/modules/sensors/data_validator/CMakeFiles/data_validator.dir/DataValidatorGroup.cpp.o
+[602/908] Building CXX object src/modules/mc_autotune_attitude_control/CMakeFiles/mc_autotune_attitude_control.dir/mc_autotune_attitude_control.cpp.o
+[603/908] Building CXX object src/modules/navigator/CMakeFiles/modules__navigator.dir/geofence.cpp.o
+[604/908] Building CXX object src/modules/payload_deliverer/CMakeFiles/modules__payload_deliverer.dir/payload_deliverer.cpp.o
+[605/908] Building CXX object src/modules/replay/CMakeFiles/modules__replay.dir/ReplayEkf2.cpp.o
+[606/908] Building CXX object src/modules/local_position_estimator/CMakeFiles/modules__local_position_estimator.dir/BlockLocalPositionEstimator.cpp.o
+[607/908] Building CXX object src/modules/mc_pos_control/CMakeFiles/modules__mc_pos_control.dir/MulticopterPositionControl.cpp.o
+[607/908] Performing build step for 'sitl_gazebo-classic'
+[1/142] Running cpp protocol buffer compiler on msgs/OpticalFlow.proto
+[2/142] Running cpp protocol buffer compiler on msgs/Pressure.proto
+[3/142] Running cpp protocol buffer compiler on msgs/Int32.proto
+[4/142] Running cpp protocol buffer compiler on msgs/Range.proto
+[5/142] Running cpp protocol buffer compiler on msgs/SITLGps.proto
+[6/142] Running cpp protocol buffer compiler on msgs/MagneticField.proto
+[7/142] Running cpp protocol buffer compiler on msgs/Airspeed.proto
+[8/142] Running cpp protocol buffer compiler on msgs/Imu.proto
+[9/142] Running cpp protocol buffer compiler on msgs/IRLock.proto
+[10/142] Running cpp protocol buffer compiler on msgs/TargetRelative.proto
+[11/142] Running cpp protocol buffer compiler on msgs/Float.proto
+[12/142] Running cpp protocol buffer compiler on msgs/Groundtruth.proto
+[13/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/depth_camera/depth_camera.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/depth_camera/depth_camera.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/depth_camera/depth_camera.sdf
+[14/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/pixhawk/pixhawk.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/pixhawk/pixhawk.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/pixhawk/pixhawk.sdf
+[15/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/advanced_plane/advanced_plane.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/advanced_plane/advanced_plane.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/advanced_plane/advanced_plane.sdf
+[16/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/boat/boat.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/boat/boat.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/boat/boat.sdf
+[17/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/3DR_gps_mag/3DR_gps_mag.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/3DR_gps_mag/3DR_gps_mag.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/3DR_gps_mag/3DR_gps_mag.sdf
+[18/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/iris/iris.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/iris/iris.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/iris/iris.sdf
+[19/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/mb1240-xl-ez4/mb1240-xl-ez4.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/mb1240-xl-ez4/mb1240-xl-ez4.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/mb1240-xl-ez4/mb1240-xl-ez4.sdf
+[20/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/cloudship/cloudship.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/cloudship/cloudship.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/cloudship/cloudship.sdf
+[21/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/c920/c920.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/c920/c920.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/c920/c920.sdf
+[22/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/matrice_100/matrice_100.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/matrice_100/matrice_100.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/matrice_100/matrice_100.sdf
+[23/142] Building CXX object CMakeFiles/sensor_msgs.dir/Groundtruth.pb.cc.o
+[24/142] Building CXX object CMakeFiles/sensor_msgs.dir/TargetRelative.pb.cc.o
+[25/142] Building CXX object CMakeFiles/std_msgs.dir/Int32.pb.cc.o
+[26/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/plane/plane.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/plane/plane.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/plane/plane.sdf
+[27/142] Building CXX object CMakeFiles/sensor_msgs.dir/IRLock.pb.cc.o
+[28/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/px4flow/px4flow.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/px4flow/px4flow.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/px4flow/px4flow.sdf
+[29/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/quadtailsitter/quadtailsitter.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/quadtailsitter/quadtailsitter.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/quadtailsitter/quadtailsitter.sdf
+[30/142] Building CXX object CMakeFiles/sensor_msgs.dir/Airspeed.pb.cc.o
+[31/142] Building CXX object CMakeFiles/sensor_msgs.dir/Range.pb.cc.o
+[32/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/r200/r200.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/r200/r200.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/r200/r200.sdf
+[33/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/rover/rover.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/rover/rover.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/rover/rover.sdf
+[34/142] Building CXX object CMakeFiles/sensor_msgs.dir/MagneticField.pb.cc.o
+[35/142] Linking CXX shared library libstd_msgs.so
+[36/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/standard_vtol_drop/standard_vtol_drop.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/standard_vtol_drop/standard_vtol_drop.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/standard_vtol_drop/standard_vtol_drop.sdf
+[37/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/sf10a/sf10a.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/sf10a/sf10a.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/sf10a/sf10a.sdf
+[38/142] Running cpp protocol buffer compiler on msgs/Force.proto
+[39/142] Running cpp protocol buffer compiler on msgs/Wind.proto
+[40/142] Running cpp protocol buffer compiler on msgs/Odometry.proto
+[41/142] Building CXX object CMakeFiles/sensor_msgs.dir/Float.pb.cc.o
+[42/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/tiltrotor/tiltrotor.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/tiltrotor/tiltrotor.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/tiltrotor/tiltrotor.sdf
+[43/142] Running cpp protocol buffer compiler on msgs/CommandMotorSpeed.proto
+[44/142] Running cpp protocol buffer compiler on msgs/MotorSpeed.proto
+[45/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/r1_rover/r1_rover.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/r1_rover/r1_rover.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/r1_rover/r1_rover.sdf
+[46/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/tailsitter/tailsitter.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/tailsitter/tailsitter.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/tailsitter/tailsitter.sdf
+[47/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/typhoon_h480/typhoon_h480.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/typhoon_h480/typhoon_h480.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/typhoon_h480/typhoon_h480.sdf
+[48/142] Generating /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/standard_vtol/standard_vtol.sdf
+/workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/standard_vtol/standard_vtol.sdf.jinja -> /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/standard_vtol/standard_vtol.sdf
+[49/142] Building CXX object CMakeFiles/sensor_msgs.dir/SITLGps.pb.cc.o
+[50/142] Building CXX object CMakeFiles/sensor_msgs.dir/OpticalFlow.pb.cc.o
+[51/142] Building CXX object CMakeFiles/sensor_msgs.dir/Pressure.pb.cc.o
+[52/142] Building CXX object CMakeFiles/nav_msgs.dir/Odometry.pb.cc.o
+[53/142] Building CXX object CMakeFiles/sensor_msgs.dir/Imu.pb.cc.o
+[54/142] Building CXX object CMakeFiles/physics_msgs.dir/Force.pb.cc.o
+[55/142] Building CXX object CMakeFiles/physics_msgs.dir/Wind.pb.cc.o
+[56/142] Building CXX object CMakeFiles/gazebo_pose_sniffer_plugin.dir/src/gazebo_pose_sniffer_plugin.cpp.o
+[57/142] Building CXX object CMakeFiles/gazebo_random_velocity_plugin.dir/src/gazebo_random_velocity_plugin.cpp.o
+[58/142] Building CXX object CMakeFiles/gazebo_usv_dynamics_plugin.dir/src/gazebo_usv_dynamics_plugin.cpp.o
+[59/142] Building CXX object CMakeFiles/gazebo_airship_dynamics_plugin.dir/src/gazebo_airship_dynamics_plugin.cpp.o
+[60/142] Linking CXX shared library libsensor_msgs.so
+[61/142] Building CXX object CMakeFiles/gazebo_groundtruth_plugin.dir/src/gazebo_groundtruth_plugin.cpp.o
+[62/142] Building CXX object CMakeFiles/gazebo_opticalflow_mockup_plugin.dir/src/gazebo_opticalflow_mockup_plugin.cpp.o
+[63/142] Building CXX object CMakeFiles/LiftDragPlugin.dir/src/liftdrag_plugin/liftdrag_plugin.cpp.o
+[64/142] Building CXX object CMakeFiles/gazebo_airspeed_plugin.dir/src/gazebo_airspeed_plugin.cpp.o
+[65/142] Building CXX object CMakeFiles/AdvancedLiftDragPlugin.dir/src/liftdrag_plugin/advanced_liftdrag_plugin.cpp.o
+[66/142] Linking CXX shared library libphysics_msgs.so
+[67/142] Building CXX object CMakeFiles/gazebo_catapult_plugin.dir/src/gazebo_catapult_plugin.cpp.o
+[68/142] Building CXX object CMakeFiles/ForceVisual.dir/src/force_visual/force_visual.cpp.o
+[69/142] Building CXX object CMakeFiles/gazebo_mavlink_interface.dir/src/gazebo_mavlink_interface.cpp.o
+[70/142] Building CXX object CMakeFiles/gazebo_multirotor_base_plugin.dir/src/gazebo_multirotor_base_plugin.cpp.o
+[71/142] Building CXX object CMakeFiles/gazebo_parachute_plugin.dir/src/gazebo_parachute_plugin.cpp.o
+[72/142] Linking CXX shared library libnav_msgs.so
+[73/142] Building CXX object CMakeFiles/mav_msgs.dir/CommandMotorSpeed.pb.cc.o
+[74/142] Building CXX object CMakeFiles/gazebo_uuv_plugin.dir/src/gazebo_uuv_plugin.cpp.o
+[75/142] Building CXX object CMakeFiles/gazebo_wind_plugin.dir/src/gazebo_wind_plugin.cpp.o
+[76/142] Building CXX object CMakeFiles/gazebo_imu_plugin.dir/src/gazebo_imu_plugin.cpp.o
+[77/142] Building CXX object CMakeFiles/gazebo_gps_plugin.dir/src/gazebo_gps_plugin.cpp.o
+[78/142] Building CXX object CMakeFiles/gazebo_lidar_plugin.dir/src/gazebo_lidar_plugin.cpp.o
+[79/142] Building CXX object CMakeFiles/mav_msgs.dir/MotorSpeed.pb.cc.o
+[80/142] Linking CXX shared library libmav_msgs.so
+[81/142] Linking CXX shared library libForceVisual.so
+[82/142] Linking CXX shared library libAdvancedLiftDragPlugin.so
+[83/142] Linking CXX shared library libgazebo_pose_sniffer_plugin.so
+[84/142] Building CXX object CMakeFiles/gazebo_irlock_plugin.dir/src/gazebo_irlock_plugin.cpp.o
+[85/142] Linking CXX shared library libgazebo_usv_dynamics_plugin.so
+[86/142] Linking CXX shared library libgazebo_random_velocity_plugin.so
+[87/142] Linking CXX shared library libgazebo_airship_dynamics_plugin.so
+[88/142] Linking CXX shared library libLiftDragPlugin.so
+[89/142] Linking CXX shared library libgazebo_catapult_plugin.so
+[90/142] Linking CXX shared library libgazebo_groundtruth_plugin.so
+[91/142] Linking CXX shared library libgazebo_airspeed_plugin.so
+[92/142] Linking CXX shared library libgazebo_parachute_plugin.so
+[93/142] Building CXX object CMakeFiles/gazebo_mavlink_interface.dir/src/mavlink_interface.cpp.o
+[94/142] Linking CXX shared library libgazebo_irlock_plugin.so
+[95/142] Building CXX object CMakeFiles/gazebo_sonar_plugin.dir/src/gazebo_sonar_plugin.cpp.o
+[96/142] Building CXX object CMakeFiles/gazebo_aruco_plugin.dir/src/gazebo_aruco_plugin.cpp.o
+[97/142] Linking CXX shared library libgazebo_lidar_plugin.so
+[98/142] Linking CXX shared library libgazebo_multirotor_base_plugin.so
+[99/142] Linking CXX shared library libgazebo_wind_plugin.so
+[100/142] Linking CXX shared library libgazebo_gps_plugin.so
+[101/142] Linking CXX shared library libgazebo_opticalflow_mockup_plugin.so
+[102/142] Linking CXX shared library libgazebo_uuv_plugin.so
+[103/142] Linking CXX shared library libgazebo_aruco_plugin.so
+[104/142] Linking CXX shared library libgazebo_sonar_plugin.so
+[105/142] Linking CXX shared library libgazebo_imu_plugin.so
+[106/142] Linking CXX shared library libgazebo_mavlink_interface.so
+[107/142] Generating include/moc_gazebo_video_stream_widget.cpp
+[108/142] Building CXX object CMakeFiles/gazebo_opticalflow_plugin.dir/src/gazebo_opticalflow_plugin.cpp.o
+[109/142] Building CXX object CMakeFiles/gazebo_drop_plugin.dir/src/gazebo_drop_plugin.cpp.o
+[110/142] Linking CXX shared library libgazebo_drop_plugin.so
+[111/142] Generating include/moc_gazebo_user_camera_plugin.cpp
+[112/142] Building CXX object CMakeFiles/gazebo_vision_plugin.dir/src/gazebo_vision_plugin.cpp.o
+[113/142] Building CXX object CMakeFiles/gazebo_controller_interface.dir/src/gazebo_controller_interface.cpp.o
+[114/142] Building CXX object CMakeFiles/gazebo_motor_model.dir/src/gazebo_motor_model.cpp.o
+[115/142] Linking CXX shared library libgazebo_controller_interface.so
+[116/142] Linking CXX shared library libgazebo_vision_plugin.so
+[117/142] Building CXX object OpticalFlow/CMakeFiles/OpticalFlow.dir/src/optical_flow.cpp.o
+[118/142] Linking CXX shared library libgazebo_motor_model.so
+[119/142] Building CXX object OpticalFlow/CMakeFiles/OpticalFlow.dir/src/px4flow.cpp.o
+[120/142] Building CXX object OpticalFlow/CMakeFiles/OpticalFlow.dir/src/flow_px4.cpp.o
+[121/142] Building CXX object CMakeFiles/gazebo_gst_camera_plugin.dir/src/gazebo_gst_camera_plugin.cpp.o
+[122/142] Building CXX object CMakeFiles/gazebo_gimbal_controller_plugin.dir/src/gazebo_gimbal_controller_plugin.cpp.o
+[123/142] Building CXX object OpticalFlow/klt_feature_tracker/CMakeFiles/klt_feature_tracker.dir/src/trackFeatures.cpp.o
+[124/142] Linking CXX static library OpticalFlow/klt_feature_tracker/libklt_feature_tracker.a
+[125/142] Linking CXX shared library libgazebo_gimbal_controller_plugin.so
+[126/142] Building CXX object OpticalFlow/CMakeFiles/OpticalFlow.dir/src/flow_opencv.cpp.o
+[127/142] Linking CXX shared library OpticalFlow/libOpticalFlow.so
+[128/142] Linking CXX shared library libgazebo_gst_camera_plugin.so
+[129/142] Linking CXX shared library libgazebo_opticalflow_plugin.so
+[130/142] Building CXX object CMakeFiles/gazebo_magnetometer_plugin.dir/src/geo_mag_declination.cpp.o
+[131/142] Building CXX object CMakeFiles/gazebo_video_stream_widget.dir/src/gazebo_video_stream_widget.cpp.o
+[132/142] Building CXX object CMakeFiles/gazebo_video_stream_widget.dir/include/moc_gazebo_video_stream_widget.cpp.o
+[133/142] Building CXX object CMakeFiles/gazebo_magnetometer_plugin.dir/src/gazebo_magnetometer_plugin.cpp.o
+[134/142] Building CXX object CMakeFiles/gazebo_barometer_plugin.dir/src/gazebo_barometer_plugin.cpp.o
+[135/142] Linking CXX shared library libgazebo_barometer_plugin.so
+[136/142] Linking CXX shared library libgazebo_magnetometer_plugin.so
+[137/142] Linking CXX shared library libgazebo_video_stream_widget.so
+[138/142] Building CXX object CMakeFiles/gazebo_user_camera_plugin.dir/include/moc_gazebo_user_camera_plugin.cpp.o
+[139/142] Building CXX object CMakeFiles/gazebo_camera_manager_plugin.dir/src/gazebo_camera_manager_plugin.cpp.o
+[140/142] Linking CXX shared library libgazebo_camera_manager_plugin.so
+[141/142] Building CXX object CMakeFiles/gazebo_user_camera_plugin.dir/src/gazebo_user_camera_plugin.cpp.o
+[142/142] Linking CXX shared library libgazebo_user_camera_plugin.so
+[618/908] Performing install step for 'libmicroxrceddsclient_project'
+-- libmicroxrceddsclient_project install command succeeded.  See also /workspace/PX4-Autopilot/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-install-*.log
+[904/908] Linking CXX executable bin/px4
+[906/908] No install step for 'sitl_gazebo-classic'
+[907/908] Completed 'sitl_gazebo-classic'
+[907/908] cd /workspace/PX4-Autopilot/build/px4_sitl_default/src/modules/simulation/simulator_mavlink && /workspace/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_run.sh /workspace/PX4-Autopilot/build/px4_sitl_default/bin/px4 none iris none /workspace/PX4-Autopilot /workspace/PX4-Autopilot/build/px4_sitl_default
+Not running simulation (DONT_RUN is set).

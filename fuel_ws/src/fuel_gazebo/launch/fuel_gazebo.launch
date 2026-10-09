@@ -1,0 +1,105 @@
+<launch>
+  <arg name="control_backend" default="gazebo" doc="gazebo or px4"/>
+  <arg name="localization" default="sim_vision" doc="PX4: sim_vision or gps"/>
+  <arg name="sensor_mode" default="depth" doc="depth or lidar"/>
+  <arg name="scene" default="complex" doc="complex or simple"/>
+  <arg name="world_file" default="$(eval 'fuel_room.world' if arg('scene') == 'simple' else 'fuel_complex.world')"/>
+  <arg name="map_xy" default="$(eval 20.0 if arg('scene') == 'simple' else 24.0)"/>
+  <arg name="box_xy" default="$(eval 5.5 if arg('scene') == 'simple' else 9.7)"/>
+  <arg name="box_z" default="$(eval 2.3 if arg('scene') == 'simple' else 2.8)"/>
+  <arg name="gui" default="true"/>
+  <arg name="rviz" default="true"/>
+
+  <include if="$(eval arg('control_backend') == 'gazebo')" file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find fuel_gazebo)/worlds/$(arg world_file)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+
+  <include if="$(eval arg('control_backend') == 'px4')" file="$(find fuel_gazebo)/launch/px4_simulator.launch">
+    <arg name="scene" value="$(arg scene)"/>
+    <arg name="localization" value="$(arg localization)"/>
+    <arg name="gui" value="$(arg gui)"/>
+  </include>
+
+  <node pkg="fuel_gazebo" type="camera_pose.py" name="fuel_gazebo_camera_pose" output="screen">
+    <param name="sensor_mode" value="$(arg sensor_mode)"/>
+    <param name="sensor_x" value="$(eval 0.35 if arg('control_backend') == 'px4' else 0.0)"/>
+    <param name="depth_z" value="$(eval 0.15 if arg('control_backend') == 'px4' else 0.0)"/>
+    <param name="lidar_z" value="0.15"/>
+    <param name="mask_cylinder" value="$(eval arg('control_backend') != 'px4')"/>
+  </node>
+
+  <include file="$(find exploration_manager)/launch/algorithm.xml">
+    <arg name="map_size_x_" value="$(arg map_xy)"/><arg name="map_size_y_" value="$(arg map_xy)"/><arg name="map_size_z_" value="5.0"/>
+    <arg name="box_min_x" value="$(eval -float(arg('box_xy')))"/><arg name="box_min_y" value="$(eval -float(arg('box_xy')))"/><arg name="box_min_z" value="0.1"/>
+    <arg name="box_max_x" value="$(arg box_xy)"/><arg name="box_max_y" value="$(arg box_xy)"/><arg name="box_max_z" value="$(arg box_z)"/>
+    <arg name="odometry_topic" value="/state_ukf/odom"/>
+    <arg name="sensor_pose_topic" value="/gazebo_fuel/sensor_pose"/>
+    <arg name="depth_topic" value="$(eval '/gazebo_fuel/camera/depth/image_raw' if arg('sensor_mode') == 'depth' else '/gazebo_fuel/unused_depth')"/>
+    <arg name="cloud_topic" value="$(eval '/gazebo_fuel/lidar/points_world' if arg('sensor_mode') == 'lidar' else '/gazebo_fuel/unused_cloud')"/>
+    <arg name="cx" value="320.0"/><arg name="cy" value="240.0"/>
+    <arg name="fx" value="381.36"/><arg name="fy" value="381.36"/>
+    <arg name="max_vel" value="$(eval 0.5 if arg('control_backend') == 'px4' else 1.0)"/><arg name="max_acc" value="$(eval 0.5 if arg('control_backend') == 'px4' else 1.0)"/>
+  </include>
+
+  <!-- Gazebo rendering competes for CPU; the upstream 1 ms A* limit is too short here. -->
+  <param name="/exploration_node/astar/max_search_time" value="0.2" type="double"/>
+
+  <node pkg="plan_manage" name="traj_server" type="traj_server" output="screen">
+    <remap from="/position_cmd" to="/planning/pos_cmd"/>
+    <remap from="/odom_world" to="/state_ukf/odom"/>
+    <param name="traj_server/time_forward" value="1.5" type="double"/>
+    <param name="traj_server/pub_traj_id" value="4" type="int"/>
+    <param name="traj_server/init_x" value="0.0" type="double"/>
+    <param name="traj_server/init_y" value="0.0" type="double"/>
+    <param name="traj_server/init_z" value="1.0" type="double"/>
+    <param name="perception_utils/top_angle" value="0.56125" type="double"/>
+    <param name="perception_utils/left_angle" value="0.69222" type="double"/>
+    <param name="perception_utils/right_angle" value="0.68901" type="double"/>
+    <param name="perception_utils/max_dist" value="4.5" type="double"/>
+    <param name="perception_utils/vis_dist" value="1.0" type="double"/>
+  </node>
+
+  <node pkg="waypoint_generator" name="waypoint_generator" type="waypoint_generator" output="screen">
+    <remap from="~odom" to="/state_ukf/odom"/>
+    <remap from="~goal" to="/move_base_simple/goal"/>
+    <remap from="~traj_start_trigger" to="/traj_start_trigger"/>
+    <param name="waypoint_type" value="point"/>
+  </node>
+
+  <param name="/exploration_node/map_ros/sensor_offset_x" value="0.0" type="double"/>
+  <param name="/exploration_node/map_ros/initial_free_radius" value="0.0" type="double"/>
+  <param name="/exploration_node/map_ros/sensor_offset_z" value="0.0" type="double"/>
+  <group if="$(eval arg('sensor_mode') == 'lidar')">
+    <param name="/exploration_node/map_ros/initial_free_radius" value="0.25" type="double"/>
+    <param name="/exploration_node/map_ros/sensor_offset_z" value="0.15" type="double"/>
+    <param name="/exploration_node/sdf_map/max_ray_length" value="8.0" type="double"/>
+    <param name="/exploration_node/perception_utils/top_angle" value="0.52359878" type="double"/>
+    <param name="/exploration_node/perception_utils/left_angle" value="1.04719755" type="double"/>
+    <param name="/exploration_node/perception_utils/right_angle" value="1.04719755" type="double"/>
+    <param name="/exploration_node/perception_utils/max_dist" value="8.0" type="double"/>
+    <param name="/traj_server/perception_utils/top_angle" value="0.52359878" type="double"/>
+    <param name="/traj_server/perception_utils/left_angle" value="1.04719755" type="double"/>
+    <param name="/traj_server/perception_utils/right_angle" value="1.04719755" type="double"/>
+    <param name="/traj_server/perception_utils/max_dist" value="8.0" type="double"/>
+  </group>
+
+  <group if="$(eval arg('control_backend') == 'px4')">
+    <param name="/exploration_node/map_ros/initial_free_radius" value="0.5" type="double"/>
+    <param name="/exploration_node/map_ros/sensor_offset_x" value="$(eval 0.35 if arg('sensor_mode') == 'lidar' else -0.15)" type="double"/>
+    <param name="/exploration_node/map_ros/sensor_offset_z" value="$(eval 0.15 if arg('sensor_mode') == 'lidar' else 0.35)" type="double"/>
+    <param name="/exploration_node/sdf_map/obstacles_inflation" value="0.35" type="double"/>
+    <param name="/exploration_node/frontier/min_candidate_clearance" value="0.21" type="double"/>
+    <node pkg="fuel_gazebo" type="px4_offboard.py" name="fuel_px4_offboard" output="screen" required="true">
+      <param name="sitl_only" value="true"/>
+      <param name="localization" value="$(arg localization)"/>
+      <param name="takeoff_height" value="1.0"/>
+    </node>
+  </group>
+
+  <include if="$(arg rviz)" file="$(find fuel_gazebo)/launch/rviz_depth.launch">
+    <arg name="sensor_mode" value="$(arg sensor_mode)"/>
+  </include>
+</launch>
